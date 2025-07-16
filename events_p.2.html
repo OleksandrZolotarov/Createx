@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Events p.2</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250716213916">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20250716213916">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-lp class="header header--body-color">
+			<div class="header__container">
+				<div class="header__logo-menu">
+					<div class="header__logo">
+						<a href="homepage.html"><img src="img/header/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="header__menu menu header--body-color">
+						<button type="button" aria-label="Toggle menu" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="about_us.html" class="menu__link">About Us</a></li>
+								<li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
+								<li class="menu__item"><a href="events_p.1.html" class="menu__link">Events</a></li>
+								<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a>
+								</li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">Contacts </a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__button-profile">
+					<a data-da=".menu__body, 615" href="#" class="header__button button button--big">Get consultation</a>
+					<div class="header__profile">
+						<button data-popup="#popup-sign-in" class="header__login-button" type="button">Log
+							in</button><span>/</span>
+						<button data-popup="#popup-sign-up" class="header__register-button" type="button">Register</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="popup-sign-in" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-in">
+						<div class="sign-in__content">
+							<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+							<div class="sign-in__title-block">
+								<h1 class="sign-in__title">Sign in</h1>
+								<div class="sign-in__text">
+									<p>Sign in to your account using email and password provided during registration.</p>
+								</div>
+							</div>
+							<form class="sign-in__form" action="#" method="post">
+								<div class="sign-in__email-label-input discount-label-input">
+									<label class="sign-in__email-label discount-label" for="email-sign-in">Email</label>
+									<input required class="discount-input" id="email-sign-in" autocomplete="on" type="email" name="email" placeholder="Your working email">
+								</div>
+								<div class="sign-in__password-label-input">
+									<label class="sign-in__pass-label discount-label" for="password-sign-in">Password</label>
+									<input required id="password-sign-in" type="password" class="sign-in__pass-input discount-input pass-input">
+									<button type="button" class="sign-in__show-pass"></button>
+								</div>
+								<div class="sign-in__checkbox-link">
+									<div class="sign-in__checkbox checkbox">
+										<input type="checkbox" name="form[]" id="subscribe-events-sign-in-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-sign-in-checkbox">Keep me
+											signed
+											in</label>
+									</div>
+									<button type="button" data-popup="#popup-forgot-password" class="sign-in__pass-button">Forgot
+										password?</button>
+								</div>
+								<button class="sign-in__button button button--fw">Sign in</button>
+							</form>
+							<div class="sign-in__sign-up-button">
+								<p>Don't have an account?</p><button data-popup="#popup-sign-up" type="button">Sign up</button>
+							</div>
+							<div class="sign-in__social-wrapper">
+								<div class="sign-in__social-text">Or sign in with</div>
+								<ul class="sign-in__social-list social-list">
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="sign-in__social-list__link social-list__link">
+											<svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="sign-in__social-list__link social-list__link "> <svg class="sign-in__social-list__icon social-list__icon ">
+												<use xlink:href="img/icons/icons.svg#linked-in"></use>
+											</svg></a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="sign-in__social-list__link social-list__link"> <svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#Twitter"></use>
+											</svg></a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="sign-in__social-list__link social-list__link"> <svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#ins"></use>
+											</svg></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-forgot-password" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="forgot-password sign-in">
+						<div class="sign-in__content sign-in__content--padding">
+							<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+							<div class="sign-in__title-block">
+								<h1 class="sign-in__title">Forgot password</h1>
+								<div class="sign-in__text">
+									<p>Provide your email address to reset your password</p>
+								</div>
+							</div>
+							<form class="sign-in__form" action="#">
+								<div class="sign-in__email-label-input discount-label-input">
+									<label class="sign-in__email-label discount-label" for="email-password">Email</label>
+									<input required class="discount-input" id="email-password" autocomplete="on" type="email" name="email" data-error="error" placeholder="Your email">
+								</div>
+								<button class="sign-in__button button button--fw">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-sign-up" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-up">
+						<div class="sign-up__content">
+							<button data-close type="button" class="popup__close sign-up__close-icon"> </button>
+							<div class="sign-up__title-block">
+								<h1 class="sign-up__title">Sign up</h1>
+								<div class="sign-up__text">
+									<p>Registration takes less than a minute but gives you full control over your studying.
+									</p>
+								</div>
+							</div>
+							<form class="sign-up__form" action="#" method="post">
+								<div class="discount-label-input">
+									<label class="discount-label" for="popup-username">Full name</label>
+									<input required autocomplete="on" type="text" id="popup-username" name="username" placeholder="Your full name" class="discount-input">
+								</div>
+								<div class="sign-up__email-label-input discount-label-input">
+									<label class="sign-up__email-label discount-label" for="email-sign-up">Email</label>
+									<input required class="discount-input" id="email-sign-up" autocomplete="on" type="email" name="email" placeholder="Your working email">
+								</div>
+								<div class="sign-up__password-label-input">
+									<label class="sign-up__pass-label discount-label" for="password-sign-up">Password</label>
+									<input id="password-sign-up" type="password" class="sign-up__pass-input discount-input pass-input">
+									<button type="button" class="sign-up__show-pass show-pass"></button>
+								</div>
+								<div class="sign-up__password-label-input">
+									<label class="sign-up__pass-label discount-label" for="confirm-password-sign-up">Confirm
+										Password</label>
+									<input id="confirm-password-sign-up" type="password" class="sign-up__confirm-pass-input discount-input confirm-pass-input">
+									<button type="button" class="sign-up__confirm-pass confirm-pass"></button>
+								</div>
+								<div class="sign-up__checkbox-link">
+									<div class="sign-up__checkbox checkbox">
+										<input type="checkbox" name="form[]" id="subscribe-events-sign-up-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-sign-up-checkbox">Remember
+											me</label>
+									</div>
+								</div>
+								<button class="sign-up__button button button--fw">Sign up</button>
+							</form>
+							<div class="sign-up__sign-in-button">
+								<p>Already have an account?</p><button data-popup="#popup-sign-in" type="button">Sign
+									in</button>
+							</div>
+							<div class="sign-up__social-wrapper">
+								<div class="sign-up__social-text">Or sign in with</div>
+								<ul class="sign-up__social-list social-list">
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="sign-up__social-list__link social-list__link">
+											<svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="sign-up__social-list__link social-list__link "> <svg class="sign-up__social-list__icon social-list__icon ">
+												<use xlink:href="img/icons/icons.svg#linked-in"></use>
+											</svg></a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="sign-up__social-list__link social-list__link"> <svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#Twitter"></use>
+											</svg></a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="sign-up__social-list__link social-list__link"> <svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#ins"></use>
+											</svg></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<main id="page" class="page">
+
+			<!-- LECTURE ============================================================================================ -->
+			<section class="page__lecture-header lecture-header">
+				<svg class="lecture-header__circles" width="172" height="138" viewBox="0 0 172 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M30.0975 0C-48.4557 0 -112 63.5443 -112 142.097C-112 220.456 -48.4557 284.195 30.0975 284.195C108.456 284.195 172.195 220.651 172.195 142.097C172 63.5443 108.456 0 30.0975 0ZM30.0975 275.034C-43.3878 275.034 -102.839 215.583 -102.839 142.097C-102.839 68.6122 -43.3878 9.16129 30.0975 9.16129C103.583 9.16129 163.034 68.6122 163.034 142.097C163.034 215.388 103.388 275.034 30.0975 275.034Z" fill="white" />
+					<path d="M30.0985 30.6025C-31.3016 30.6025 -81.2014 80.5023 -81.2014 141.902C-81.2014 203.303 -31.3016 253.202 30.0985 253.202C91.4986 253.202 141.398 203.498 141.398 142.097C141.398 80.5023 91.4986 30.6025 30.0985 30.6025ZM30.0985 236.244C-21.9454 236.244 -64.2433 193.946 -64.2433 141.902C-64.2433 89.8585 -21.9454 47.5607 30.0985 47.5607C82.1424 47.5607 124.44 89.8585 124.44 141.902C124.44 193.946 82.1424 236.244 30.0985 236.244Z" fill="white" />
+					<path d="M30.098 79.5273C-4.40304 79.5273 -32.4717 107.596 -32.4717 142.097C-32.4717 176.598 -4.59796 204.667 30.098 204.667C64.599 204.667 92.6677 176.598 92.6677 142.097C92.4727 107.596 64.599 79.5273 30.098 79.5273ZM30.098 175.623C11.5805 175.623 -3.42843 160.614 -3.42843 142.097C-3.42843 123.579 11.5805 108.571 30.098 108.571C48.6155 108.571 63.6244 123.579 63.6244 142.097C63.6244 160.614 48.6155 175.623 30.098 175.623Z" fill="white" />
+				</svg>
+				<div class="lecture-header__container">
+					<svg class="lecture-header__shapes" width="88" height="47" viewBox="0 0 88 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="shapes" opacity="0.3">
+							<path id="Vector" d="M66.4862 42.8902C77.2053 42.8902 85.9372 34.1647 85.9372 23.4534C85.9372 12.7422 77.2053 4.01672 66.4862 4.01672L66.4862 42.8902Z" fill="white" />
+							<path id="Vector_2" d="M36.1412 42.8902C46.8603 42.8902 55.5922 34.1647 55.5922 23.4534C55.5922 12.7422 46.8603 4.01672 36.1412 4.01672L36.1412 42.8902Z" fill="white" />
+							<path id="Vector_3" d="M5.79649 42.8901C16.5156 42.8901 25.2475 34.1647 25.2475 23.4534C25.2475 12.7422 16.5156 4.01672 5.79649 4.01672V42.8901Z" fill="white" />
+						</g>
+					</svg>
+					<svg class="lecture-header__dots" width="157" height="137" viewBox="0 0 157 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.8" clip-path="url(#clip0_2320_3687)">
+							<path d="M5.3356 40.2644C5.3356 41.7838 4.19226 42.9234 2.6678 42.9234C1.14334 42.9234 0 41.7838 0 40.2644C0 38.745 1.14334 37.6055 2.6678 37.6055C4.19226 37.6055 5.3356 38.8716 5.3356 40.2644Z" fill="white" />
+							<path d="M28.0755 40.2644C28.0755 41.7838 26.9321 42.9234 25.4077 42.9234C23.8832 42.9234 22.7399 41.7838 22.7399 40.2644C22.7399 38.745 23.8832 37.6055 25.4077 37.6055C26.8051 37.6055 28.0755 38.8716 28.0755 40.2644Z" fill="white" />
+							<path d="M50.688 40.2644C50.688 41.7838 49.5447 42.9234 48.0202 42.9234C46.4958 42.9234 45.3524 41.7838 45.3524 40.2644C45.3524 38.745 46.4958 37.6055 48.0202 37.6055C49.5447 37.6055 50.688 38.8716 50.688 40.2644Z" fill="white" />
+							<path d="M73.4279 40.2644C73.4279 41.7838 72.2845 42.9234 70.7601 42.9234C69.2356 42.9234 68.0923 41.7838 68.0923 40.2644C68.0923 38.745 69.2356 37.6055 70.7601 37.6055C72.2845 37.6055 73.4279 38.8716 73.4279 40.2644Z" fill="white" />
+							<path d="M96.1677 40.2644C96.1677 41.7838 95.0244 42.9234 93.5 42.9234C91.9755 42.9234 90.8322 41.7838 90.8322 40.2644C90.8322 38.745 91.9755 37.6055 93.5 37.6055C94.8974 37.6055 96.1677 38.8716 96.1677 40.2644Z" fill="white" />
+							<path d="M118.908 40.2644C118.908 41.7838 117.764 42.9234 116.24 42.9234C114.715 42.9234 113.572 41.7838 113.572 40.2644C113.572 38.745 114.715 37.6055 116.24 37.6055C117.764 37.6055 118.908 38.8716 118.908 40.2644Z" fill="white" />
+							<path d="M141.52 40.2644C141.52 41.7838 140.377 42.9234 138.852 42.9234C137.328 42.9234 136.185 41.7838 136.185 40.2644C136.185 38.745 137.328 37.6055 138.852 37.6055C140.377 37.6055 141.52 38.8716 141.52 40.2644Z" fill="white" />
+							<path d="M5.3356 59.1306C5.3356 60.6501 4.19226 61.7896 2.6678 61.7896C1.14334 61.7896 0 60.6501 0 59.1306C0 57.6112 1.14334 56.4717 2.6678 56.4717C4.19226 56.4717 5.3356 57.6112 5.3356 59.1306Z" fill="white" />
+							<path d="M28.0755 59.1306C28.0755 60.6501 26.9321 61.7896 25.4077 61.7896C23.8832 61.7896 22.7399 60.6501 22.7399 59.1306C22.7399 57.6112 23.8832 56.4717 25.4077 56.4717C26.8051 56.4717 28.0755 57.6112 28.0755 59.1306Z" fill="white" />
+							<path d="M50.688 59.1306C50.688 60.6501 49.5447 61.7896 48.0202 61.7896C46.4958 61.7896 45.3524 60.6501 45.3524 59.1306C45.3524 57.6112 46.4958 56.4717 48.0202 56.4717C49.5447 56.4717 50.688 57.6112 50.688 59.1306Z" fill="white" />
+							<path d="M73.4279 59.1306C73.4279 60.6501 72.2845 61.7896 70.7601 61.7896C69.2356 61.7896 68.0923 60.6501 68.0923 59.1306C68.0923 57.6112 69.2356 56.4717 70.7601 56.4717C72.2845 56.4717 73.4279 57.6112 73.4279 59.1306Z" fill="white" />
+							<path d="M96.1677 59.1306C96.1677 60.6501 95.0244 61.7896 93.5 61.7896C91.9755 61.7896 90.8322 60.6501 90.8322 59.1306C90.8322 57.6112 91.9755 56.4717 93.5 56.4717C94.8974 56.4717 96.1677 57.6112 96.1677 59.1306Z" fill="white" />
+							<path d="M118.908 59.1306C118.908 60.6501 117.764 61.7896 116.24 61.7896C114.715 61.7896 113.572 60.6501 113.572 59.1306C113.572 57.6112 114.715 56.4717 116.24 56.4717C117.764 56.4717 118.908 57.6112 118.908 59.1306Z" fill="white" />
+							<path d="M141.52 59.1306C141.52 60.6501 140.377 61.7896 138.852 61.7896C137.328 61.7896 136.185 60.6501 136.185 59.1306C136.185 57.6112 137.328 56.4717 138.852 56.4717C140.377 56.4717 141.52 57.6112 141.52 59.1306Z" fill="white" />
+							<path d="M5.3356 2.65896C5.3356 4.17837 4.19226 5.31793 2.6678 5.31793C1.14334 5.31793 0 4.17837 0 2.65896C0 1.13956 1.14334 0 2.6678 0C4.19226 0 5.3356 1.13956 5.3356 2.65896Z" fill="white" />
+							<path d="M28.0755 2.65896C28.0755 4.17837 26.9321 5.31793 25.4077 5.31793C23.8832 5.31793 22.7399 4.17837 22.7399 2.65896C22.7399 1.13956 23.8832 0 25.4077 0C26.8051 0 28.0755 1.13956 28.0755 2.65896Z" fill="white" />
+							<path d="M50.688 2.65896C50.688 4.17837 49.5447 5.31793 48.0202 5.31793C46.4958 5.31793 45.3524 4.17837 45.3524 2.65896C45.3524 1.13956 46.6228 0 48.0202 0C49.5447 0 50.688 1.13956 50.688 2.65896Z" fill="white" />
+							<path d="M73.4279 2.65896C73.4279 4.17837 72.2845 5.31793 70.7601 5.31793C69.2356 5.31793 68.0923 4.17837 68.0923 2.65896C68.0923 1.13956 69.3627 0 70.7601 0C72.1575 0 73.4279 1.13956 73.4279 2.65896Z" fill="white" />
+							<path d="M96.1677 2.65896C96.1677 4.17837 95.0244 5.31793 93.5 5.31793C91.9755 5.31793 90.8322 4.17837 90.8322 2.65896C90.8322 1.13956 91.9755 0 93.5 0C94.8974 0 96.1677 1.13956 96.1677 2.65896Z" fill="white" />
+							<path d="M118.908 2.65896C118.908 4.17837 117.764 5.31793 116.24 5.31793C114.715 5.31793 113.572 4.17837 113.572 2.65896C113.572 1.13956 114.715 0 116.24 0C117.764 0 118.908 1.13956 118.908 2.65896Z" fill="white" />
+							<path d="M141.52 2.65896C141.52 4.17837 140.377 5.31793 138.852 5.31793C137.328 5.31793 136.185 4.17837 136.185 2.65896C136.185 1.13956 137.328 0 138.852 0C140.377 0 141.52 1.13956 141.52 2.65896Z" fill="white" />
+							<path d="M5.3356 21.5252C5.3356 23.0446 4.19226 24.1841 2.6678 24.1841C1.14334 24.1841 0 22.918 0 21.5252C0 20.0058 1.14334 18.8662 2.6678 18.8662C4.19226 18.8662 5.3356 20.0058 5.3356 21.5252Z" fill="white" />
+							<path d="M28.0755 21.5252C28.0755 23.0446 26.9321 24.1841 25.4077 24.1841C23.8832 24.1841 22.7399 23.0446 22.7399 21.5252C22.7399 20.0058 23.8832 18.8662 25.4077 18.8662C26.8051 18.8662 28.0755 20.0058 28.0755 21.5252Z" fill="white" />
+							<path d="M50.688 21.5252C50.688 23.0446 49.5447 24.1841 48.0202 24.1841C46.4958 24.1841 45.3524 23.0446 45.3524 21.5252C45.3524 20.0058 46.4958 18.8662 48.0202 18.8662C49.5447 18.8662 50.688 20.0058 50.688 21.5252Z" fill="white" />
+							<path d="M73.4279 21.5252C73.4279 23.0446 72.2845 24.1841 70.7601 24.1841C69.2356 24.1841 68.0923 23.0446 68.0923 21.5252C68.0923 20.0058 69.2356 18.8662 70.7601 18.8662C72.2845 18.8662 73.4279 20.0058 73.4279 21.5252Z" fill="white" />
+							<path d="M96.1677 21.5252C96.1677 23.0446 95.0244 24.1841 93.5 24.1841C91.9755 24.1841 90.8322 23.0446 90.8322 21.5252C90.8322 20.0058 91.9755 18.8662 93.5 18.8662C94.8974 18.8662 96.1677 20.0058 96.1677 21.5252Z" fill="white" />
+							<path d="M118.908 21.5252C118.908 23.0446 117.764 24.1841 116.24 24.1841C114.715 24.1841 113.572 23.0446 113.572 21.5252C113.572 20.0058 114.715 18.8662 116.24 18.8662C117.764 18.8662 118.908 20.0058 118.908 21.5252Z" fill="white" />
+							<path d="M141.52 21.5252C141.52 23.0446 140.377 24.1841 138.852 24.1841C137.328 24.1841 136.185 23.0446 136.185 21.5252C136.185 20.0058 137.328 18.8662 138.852 18.8662C140.377 18.8662 141.52 20.0058 141.52 21.5252Z" fill="white" />
+							<path d="M5.3356 77.8699C5.3356 79.3893 4.19226 80.5289 2.6678 80.5289C1.14334 80.5289 0 79.3893 0 77.8699C0 76.3505 1.14334 75.2109 2.6678 75.2109C4.19226 75.2109 5.3356 76.4771 5.3356 77.8699Z" fill="white" />
+							<path d="M28.0755 77.8699C28.0755 79.3893 26.9321 80.5289 25.4077 80.5289C23.8832 80.5289 22.7399 79.3893 22.7399 77.8699C22.7399 76.3505 23.8832 75.2109 25.4077 75.2109C26.8051 75.2109 28.0755 76.4771 28.0755 77.8699Z" fill="white" />
+							<path d="M50.688 77.8699C50.688 79.3893 49.5447 80.5289 48.0202 80.5289C46.4958 80.5289 45.3524 79.3893 45.3524 77.8699C45.3524 76.3505 46.4958 75.2109 48.0202 75.2109C49.5447 75.2109 50.688 76.4771 50.688 77.8699Z" fill="white" />
+							<path d="M73.4279 77.8699C73.4279 79.3893 72.2845 80.5289 70.7601 80.5289C69.2356 80.5289 68.0923 79.3893 68.0923 77.8699C68.0923 76.3505 69.2356 75.2109 70.7601 75.2109C72.2845 75.2109 73.4279 76.4771 73.4279 77.8699Z" fill="white" />
+							<path d="M96.1677 77.8699C96.1677 79.3893 95.0244 80.5289 93.5 80.5289C91.9755 80.5289 90.8322 79.3893 90.8322 77.8699C90.8322 76.3505 91.9755 75.2109 93.5 75.2109C94.8974 75.2109 96.1677 76.4771 96.1677 77.8699Z" fill="white" />
+							<path d="M118.908 77.8699C118.908 79.3893 117.764 80.5289 116.24 80.5289C114.715 80.5289 113.572 79.3893 113.572 77.8699C113.572 76.3505 114.715 75.2109 116.24 75.2109C117.764 75.2109 118.908 76.4771 118.908 77.8699Z" fill="white" />
+							<path d="M141.52 77.8699C141.52 79.3893 140.377 80.5289 138.852 80.5289C137.328 80.5289 136.185 79.3893 136.185 77.8699C136.185 76.3505 137.328 75.2109 138.852 75.2109C140.377 75.2109 141.52 76.4771 141.52 77.8699Z" fill="white" />
+							<path d="M5.3356 96.7361C5.3356 98.2555 4.19226 99.3951 2.6678 99.3951C1.14334 99.3951 0 98.2555 0 96.7361C0 95.2167 1.14334 94.0771 2.6678 94.0771C4.19226 94.0771 5.3356 95.2167 5.3356 96.7361Z" fill="white" />
+							<path d="M28.0755 96.7361C28.0755 98.2555 26.9321 99.3951 25.4077 99.3951C23.8832 99.3951 22.7399 98.2555 22.7399 96.7361C22.7399 95.2167 23.8832 94.0771 25.4077 94.0771C26.8051 94.0771 28.0755 95.2167 28.0755 96.7361Z" fill="white" />
+							<path d="M50.688 96.7361C50.688 98.2555 49.5447 99.3951 48.0202 99.3951C46.4958 99.3951 45.3524 98.2555 45.3524 96.7361C45.3524 95.2167 46.4958 94.0771 48.0202 94.0771C49.5447 94.0771 50.688 95.2167 50.688 96.7361Z" fill="white" />
+							<path d="M70.7601 99.3951C72.2335 99.3951 73.4279 98.2046 73.4279 96.7361C73.4279 95.2676 72.2335 94.0771 70.7601 94.0771C69.2867 94.0771 68.0923 95.2676 68.0923 96.7361C68.0923 98.2046 69.2867 99.3951 70.7601 99.3951Z" fill="white" />
+							<path d="M96.1677 96.7361C96.1677 98.2555 95.0244 99.3951 93.5 99.3951C91.9755 99.3951 90.8322 98.2555 90.8322 96.7361C90.8322 95.2167 91.9755 94.0771 93.5 94.0771C94.8974 94.0771 96.1677 95.2167 96.1677 96.7361Z" fill="white" />
+							<path d="M118.908 96.7361C118.908 98.2555 117.764 99.3951 116.24 99.3951C114.715 99.3951 113.572 98.2555 113.572 96.7361C113.572 95.2167 114.715 94.0771 116.24 94.0771C117.764 94.0771 118.908 95.2167 118.908 96.7361Z" fill="white" />
+							<path d="M141.52 96.7361C141.52 98.2555 140.377 99.3951 138.852 99.3951C137.328 99.3951 136.185 98.2555 136.185 96.7361C136.185 95.2167 137.328 94.0771 138.852 94.0771C140.377 94.0771 141.52 95.2167 141.52 96.7361Z" fill="white" />
+							<path d="M5.3356 115.601C5.3356 117.121 4.19226 118.26 2.6678 118.26C1.14334 118.26 0 117.121 0 115.601C0 114.082 1.14334 112.942 2.6678 112.942C4.19226 112.942 5.3356 114.082 5.3356 115.601Z" fill="white" />
+							<path d="M28.0755 115.601C28.0755 117.121 26.9321 118.26 25.4077 118.26C23.8832 118.26 22.7399 117.121 22.7399 115.601C22.7399 114.082 23.8832 112.942 25.4077 112.942C26.8051 112.942 28.0755 114.082 28.0755 115.601Z" fill="white" />
+							<path d="M50.688 115.601C50.688 117.121 49.5447 118.26 48.0202 118.26C46.4958 118.26 45.3524 117.121 45.3524 115.601C45.3524 114.082 46.4958 112.942 48.0202 112.942C49.5447 112.942 50.688 114.082 50.688 115.601Z" fill="white" />
+							<path d="M73.4279 115.601C73.4279 117.121 72.2845 118.26 70.7601 118.26C69.2356 118.26 68.0923 117.121 68.0923 115.601C68.0923 114.082 69.2356 112.942 70.7601 112.942C72.2845 112.942 73.4279 114.082 73.4279 115.601Z" fill="white" />
+							<path d="M96.1677 115.601C96.1677 117.121 95.0244 118.26 93.5 118.26C91.9755 118.26 90.8322 117.121 90.8322 115.601C90.8322 114.082 91.9755 112.942 93.5 112.942C94.8974 112.942 96.1677 114.082 96.1677 115.601Z" fill="white" />
+							<path d="M118.908 115.601C118.908 117.121 117.764 118.26 116.24 118.26C114.715 118.26 113.572 117.121 113.572 115.601C113.572 114.082 114.715 112.942 116.24 112.942C117.764 112.942 118.908 114.082 118.908 115.601Z" fill="white" />
+							<path d="M141.52 115.601C141.52 117.121 140.377 118.26 138.852 118.26C137.328 118.26 136.185 117.121 136.185 115.601C136.185 114.082 137.328 112.942 138.852 112.942C140.377 112.942 141.52 114.082 141.52 115.601Z" fill="white" />
+							<path d="M5.3356 134.341C5.3356 135.86 4.19226 137 2.6678 137C1.14334 137 0 135.86 0 134.341C0 132.821 1.14334 131.682 2.6678 131.682C4.19226 131.682 5.3356 132.948 5.3356 134.341Z" fill="white" />
+							<path d="M28.0755 134.341C28.0755 135.86 26.9321 137 25.4077 137C23.8832 137 22.7399 135.86 22.7399 134.341C22.7399 132.821 23.8832 131.682 25.4077 131.682C26.8051 131.682 28.0755 132.948 28.0755 134.341Z" fill="white" />
+							<path d="M50.688 134.341C50.688 135.86 49.5447 137 48.0202 137C46.4958 137 45.3524 135.86 45.3524 134.341C45.3524 132.821 46.4958 131.682 48.0202 131.682C49.5447 131.682 50.688 132.948 50.688 134.341Z" fill="white" />
+							<path d="M73.4279 134.341C73.4279 135.86 72.2845 137 70.7601 137C69.2356 137 68.0923 135.86 68.0923 134.341C68.0923 132.821 69.2356 131.682 70.7601 131.682C72.2845 131.682 73.4279 132.948 73.4279 134.341Z" fill="white" />
+							<path d="M96.1677 134.341C96.1677 135.86 95.0244 137 93.5 137C91.9755 137 90.8322 135.86 90.8322 134.341C90.8322 132.821 91.9755 131.682 93.5 131.682C94.8974 131.682 96.1677 132.948 96.1677 134.341Z" fill="white" />
+							<path d="M118.908 134.341C118.908 135.86 117.764 137 116.24 137C114.715 137 113.572 135.86 113.572 134.341C113.572 132.821 114.715 131.682 116.24 131.682C117.764 131.682 118.908 132.948 118.908 134.341Z" fill="white" />
+							<path d="M141.52 134.341C141.52 135.86 140.377 137 138.852 137C137.328 137 136.185 135.86 136.185 134.341C136.185 132.821 137.328 131.682 138.852 131.682C140.377 131.682 141.52 132.948 141.52 134.341Z" fill="white" />
+						</g>
+						<defs>
+							<clipPath id="clip0_2320_3687">
+								<rect width="187" height="137" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+					<svg class="lecture-header__vector" width="110" height="58" viewBox="0 0 110 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="shape" opacity="0.3">
+							<path id="Vector1" d="M96.3412 36.3218L110.001 36.3218L110.001 1.75665e-06L73.6788 0L73.6788 13.556L96.3412 13.556L96.3412 36.3218Z" fill="white" />
+							<path id="Vector1_2" d="M71.8159 60.8452L85.3719 60.8452L85.3719 24.5234L49.1536 24.5234L49.1536 38.1829L71.8159 38.1829L71.8159 60.8452Z" fill="white" />
+							<path id="Vector1_3" d="M47.1875 85.3716L60.847 85.3716L60.847 49.1533L24.5251 49.1533L24.5251 62.7093L47.1875 62.7093L47.1875 85.3716Z" fill="white" />
+						</g>
+					</svg>
+					<div class="lecture-header__title-block title-block title-block--center">
+						<div class="lecture-header__subtitle subtitle">Online lecture</div>
+						<h2 class="lecture-header__title title">Formation of the organizational structure of the company
+							in the
+							face of uncertainty</h2>
+					</div>
+				</div>
+			</section>
+			<section class="page__lecture lecture">
+				<div class="lecture__container">
+					<div class="lecture__about-block">
+						<div class="lecture__about-left">
+							<h3 class="lecture__about-title title">
+								We will talk about:
+							</h3>
+							<div data-spollers class="lecture__spollers spollers ">
+								<details class="spollers__item lecture__spollers-item">
+									<summary class="spollers__title lecture__spollers-title"><span class="spollers__title-lesson lecture__spollers-title-lesson">Theme
+											1.</span><span class="spollers__title-lesson-text lecture__spollers-title-text">
+											Aliquet lectus
+											urna
+											viverra in
+											odio.</span>
+									</summary>
+									<div class="spollers__body lecture__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+								<details class="spollers__item lecture__spollers-item">
+									<summary class="spollers__title lecture__spollers-title"><span class="spollers__title-lesson lecture__spollers-title-lesson">Theme
+											2.</span><span class="spollers__title-lesson-text lecture__spollers-title-text">
+											Orci commodo, viverra orci mollis ut euismod.</span>
+									</summary>
+									<div class="spollers__body lecture__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+								<details class="spollers__item lecture__spollers-item">
+									<summary class="spollers__title lecture__spollers-title"><span class="spollers__title-lesson lecture__spollers-title-lesson">Theme
+											3.</span><span class="spollers__title-lesson-text lecture__spollers-title-text">
+											Sagittis vitae facilisi rutrum amet mauris quisque vel.</span>
+									</summary>
+									<div class="spollers__body lecture__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+								<details class="spollers__item lecture__spollers-item">
+									<summary class="spollers__title lecture__spollers-title"><span class="spollers__title-lesson lecture__spollers-title-lesson">Theme
+											4.</span><span class="spollers__title-lesson-text lecture__spollers-title-text">
+											In id dolor quis nunc, urna hendrerit pharetra.</span>
+									</summary>
+									<div class="spollers__body lecture__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+							</div>
+						</div>
+						<div class="lecture__about-right">
+							<div class="lecture__detailes">
+								<ul class="lecture__detailes-list">
+									<li class="lecture__detailes-item">
+										<ul class="lecture__sub-list">
+											<li class="lecture__sub-item-title">Time</li>
+											<li class="lecture__sub-item-title-detail">August 5, 11:00 – 14:00</li>
+											<li class="lecture__sub-item-text">Metus turpis sit lorem lacus, in elit
+												tellus lacus.</li>
+										</ul>
+									</li>
+									<li class="lecture__detailes-item">
+										<ul class="lecture__sub-list">
+											<li class="lecture__sub-item-title">Price</li>
+											<li class="lecture__sub-item-title-detail">Free</li>
+											<li class="lecture__sub-item-text">Nulla sem adipiscing adipiscing felis
+												fringilla. Adipiscing mauris quam ac elit tristique dis.</li>
+										</ul>
+									</li>
+								</ul>
+								<a href="#" class="lecture__link">Event on Facebook</a>
+								<a href="#" class="lecture__button button button--fw">Join the course</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- SPEAKER ============================================================================================ -->
+
+			<section class="page__speaker speaker">
+				<svg class="speaker__dots" xmlns="http://www.w3.org/2000/svg" width="112" height="170" viewBox="0 0 112 170" fill="none">
+					<g opacity="0.8" clip-path="url(#clip0_2327_2611)">
+						<path d="M6.83187 35.7462C6.03981 36.5382 4.84482 36.5314 4.04356 35.7301C3.2423 34.9288 3.2354 33.7338 4.02746 32.9418C4.81953 32.1497 6.01452 32.1566 6.81578 32.9579C7.55027 33.6924 7.55793 35.0201 6.83187 35.7462Z" fill="#FFCF2D" />
+						<path d="M18.7171 47.6319C17.9251 48.424 16.7301 48.4171 15.9288 47.6158C15.1275 46.8146 15.1207 45.6196 15.9127 44.8275C16.7048 44.0355 17.8998 44.0423 18.701 44.8436C19.5023 45.6449 19.4432 46.9059 18.7171 47.6319Z" fill="#FFCF2D" />
+						<path d="M30.6693 59.5841C29.8772 60.3761 28.6822 60.3692 27.881 59.568C27.0797 58.7667 27.0728 57.5717 27.8649 56.7797C28.6569 55.9876 29.8519 55.9945 30.6532 56.7958C31.4544 57.597 31.3953 58.858 30.6693 59.5841Z" fill="#FFCF2D" />
+						<path d="M42.6214 71.5362C41.8293 72.3283 40.6344 72.3214 39.8331 71.5201C39.0318 70.7189 39.0249 69.5239 39.817 68.7318C40.6091 67.9398 41.8041 67.9466 42.6053 68.7479C43.3398 69.4824 43.3475 70.8102 42.6214 71.5362Z" fill="#FFCF2D" />
+						<path d="M54.5736 83.4874C53.7815 84.2795 52.5865 84.2726 51.7853 83.4713C50.984 82.67 50.9771 81.4751 51.7692 80.683C52.5612 79.8909 53.7562 79.8978 54.5575 80.6991C55.3587 81.5003 55.2996 82.7613 54.5736 83.4874Z" fill="#FFCF2D" />
+						<path d="M66.4588 95.3741C65.6668 96.1662 64.4718 96.1593 63.6705 95.358C62.8693 94.5568 62.8624 93.3618 63.6544 92.5697C64.4465 91.7776 65.6415 91.7845 66.4427 92.5858C67.244 93.3871 67.1849 94.6481 66.4588 95.3741Z" fill="#FFCF2D" />
+						<path d="M78.4112 107.325C77.6192 108.117 76.4242 108.11 75.6229 107.309C74.8216 106.508 74.8147 105.313 75.6068 104.521C76.3989 103.729 77.5939 103.736 78.3951 104.537C79.1964 105.338 79.1373 106.599 78.4112 107.325Z" fill="#FFCF2D" />
+						<path d="M90.3631 119.278C89.571 120.07 88.3761 120.064 87.5748 119.262C86.7735 118.461 86.7666 117.266 87.5587 116.474C88.3508 115.682 89.5458 115.689 90.347 116.49C91.0815 117.225 91.0892 118.552 90.3631 119.278Z" fill="#FFCF2D" />
+						<path d="M8.88216 57.4669C8.0901 58.2589 6.89511 58.252 6.09385 57.4508C5.29259 56.6495 5.28569 55.4545 6.07776 54.6625C6.86982 53.8704 8.06481 53.8773 8.86607 54.6786C9.66733 55.4798 9.67423 56.6748 8.88216 57.4669Z" fill="#FFCF2D" />
+						<path d="M20.8346 69.419C20.0425 70.2111 18.8475 70.2042 18.0462 69.4029C17.245 68.6017 17.2381 67.4067 18.0301 66.6146C18.8222 65.8226 20.0172 65.8295 20.8185 66.6307C21.6197 67.432 21.6266 68.627 20.8346 69.419Z" fill="#FFCF2D" />
+						<path d="M32.7865 81.3702C31.9944 82.1623 30.7994 82.1554 29.9981 81.3541C29.1969 80.5529 29.19 79.3579 29.982 78.5658C30.7741 77.7737 31.9691 77.7806 32.7704 78.5819C33.5049 79.3164 33.5785 80.5781 32.7865 81.3702Z" fill="#FFCF2D" />
+						<path d="M44.7386 93.3233C43.9465 94.1154 42.7516 94.1085 41.9503 93.3072C41.149 92.506 41.1421 91.311 41.9342 90.5189C42.7263 89.7269 43.9213 89.7338 44.7225 90.535C45.5238 91.3363 45.5307 92.5313 44.7386 93.3233Z" fill="#FFCF2D" />
+						<path d="M56.6241 105.208C55.832 106 54.6371 105.993 53.8358 105.192C53.0345 104.391 53.0276 103.196 53.8197 102.404C54.6118 101.612 55.8068 101.619 56.608 102.42C57.4093 103.221 57.4162 104.416 56.6241 105.208Z" fill="#FFCF2D" />
+						<path d="M68.5763 117.161C67.7842 117.953 66.5892 117.946 65.7879 117.145C64.9867 116.344 64.9798 115.149 65.7718 114.357C66.5639 113.565 67.7589 113.572 68.5602 114.373C69.3614 115.174 69.3683 116.369 68.5763 117.161Z" fill="#FFCF2D" />
+						<path d="M80.5284 129.112C79.7363 129.904 78.5413 129.898 77.7401 129.096C76.9388 128.295 76.9319 127.1 77.724 126.308C78.5161 125.516 79.7111 125.523 80.5123 126.324C81.2468 127.059 81.3205 128.32 80.5284 129.112Z" fill="#FFCF2D" />
+						<path d="M14.4832 4.19052C13.6912 4.98258 12.4962 4.97569 11.6949 4.17443C10.8937 3.37317 10.8868 2.17818 11.6788 1.38611C12.4709 0.594048 13.6659 0.600945 14.4671 1.4022C15.2684 2.20346 15.2753 3.39846 14.4832 4.19052Z" fill="#FFCF2D" />
+						<path d="M26.4354 16.1427C25.6433 16.9347 24.4483 16.9278 23.6471 16.1266C22.8458 15.3253 22.8389 14.1303 23.631 13.3383C24.423 12.5462 25.618 12.5531 26.4193 13.3544C27.1538 14.0888 27.2274 15.3506 26.4354 16.1427Z" fill="#FFCF2D" />
+						<path d="M38.3206 28.0284C37.5286 28.8205 36.3336 28.8136 35.5323 28.0123C34.7311 27.2111 34.7242 26.0161 35.5162 25.224C36.3083 24.4319 37.5701 24.5056 38.3045 25.2401C39.1058 26.0414 39.1127 27.2363 38.3206 28.0284Z" fill="#FFCF2D" />
+						<path d="M50.2728 39.9806C49.4807 40.7726 48.2857 40.7657 47.4845 39.9645C46.6832 39.1632 46.6763 37.9682 47.4684 37.1762C48.2604 36.3841 49.5222 36.4578 50.2567 37.1922C50.9912 37.9267 51.0648 39.1885 50.2728 39.9806Z" fill="#FFCF2D" />
+						<path d="M62.2249 51.9327C61.4329 52.7248 60.2379 52.7179 59.4366 51.9166C58.6354 51.1154 58.6285 49.9204 59.4205 49.1283C60.2126 48.3362 61.4076 48.3431 62.2088 49.1444C62.9433 49.8789 63.017 51.1406 62.2249 51.9327Z" fill="#FFCF2D" />
+						<path d="M74.1771 63.8839C73.385 64.676 72.19 64.6691 71.3888 63.8678C70.5875 63.0665 70.5806 61.8715 71.3727 61.0795C72.1647 60.2874 73.3597 60.2943 74.161 61.0956C74.9623 61.8968 74.9692 63.0918 74.1771 63.8839Z" fill="#FFCF2D" />
+						<path d="M86.0626 75.7706C85.2705 76.5627 84.0755 76.5558 83.2743 75.7545C82.473 74.9533 82.4661 73.7583 83.2582 72.9662C84.0502 72.1741 85.2452 72.181 86.0465 72.9823C86.8478 73.7835 86.8546 74.9785 86.0626 75.7706Z" fill="#FFCF2D" />
+						<path d="M98.0147 87.7218C97.2227 88.5138 96.0277 88.5069 95.2264 87.7057C94.4252 86.9044 94.4183 85.7094 95.2103 84.9174C96.0024 84.1253 97.1974 84.1322 97.9986 84.9335C98.7999 85.7347 98.8068 86.9297 98.0147 87.7218Z" fill="#FFCF2D" />
+						<path d="M109.967 99.6749C109.175 100.467 107.98 100.46 107.178 99.6588C106.377 98.8575 106.37 97.6626 107.162 96.8705C107.954 96.0784 109.149 96.0853 109.951 96.8866C110.685 97.6211 110.759 98.8828 109.967 99.6749Z" fill="#FFCF2D" />
+						<path d="M4.64852 14.0255C3.85646 14.8175 2.66146 14.8107 1.8602 14.0094C1.05894 13.2081 1.11805 11.9471 1.84411 11.2211C2.63618 10.429 3.83117 10.4359 4.63243 11.2372C5.43369 12.0384 5.44058 13.2334 4.64852 14.0255Z" fill="#FFCF2D" />
+						<path d="M16.6007 25.9776C15.8086 26.7697 14.6136 26.7628 13.8124 25.9615C13.0111 25.1603 13.0042 23.9653 13.7963 23.1732C14.5883 22.3812 15.7833 22.3881 16.5846 23.1893C17.3191 23.9238 17.3927 25.1856 16.6007 25.9776Z" fill="#FFCF2D" />
+						<path d="M28.4859 37.8624C27.6939 38.6545 26.4989 38.6476 25.6976 37.8463C24.8963 37.045 24.8894 35.8501 25.6815 35.058C26.4736 34.2659 27.6686 34.2728 28.4698 35.0741C29.2711 35.8753 29.278 37.0703 28.4859 37.8624Z" fill="#FFCF2D" />
+						<path d="M40.4383 49.8145C39.6462 50.6066 38.4513 50.5997 37.65 49.7985C36.8487 48.9972 36.8418 47.8022 37.6339 47.0101C38.426 46.2181 39.621 46.225 40.4222 47.0262C41.2235 47.8275 41.2304 49.0225 40.4383 49.8145Z" fill="#FFCF2D" />
+						<path d="M52.3902 61.7667C51.5981 62.5588 50.4032 62.5519 49.6019 61.7506C48.8006 60.9493 48.7937 59.7543 49.5858 58.9623C50.3779 58.1702 51.5729 58.1771 52.3741 58.9784C53.1086 59.7129 53.1823 60.9746 52.3902 61.7667Z" fill="#FFCF2D" />
+						<path d="M64.3424 73.7198C63.5503 74.5119 62.3553 74.505 61.5541 73.7037C60.7528 72.9025 60.7459 71.7075 61.538 70.9154C62.33 70.1233 63.525 70.1302 64.3263 70.9315C65.1275 71.7328 65.1344 72.9278 64.3424 73.7198Z" fill="#FFCF2D" />
+						<path d="M76.2276 85.6046C75.4356 86.3967 74.2406 86.3898 73.4393 85.5885C72.6381 84.7872 72.6312 83.5922 73.4232 82.8002C74.2153 82.0081 75.4103 82.015 76.2115 82.8163C77.0128 83.6175 77.0197 84.8125 76.2276 85.6046Z" fill="#FFCF2D" />
+						<path d="M88.18 97.5558C87.388 98.3478 86.193 98.3409 85.3917 97.5397C84.5904 96.7384 84.5835 95.5434 85.3756 94.7513C86.1677 93.9593 87.3627 93.9662 88.1639 94.7674C88.9652 95.5687 88.9721 96.7637 88.18 97.5558Z" fill="#FFCF2D" />
+						<path d="M100.132 109.509C99.3398 110.301 98.1449 110.294 97.3436 109.493C96.5423 108.692 96.5354 107.497 97.3275 106.704C98.1196 105.912 99.3146 105.919 100.116 106.721C100.85 107.455 100.924 108.717 100.132 109.509Z" fill="#FFCF2D" />
+						<path d="M-0.886637 67.2354C-1.6787 68.0275 -2.87369 68.0206 -3.67495 67.2193C-4.47621 66.4181 -4.48311 65.2231 -3.69104 64.431C-2.89898 63.639 -1.70399 63.6459 -0.90273 64.4471C-0.10147 65.2484 -0.160578 66.5094 -0.886637 67.2354Z" fill="#FFCF2D" />
+						<path d="M11.0655 79.1866C10.2734 79.9787 9.07845 79.9718 8.2772 79.1705C7.47594 78.3693 7.46904 77.1743 8.2611 76.3822C9.05317 75.5901 10.2482 75.597 11.0494 76.3983C11.8507 77.1996 11.7916 78.4606 11.0655 79.1866Z" fill="#FFCF2D" />
+						<path d="M23.0177 91.1397C22.2256 91.9318 21.0306 91.9249 20.2293 91.1236C19.4281 90.3224 19.4212 89.1274 20.2133 88.3353C21.0053 87.5433 22.2003 87.5502 23.0016 88.3514C23.7361 89.0859 23.7437 90.4137 23.0177 91.1397Z" fill="#FFCF2D" />
+						<path d="M34.9698 103.091C34.1778 103.883 32.9828 103.876 32.1815 103.075C31.3802 102.274 31.3733 101.079 32.1654 100.287C32.9575 99.4944 34.1525 99.5013 34.9537 100.303C35.755 101.104 35.6959 102.365 34.9698 103.091Z" fill="#FFCF2D" />
+						<path d="M46.8551 114.978C46.063 115.77 44.868 115.763 44.0668 114.962C43.2655 114.16 43.2586 112.965 44.0507 112.173C44.8427 111.381 46.0377 111.388 46.839 112.189C47.6402 112.991 47.5811 114.252 46.8551 114.978Z" fill="#FFCF2D" />
+						<path d="M58.8075 126.929C58.0154 127.721 56.8204 127.714 56.0191 126.913C55.2179 126.111 55.211 124.916 56.0031 124.124C56.7951 123.332 57.9901 123.339 58.7914 124.14C59.5926 124.942 59.5335 126.203 58.8075 126.929Z" fill="#FFCF2D" />
+						<path d="M70.7594 138.882C69.9673 139.674 68.7723 139.667 67.971 138.866C67.1698 138.065 67.1629 136.87 67.955 136.078C68.747 135.285 69.942 135.292 70.7433 136.094C71.4778 136.828 71.4854 138.156 70.7594 138.882Z" fill="#FFCF2D" />
+						<path d="M-1.55752 89.0065C-0.783101 89.7809 0.465267 89.7881 1.23079 89.0225C1.99632 88.257 1.98912 87.0086 1.2147 86.2342C0.440289 85.4598 -0.808082 85.4526 -1.57361 86.2181C-2.33914 86.9837 -2.33193 88.232 -1.55752 89.0065Z" fill="#FFCF2D" />
+						<path d="M13.1832 100.974C12.3911 101.766 11.1961 101.759 10.3949 100.958C9.59362 100.156 9.58672 98.9614 10.3788 98.1693C11.1708 97.3772 12.3658 97.3841 13.1671 98.1854C13.9016 98.9199 13.9753 100.182 13.1832 100.974Z" fill="#FFCF2D" />
+						<path d="M25.1351 112.927C24.343 113.719 23.148 113.712 22.3468 112.911C21.5455 112.109 21.5386 110.915 22.3307 110.122C23.1228 109.33 24.3177 109.337 25.119 110.139C25.9203 110.94 25.9272 112.135 25.1351 112.927Z" fill="#FFCF2D" />
+						<path d="M37.0206 124.812C36.2285 125.604 35.0335 125.597 34.2323 124.796C33.431 123.994 33.4241 122.799 34.2162 122.007C35.0082 121.215 36.2032 121.222 37.0045 122.023C37.8058 122.825 37.8127 124.02 37.0206 124.812Z" fill="#FFCF2D" />
+						<path d="M46.1844 136.749C46.9588 137.523 48.2072 137.53 48.9727 136.765C49.7383 135.999 49.7311 134.751 48.9566 133.976C48.1822 133.202 46.9339 133.195 46.1683 133.96C45.4028 134.726 45.41 135.974 46.1844 136.749Z" fill="#FFCF2D" />
+						<path d="M60.9249 148.716C60.1328 149.508 58.9378 149.501 58.1366 148.7C57.3353 147.899 57.3284 146.704 58.1205 145.911C58.9125 145.119 60.1075 145.126 60.9088 145.928C61.6433 146.662 61.717 147.924 60.9249 148.716Z" fill="#FFCF2D" />
+						<path d="M3.34798 110.81C2.55592 111.602 1.36093 111.595 0.559671 110.794C-0.241588 109.992 -0.248486 108.797 0.543576 108.005C1.33564 107.213 2.53063 107.22 3.33189 108.021C4.06638 108.756 4.14004 110.018 3.34798 110.81Z" fill="#FFCF2D" />
+						<path d="M15.3001 122.761C14.5081 123.553 13.3131 123.546 12.5118 122.745C11.7106 121.943 11.7037 120.748 12.4957 119.956C13.2878 119.164 14.4828 119.171 15.284 119.973C16.0853 120.774 16.0922 121.969 15.3001 122.761Z" fill="#FFCF2D" />
+						<path d="M27.1854 134.648C26.3933 135.44 25.1983 135.433 24.3971 134.631C23.5958 133.83 23.5889 132.635 24.381 131.843C25.173 131.051 26.368 131.058 27.1693 131.859C27.9706 132.661 27.9775 133.855 27.1854 134.648Z" fill="#FFCF2D" />
+						<path d="M39.1375 146.599C38.3455 147.391 37.1505 147.384 36.3492 146.583C35.548 145.781 35.5411 144.586 36.3331 143.794C37.1252 143.002 38.3202 143.009 39.1214 143.81C39.9227 144.612 39.9296 145.807 39.1375 146.599Z" fill="#FFCF2D" />
+						<path d="M51.0897 158.552C50.2976 159.344 49.1026 159.337 48.3014 158.536C47.5001 157.734 47.4932 156.54 48.2853 155.747C49.0773 154.955 50.2723 154.962 51.0736 155.764C51.8081 156.498 51.8817 157.76 51.0897 158.552Z" fill="#FFCF2D" />
+						<path d="M5.53158 132.53C4.73951 133.322 3.54452 133.316 2.74326 132.514C1.94201 131.713 1.93511 130.518 2.72717 129.726C3.51924 128.934 4.71422 128.941 5.51548 129.742C6.31674 130.543 6.25763 131.804 5.53158 132.53Z" fill="#FFCF2D" />
+						<path d="M17.4171 144.415C16.625 145.207 15.43 145.2 14.6288 144.399C13.8275 143.598 13.8206 142.403 14.6127 141.611C15.4047 140.819 16.5997 140.826 17.401 141.627C18.2022 142.428 18.1431 143.689 17.4171 144.415Z" fill="#FFCF2D" />
+						<path d="M29.3692 156.368C28.5772 157.16 27.3822 157.153 26.5809 156.352C25.7797 155.551 25.7728 154.356 26.5648 153.564C27.3569 152.772 28.5519 152.779 29.3531 153.58C30.1544 154.381 30.0953 155.642 29.3692 156.368Z" fill="#FFCF2D" />
+						<path d="M41.3214 168.319C40.5293 169.111 39.3343 169.105 38.5331 168.303C37.7318 167.502 37.7249 166.307 38.517 165.515C39.309 164.723 40.504 164.73 41.3053 165.531C42.0398 166.266 42.0474 167.593 41.3214 168.319Z" fill="#FFCF2D" />
+					</g>
+					<defs>
+						<clipPath id="clip0_2327_2611">
+							<rect width="139" height="101" fill="white" transform="translate(13.0649) rotate(45)" />
+						</clipPath>
+					</defs>
+				</svg>
+				<div class="speaker__container">
+					<svg class="speaker__circles" width="242" height="242" viewBox="0 0 242 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.12" clip-path="url(#clip0_2282_1)">
+							<path d="M121.083 0C54.1469 0 0 54.1469 0 121.083C0 187.853 54.1469 242.166 121.083 242.166C187.853 242.166 242.166 188.019 242.166 121.083C242 54.1469 187.853 0 121.083 0ZM121.083 234.36C58.4653 234.36 7.80645 183.701 7.80645 121.083C7.80645 58.4653 58.4653 7.80645 121.083 7.80645C183.701 7.80645 234.36 58.4653 234.36 121.083C234.36 183.535 183.535 234.36 121.083 234.36Z" fill="#FFCF2D" />
+							<path d="M121.083 26.0762C68.7634 26.0762 26.2432 68.5964 26.2432 120.916C26.2432 173.236 68.7634 215.756 121.083 215.756C173.403 215.756 215.923 173.402 215.923 121.082C215.923 68.5964 173.403 26.0762 121.083 26.0762ZM121.083 201.306C76.736 201.306 40.6934 165.264 40.6934 120.916C40.6934 76.569 76.736 40.5264 121.083 40.5264C165.431 40.5264 201.473 76.569 201.473 120.916C201.473 165.264 165.431 201.306 121.083 201.306Z" fill="#FFCF2D" />
+						</g>
+						<defs>
+							<clipPath id="clip0_2282_1">
+								<rect width="242" height="242" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+					<svg class="speaker__shapes" xmlns="http://www.w3.org/2000/svg" width="100" height="85" viewBox="0 0 100 85" fill="none">
+						<g opacity="0.2">
+							<path d="M79.0235 47.9009C88.3065 42.5413 91.5058 30.6189 86.1502 21.3427C80.7946 12.0665 68.8698 8.87593 59.5868 14.2355L79.0235 47.9009Z" fill="#FFCF2D" />
+							<path d="M52.7442 63.0737C62.0272 57.7142 65.2265 45.7918 59.8709 36.5155C54.5153 27.2393 42.5905 24.0488 33.3075 29.4083L52.7442 63.0737Z" fill="#FFCF2D" />
+							<path d="M26.4649 78.2456C35.7479 72.886 38.9472 60.9636 33.5916 51.6874C28.236 42.4112 16.3112 39.2207 7.0282 44.5802L26.4649 78.2456Z" fill="#FFCF2D" />
+						</g>
+					</svg>
+					<div class="speaker__content">
+						<div class="speaker__image">
+							<picture><source srcset="img/speaker/speaker-image.webp" type="image/webp"><img src="img/speaker/speaker-image.jpg" loading="lazy" alt="Speaker-image"></picture>
+						</div>
+						<div class="speaker__body">
+							<div class="speaker__title-block title-block">
+								<div class="speaker__subtitle subtitle">Speaker</div>
+								<div class="speaker__title title">Kathryn Murphy</div>
+							</div>
+							<div class="speaker__title-details">Analyst and Marketing specialist in IT company</div>
+							<div class="speaker__text">
+								<p>Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur
+									venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis
+									commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel
+									diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id
+									habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique
+									sollicitudin interdum quam.
+								</p>
+							</div>
+							<ul class="speaker__logo-list">
+								<li class="speaker__logo-item"><a href="#" aria-label="Company students work in"><picture><source srcset="img/speaker/logo_01.webp" type="image/webp"><img src="img/speaker/logo_01.png" loading="lazy" alt="logo"></picture></a></li>
+								<li class="speaker__logo-item"><a href="#" aria-label="Company students work in"><picture><source srcset="img/speaker/logo_02.webp" type="image/webp"><img src="img/speaker/logo_02.png" loading="lazy" alt="logo"></picture></a></li>
+								<li class="speaker__logo-item"><a href="#" aria-label="Company students work in"><picture><source srcset="img/speaker/logo_03.webp" type="image/webp"><img src="img/speaker/logo_03.png" loading="lazy" alt="logo"></picture></a></li>
+							</ul>
+							<ul class="speaker__social-list social-list social-list--big">
+								<li class="social-list__item">
+									<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="social-list__link social-list__link--big">
+										<svg class="social-list__icon">
+											<use xlink:href="img/icons/icons.svg#fb"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social-list__item">
+									<a href="#" aria-label="Behance" data-tippy-content="Behance" target="_blank" class="social-list__link social-list__link--big"> <svg class="social-list__icon">
+											<use xlink:href="img/icons/icons.svg#bh"></use>
+										</svg></a>
+								</li>
+
+								<li class="social-list__item">
+									<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="social-list__link social-list__link--big"> <svg class="social-list__icon">
+											<use xlink:href="img/icons/icons.svg#Twitter"></use>
+										</svg></a>
+								</li>
+								<li class="social-list__item">
+									<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="social-list__link social-list__link--big"> <svg class="social-list__icon">
+											<use xlink:href="img/icons/icons.svg#linked-in"></use>
+										</svg></a>
+								</li>
+								<li class="social-list__item">
+									<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="social-list__link social-list__link--big"> <svg class="social-list__icon">
+											<use xlink:href="img/icons/icons.svg#ins"></use>
+										</svg></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- FOR WHOM============================================================================= -->
+			<section class="page__for-whom for-whom">
+				<div class="for-whom__container">
+					<svg class="for-whom__deco-shapes" xmlns="http://www.w3.org/2000/svg" width="79" height="77" viewBox="0 0 79 77" fill="none">
+						<g opacity="0.2">
+							<path d="M49.7906 54.9722L55.9085 61.09L39.5163 77.4822L23.1709 61.1367L29.3355 54.9722L39.563 65.1997L49.7906 54.9722Z" fill="#FFCF2D" />
+							<path d="M49.7444 32.7884L55.909 38.953L39.5635 55.2984L23.1714 38.9062L29.2892 32.7884L39.5168 43.016L49.7444 32.7884Z" fill="#FFCF2D" />
+							<path d="M49.7911 10.605L55.9557 16.7695L39.5635 33.1617L23.1714 16.7695L29.336 10.605L39.5635 20.8325L49.7911 10.605Z" fill="#FFCF2D" />
+						</g>
+					</svg>
+					<div class="for-whom__title-block title-block ">
+						<div class="for-whom__subtitle subtitle">For whom?</div>
+						<h3 class="for-whom__title title">Who will benefit from the course:</h3>
+					</div>
+					<ul class="for-whom__list list">
+						<li class="for-whom__list-item list-item">Specialists with more than 1 year of active work
+							experience</li>
+						<li class="for-whom__list-item list-item">Mobile app designers who want to improve their skills
+							in solving business problems, creating and testing human-centered interfaces
+						</li>
+						<li class="for-whom__list-item list-item">Professional designers who want to feel more confident
+							in UX</li>
+					</ul>
+				</div>
+			</section>
+			<!-- SUBSCRIBE-EVENTS============================================================================= -->
+			<section class="page__subscribe-events subscribe-events ">
+				<div class="subscribe-events__container">
+					<div class="subscribe-events__block">
+						<svg class="subscribe-events__circles" xmlns="http://www.w3.org/2000/svg" width="135" height="42" viewBox="0 0 135 42" fill="none">
+							<g opacity="0.2">
+								<path d="M67.954 -96.8984C105.018 -96.8984 135 -65.8893 135 -27.556C135 10.6823 105.018 41.7865 67.954 41.7865C30.9821 41.7865 0.908011 10.7774 0.908014 -27.556C0.999982 -65.8893 30.9821 -96.8984 67.954 -96.8984ZM67.954 37.3158C102.627 37.3158 130.677 8.30425 130.677 -27.556C130.677 -63.4162 102.627 -92.4278 67.954 -92.4278C33.2814 -92.4278 5.23059 -63.4162 5.23058 -27.556C5.23058 8.20912 33.3734 37.3158 67.954 37.3158Z" fill="white" />
+								<path d="M67.9535 -81.9648C96.924 -81.9648 120.468 -57.6141 120.468 -27.6514C120.468 2.31142 96.924 26.6621 67.9535 26.6621C38.983 26.6621 15.4388 2.40654 15.4388 -27.5562C15.4388 -57.6141 38.983 -81.9649 67.9535 -81.9648ZM67.9535 18.3867C92.5094 18.3867 112.467 -2.25433 112.467 -27.6514C112.467 -53.0484 92.5094 -73.6894 67.9535 -73.6894C43.3976 -73.6894 23.4401 -53.0484 23.4401 -27.6514C23.4401 -2.25434 43.3976 18.3867 67.9535 18.3867Z" fill="white" />
+							</g>
+						</svg>
+						<svg class="subscribe-events__vector" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+							<g opacity="0.3">
+								<path d="M16.1255 8.91209L16.1255 0.00022334L40.0039 0.000221252L40.0039 23.8105L31.024 23.8105L31.024 8.91209L16.1255 8.91209Z" fill="white" />
+								<path d="M-0.0005131 25.1015L-0.000514263 16.1216L23.8098 16.1216L23.8098 40L14.898 40L14.8979 25.1015L-0.0005131 25.1015Z" fill="white" />
+							</g>
+						</svg>
+						<div class="subscribe-events__image">
+							<img src="img/page-subscribe/illustration.svg" loading="lazy" alt="Illustration">
+						</div>
+						<div class="subscribe-events__body">
+							<h3 class="subscribe-events__title">Don’t want to miss the best events?
+								Subscribe to our newsletter!</h3>
+							<div class="subscribe-events__form-wrapper">
+								<form class="subscribe-events__form" action="#">
+									<div class="subscribe-events__form-input-wrapper">
+										<input required autocomplete="off" type="email" name="email" data-error="Error" placeholder="Your working email" class="subscribe-events__input">
+										<button class="subscribe-events__button button button--big">Subscribe</button>
+									</div>
+									<div class="subscribe-events__checkbox checkbox">
+										<input required type="checkbox" name="form[]" data-error="Error" id="subscribe-events-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-checkbox">I agree
+											to receive communications from
+											Createx
+											Online School</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- REQUEST=========================================================================== -->
+			<section class="page__request request">
+				<div class="request__container">
+					<div class="request__content-left">
+						<div class="request__title-block title-block ">
+							<div class="request__subtitle subtitle">Don't miss the event</div>
+							<h3 class="request__title title">Leave a request</h3>
+						</div>
+						<form action="#" class="request__discount-form discount-form discount-form--vertical">
+							<div class="request__discount-label-input discount-label-input">
+								<label class="request__discount-label discount-label" for="request-username">Full
+									name</label>
+								<input required autocomplete="off" type="text" id="request-username" name="username" data-error="Error" placeholder="Your full name" class="request__discount-input discount-input">
+							</div>
+							<div class="request__discount-label-input discount-label-input">
+								<label class="request__discount-label" for="email">Email</label>
+								<input required class="request__discount-input discount-input" id="email" autocomplete="off" type="email" name="email" data-error="error" placeholder="Your working email">
+							</div>
+							<div class="request__discount-label-input discount-label-input">
+								<label class="request__discount-label discount-label" for="phone">Phone</label>
+								<input required autocomplete="off" type="tel" id="phone" name="phone" data-error="Error" placeholder="Your phone number" class="request__discount-input discount-input">
+							</div>
+							<div class="request__discount-button-wrapper">
+								<button class="request__discount-button discount-button button button--fw ">Join the
+									course</button>
+								<div class="request__discount-button-note">* You will receive a link to the online
+									lecture in an email after registration.</div>
+							</div>
+						</form>
+					</div>
+					<div class="request__content-right">
+						<div class="request__image">
+							<img src="img/request/illustration.svg" loading="lazy" alt="Image">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- online-events ======================================================================= -->
+			<section class="page__online-events online-events">
+				<svg class="online-events__deco-circles" width="172" height="153" viewBox="0 0 172 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M129.089 0C57.7268 0 0 57.7268 0 129.089C0 200.273 57.7268 258.177 129.089 258.177C200.273 258.177 258.177 200.45 258.177 129.089C258 57.7268 200.273 0 129.089 0ZM129.089 249.855C62.3308 249.855 8.32258 195.846 8.32258 129.089C8.32258 62.3308 62.3308 8.32258 129.089 8.32258C195.846 8.32258 249.855 62.3308 249.855 129.089C249.855 195.669 195.669 249.855 129.089 249.855Z" fill="white" />
+					<path d="M129.089 27.8008C73.3095 27.8008 27.978 73.1323 27.978 128.911C27.978 184.69 73.3095 230.022 129.089 230.022C184.868 230.022 230.199 184.867 230.199 129.088C230.199 73.1323 184.868 27.8008 129.089 27.8008ZM129.089 214.616C81.8092 214.616 43.3837 176.191 43.3837 128.911C43.3837 81.6319 81.8092 43.2064 129.089 43.2064C176.368 43.2064 214.793 81.6319 214.793 128.911C214.793 176.191 176.368 214.616 129.089 214.616Z" fill="white" />
+				</svg>
+				<div class="online-events__container">
+					<svg class="online-events__deco-shapes" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+						<g opacity="0.6">
+							<path d="M18.1419 10.0265L18.1419 0.000681365L45.0049 0.000679016L45.0049 26.7871L34.9026 26.7871L34.9026 10.0265L18.1419 10.0265Z" fill="white" />
+							<path d="M0.000188563 28.2393L0.000187254 18.137L26.7866 18.137L26.7866 45L16.7608 45L16.7608 28.2393L0.000188563 28.2393Z" fill="white" />
+						</g>
+					</svg>
+					<svg class="online-events__deco-dots" xmlns="http://www.w3.org/2000/svg" width="129" height="95" viewBox="0 0 129 95" fill="none">
+						<g clip-path="url(#clip0_2327_2239)">
+							<path d="M3.68071 27.92C3.68071 28.9736 2.89198 29.7638 1.84035 29.7638C0.788723 29.7638 0 28.9736 0 27.92C0 26.8664 0.788723 26.0762 1.84035 26.0762C2.89198 26.0762 3.68071 26.9542 3.68071 27.92Z" fill="white" />
+							<path d="M19.3675 27.92C19.3675 28.9736 18.5788 29.7638 17.5271 29.7638C16.4755 29.7638 15.6868 28.9736 15.6868 27.92C15.6868 26.8664 16.4755 26.0762 17.5271 26.0762C18.4911 26.0762 19.3675 26.9542 19.3675 27.92Z" fill="white" />
+							<path d="M34.9664 27.92C34.9664 28.9736 34.1776 29.7638 33.126 29.7638C32.0744 29.7638 31.2856 28.9736 31.2856 27.92C31.2856 26.8664 32.0744 26.0762 33.126 26.0762C34.1776 26.0762 34.9664 26.9542 34.9664 27.92Z" fill="white" />
+							<path d="M50.6536 27.92C50.6536 28.9736 49.8649 29.7638 48.8133 29.7638C47.7616 29.7638 46.9729 28.9736 46.9729 27.92C46.9729 26.8664 47.7616 26.0762 48.8133 26.0762C49.8649 26.0762 50.6536 26.9542 50.6536 27.92Z" fill="white" />
+							<path d="M66.3404 27.92C66.3404 28.9736 65.5516 29.7638 64.5 29.7638C63.4484 29.7638 62.6597 28.9736 62.6597 27.92C62.6597 26.8664 63.4484 26.0762 64.5 26.0762C65.464 26.0762 66.3404 26.9542 66.3404 27.92Z" fill="white" />
+							<path d="M82.0271 27.92C82.0271 28.9736 81.2384 29.7638 80.1868 29.7638C79.1352 29.7638 78.3464 28.9736 78.3464 27.92C78.3464 26.8664 79.1352 26.0762 80.1868 26.0762C81.2384 26.0762 82.0271 26.9542 82.0271 27.92Z" fill="white" />
+							<path d="M97.626 27.92C97.626 28.9736 96.8373 29.7638 95.7857 29.7638C94.734 29.7638 93.9453 28.9736 93.9453 27.92C93.9453 26.8664 94.734 26.0762 95.7857 26.0762C96.8373 26.0762 97.626 26.9542 97.626 27.92Z" fill="white" />
+							<path d="M113.313 27.92C113.313 28.9736 112.524 29.7638 111.472 29.7638C110.421 29.7638 109.632 28.9736 109.632 27.92C109.632 26.8664 110.421 26.0762 111.472 26.0762C112.524 26.0762 113.313 26.9542 113.313 27.92Z" fill="white" />
+							<path d="M129 27.92C129 28.9736 128.211 29.7638 127.16 29.7638C126.108 29.7638 125.319 28.9736 125.319 27.92C125.319 26.8664 126.108 26.0762 127.16 26.0762C128.124 26.0762 129 26.9542 129 27.92Z" fill="white" />
+							<path d="M3.68071 41.002C3.68071 42.0556 2.89198 42.8458 1.84035 42.8458C0.788723 42.8458 0 42.0556 0 41.002C0 39.9484 0.788723 39.1582 1.84035 39.1582C2.89198 39.1582 3.68071 39.9484 3.68071 41.002Z" fill="white" />
+							<path d="M19.3675 41.002C19.3675 42.0556 18.5788 42.8458 17.5271 42.8458C16.4755 42.8458 15.6868 42.0556 15.6868 41.002C15.6868 39.9484 16.4755 39.1582 17.5271 39.1582C18.4911 39.1582 19.3675 39.9484 19.3675 41.002Z" fill="white" />
+							<path d="M34.9664 41.002C34.9664 42.0556 34.1776 42.8458 33.126 42.8458C32.0744 42.8458 31.2856 42.0556 31.2856 41.002C31.2856 39.9484 32.0744 39.1582 33.126 39.1582C34.1776 39.1582 34.9664 39.9484 34.9664 41.002Z" fill="white" />
+							<path d="M50.6536 41.002C50.6536 42.0556 49.8649 42.8458 48.8133 42.8458C47.7616 42.8458 46.9729 42.0556 46.9729 41.002C46.9729 39.9484 47.7616 39.1582 48.8133 39.1582C49.8649 39.1582 50.6536 39.9484 50.6536 41.002Z" fill="white" />
+							<path d="M66.3404 41.002C66.3404 42.0556 65.5516 42.8458 64.5 42.8458C63.4484 42.8458 62.6597 42.0556 62.6597 41.002C62.6597 39.9484 63.4484 39.1582 64.5 39.1582C65.464 39.1582 66.3404 39.9484 66.3404 41.002Z" fill="white" />
+							<path d="M82.0271 41.002C82.0271 42.0556 81.2384 42.8458 80.1868 42.8458C79.1352 42.8458 78.3464 42.0556 78.3464 41.002C78.3464 39.9484 79.1352 39.1582 80.1868 39.1582C81.2384 39.1582 82.0271 39.9484 82.0271 41.002Z" fill="white" />
+							<path d="M97.626 41.002C97.626 42.0556 96.8373 42.8458 95.7857 42.8458C94.734 42.8458 93.9453 42.0556 93.9453 41.002C93.9453 39.9484 94.734 39.1582 95.7857 39.1582C96.8373 39.1582 97.626 39.9484 97.626 41.002Z" fill="white" />
+							<path d="M113.313 41.002C113.313 42.0556 112.524 42.8458 111.472 42.8458C110.421 42.8458 109.632 42.0556 109.632 41.002C109.632 39.9484 110.421 39.1582 111.472 39.1582C112.524 39.1582 113.313 39.9484 113.313 41.002Z" fill="white" />
+							<path d="M129 41.002C129 42.0556 128.211 42.8458 127.16 42.8458C126.108 42.8458 125.319 42.0556 125.319 41.002C125.319 39.9484 126.108 39.1582 127.16 39.1582C128.124 39.1582 129 39.9484 129 41.002Z" fill="white" />
+							<path d="M3.68071 1.84381C3.68071 2.89741 2.89198 3.68762 1.84035 3.68762C0.788723 3.68762 0 2.89741 0 1.84381C0 0.790203 0.788723 0 1.84035 0C2.89198 0 3.68071 0.790203 3.68071 1.84381Z" fill="white" />
+							<path d="M19.3675 1.84381C19.3675 2.89741 18.5788 3.68762 17.5271 3.68762C16.4755 3.68762 15.6868 2.89741 15.6868 1.84381C15.6868 0.790203 16.4755 0 17.5271 0C18.4911 0 19.3675 0.790203 19.3675 1.84381Z" fill="white" />
+							<path d="M34.9664 1.84381C34.9664 2.89741 34.1776 3.68762 33.126 3.68762C32.0744 3.68762 31.2856 2.89741 31.2856 1.84381C31.2856 0.790203 32.162 0 33.126 0C34.1776 0 34.9664 0.790203 34.9664 1.84381Z" fill="white" />
+							<path d="M50.6536 1.84381C50.6536 2.89741 49.8649 3.68762 48.8133 3.68762C47.7616 3.68762 46.9729 2.89741 46.9729 1.84381C46.9729 0.790203 47.8493 0 48.8133 0C49.7773 0 50.6536 0.790203 50.6536 1.84381Z" fill="white" />
+							<path d="M66.3404 1.84381C66.3404 2.89741 65.5516 3.68762 64.5 3.68762C63.4484 3.68762 62.6597 2.89741 62.6597 1.84381C62.6597 0.790203 63.4484 0 64.5 0C65.464 0 66.3404 0.790203 66.3404 1.84381Z" fill="white" />
+							<path d="M82.0271 1.84381C82.0271 2.89741 81.2384 3.68762 80.1868 3.68762C79.1352 3.68762 78.3464 2.89741 78.3464 1.84381C78.3464 0.790203 79.1352 0 80.1868 0C81.2384 0 82.0271 0.790203 82.0271 1.84381Z" fill="white" />
+							<path d="M97.626 1.84381C97.626 2.89741 96.8373 3.68762 95.7857 3.68762C94.734 3.68762 93.9453 2.89741 93.9453 1.84381C93.9453 0.790203 94.734 0 95.7857 0C96.8373 0 97.626 0.790203 97.626 1.84381Z" fill="white" />
+							<path d="M113.313 1.84381C113.313 2.89741 112.524 3.68762 111.472 3.68762C110.421 3.68762 109.632 2.89741 109.632 1.84381C109.632 0.790203 110.421 0 111.472 0C112.524 0 113.313 0.790203 113.313 1.84381Z" fill="white" />
+							<path d="M129 1.84381C129 2.89741 128.211 3.68762 127.16 3.68762C126.108 3.68762 125.319 2.89741 125.319 1.84381C125.319 0.790203 126.108 0 127.16 0C128.124 0 129 0.790203 129 1.84381Z" fill="white" />
+							<path d="M3.68071 14.9258C3.68071 15.9794 2.89198 16.7696 1.84035 16.7696C0.788723 16.7696 0 15.8916 0 14.9258C0 13.8722 0.788723 13.082 1.84035 13.082C2.89198 13.082 3.68071 13.8722 3.68071 14.9258Z" fill="white" />
+							<path d="M19.3675 14.9258C19.3675 15.9794 18.5788 16.7696 17.5271 16.7696C16.4755 16.7696 15.6868 15.9794 15.6868 14.9258C15.6868 13.8722 16.4755 13.082 17.5271 13.082C18.4911 13.082 19.3675 13.8722 19.3675 14.9258Z" fill="white" />
+							<path d="M34.9664 14.9258C34.9664 15.9794 34.1776 16.7696 33.126 16.7696C32.0744 16.7696 31.2856 15.9794 31.2856 14.9258C31.2856 13.8722 32.0744 13.082 33.126 13.082C34.1776 13.082 34.9664 13.8722 34.9664 14.9258Z" fill="white" />
+							<path d="M50.6536 14.9258C50.6536 15.9794 49.8649 16.7696 48.8133 16.7696C47.7616 16.7696 46.9729 15.9794 46.9729 14.9258C46.9729 13.8722 47.7616 13.082 48.8133 13.082C49.8649 13.082 50.6536 13.8722 50.6536 14.9258Z" fill="white" />
+							<path d="M66.3404 14.9258C66.3404 15.9794 65.5516 16.7696 64.5 16.7696C63.4484 16.7696 62.6597 15.9794 62.6597 14.9258C62.6597 13.8722 63.4484 13.082 64.5 13.082C65.464 13.082 66.3404 13.8722 66.3404 14.9258Z" fill="white" />
+							<path d="M82.0271 14.9258C82.0271 15.9794 81.2384 16.7696 80.1868 16.7696C79.1352 16.7696 78.3464 15.9794 78.3464 14.9258C78.3464 13.8722 79.1352 13.082 80.1868 13.082C81.2384 13.082 82.0271 13.8722 82.0271 14.9258Z" fill="white" />
+							<path d="M97.626 14.9258C97.626 15.9794 96.8373 16.7696 95.7857 16.7696C94.734 16.7696 93.9453 15.9794 93.9453 14.9258C93.9453 13.8722 94.734 13.082 95.7857 13.082C96.8373 13.082 97.626 13.8722 97.626 14.9258Z" fill="white" />
+							<path d="M113.313 14.9258C113.313 15.9794 112.524 16.7696 111.472 16.7696C110.421 16.7696 109.632 15.9794 109.632 14.9258C109.632 13.8722 110.421 13.082 111.472 13.082C112.524 13.082 113.313 13.8722 113.313 14.9258Z" fill="white" />
+							<path d="M129 14.9258C129 15.9794 128.211 16.7696 127.16 16.7696C126.108 16.7696 125.319 15.9794 125.319 14.9258C125.319 13.8722 126.108 13.082 127.16 13.082C128.124 13.082 129 13.8722 129 14.9258Z" fill="white" />
+							<path d="M3.68071 53.9981C3.68071 55.0517 2.89198 55.8419 1.84035 55.8419C0.788723 55.8419 0 55.0517 0 53.9981C0 52.9445 0.788723 52.1543 1.84035 52.1543C2.89198 52.1543 3.68071 53.0323 3.68071 53.9981Z" fill="white" />
+							<path d="M19.3675 53.9981C19.3675 55.0517 18.5788 55.8419 17.5271 55.8419C16.4755 55.8419 15.6868 55.0517 15.6868 53.9981C15.6868 52.9445 16.4755 52.1543 17.5271 52.1543C18.4911 52.1543 19.3675 53.0323 19.3675 53.9981Z" fill="white" />
+							<path d="M34.9664 53.9981C34.9664 55.0517 34.1776 55.8419 33.126 55.8419C32.0744 55.8419 31.2856 55.0517 31.2856 53.9981C31.2856 52.9445 32.0744 52.1543 33.126 52.1543C34.1776 52.1543 34.9664 53.0323 34.9664 53.9981Z" fill="white" />
+							<path d="M50.6536 53.9981C50.6536 55.0517 49.8649 55.8419 48.8133 55.8419C47.7616 55.8419 46.9729 55.0517 46.9729 53.9981C46.9729 52.9445 47.7616 52.1543 48.8133 52.1543C49.8649 52.1543 50.6536 53.0323 50.6536 53.9981Z" fill="white" />
+							<path d="M66.3404 53.9981C66.3404 55.0517 65.5516 55.8419 64.5 55.8419C63.4484 55.8419 62.6597 55.0517 62.6597 53.9981C62.6597 52.9445 63.4484 52.1543 64.5 52.1543C65.464 52.1543 66.3404 53.0323 66.3404 53.9981Z" fill="white" />
+							<path d="M82.0271 53.9981C82.0271 55.0517 81.2384 55.8419 80.1868 55.8419C79.1352 55.8419 78.3464 55.0517 78.3464 53.9981C78.3464 52.9445 79.1352 52.1543 80.1868 52.1543C81.2384 52.1543 82.0271 53.0323 82.0271 53.9981Z" fill="white" />
+							<path d="M97.626 53.9981C97.626 55.0517 96.8373 55.8419 95.7857 55.8419C94.734 55.8419 93.9453 55.0517 93.9453 53.9981C93.9453 52.9445 94.734 52.1543 95.7857 52.1543C96.8373 52.1543 97.626 53.0323 97.626 53.9981Z" fill="white" />
+							<path d="M113.313 53.9981C113.313 55.0517 112.524 55.8419 111.472 55.8419C110.421 55.8419 109.632 55.0517 109.632 53.9981C109.632 52.9445 110.421 52.1543 111.472 52.1543C112.524 52.1543 113.313 53.0323 113.313 53.9981Z" fill="white" />
+							<path d="M129 53.9981C129 55.0517 128.211 55.8419 127.16 55.8419C126.108 55.8419 125.319 55.0517 125.319 53.9981C125.319 52.9445 126.108 52.1543 127.16 52.1543C128.124 52.1543 129 53.0323 129 53.9981Z" fill="white" />
+							<path d="M3.68071 67.0801C3.68071 68.1337 2.89198 68.9239 1.84035 68.9239C0.788723 68.9239 0 68.1337 0 67.0801C0 66.0265 0.788723 65.2363 1.84035 65.2363C2.89198 65.2363 3.68071 66.0265 3.68071 67.0801Z" fill="white" />
+							<path d="M19.3675 67.0801C19.3675 68.1337 18.5788 68.9239 17.5271 68.9239C16.4755 68.9239 15.6868 68.1337 15.6868 67.0801C15.6868 66.0265 16.4755 65.2363 17.5271 65.2363C18.4911 65.2363 19.3675 66.0265 19.3675 67.0801Z" fill="white" />
+							<path d="M34.9664 67.0801C34.9664 68.1337 34.1776 68.9239 33.126 68.9239C32.0744 68.9239 31.2856 68.1337 31.2856 67.0801C31.2856 66.0265 32.0744 65.2363 33.126 65.2363C34.1776 65.2363 34.9664 66.0265 34.9664 67.0801Z" fill="white" />
+							<path d="M48.8133 68.9239C49.8297 68.9239 50.6536 68.0984 50.6536 67.0801C50.6536 66.0618 49.8297 65.2363 48.8133 65.2363C47.7969 65.2363 46.9729 66.0618 46.9729 67.0801C46.9729 68.0984 47.7969 68.9239 48.8133 68.9239Z" fill="white" />
+							<path d="M66.3404 67.0801C66.3404 68.1337 65.5516 68.9239 64.5 68.9239C63.4484 68.9239 62.6597 68.1337 62.6597 67.0801C62.6597 66.0265 63.4484 65.2363 64.5 65.2363C65.464 65.2363 66.3404 66.0265 66.3404 67.0801Z" fill="white" />
+							<path d="M82.0271 67.0801C82.0271 68.1337 81.2384 68.9239 80.1868 68.9239C79.1352 68.9239 78.3464 68.1337 78.3464 67.0801C78.3464 66.0265 79.1352 65.2363 80.1868 65.2363C81.2384 65.2363 82.0271 66.0265 82.0271 67.0801Z" fill="white" />
+							<path d="M97.626 67.0801C97.626 68.1337 96.8373 68.9239 95.7857 68.9239C94.734 68.9239 93.9453 68.1337 93.9453 67.0801C93.9453 66.0265 94.734 65.2363 95.7857 65.2363C96.8373 65.2363 97.626 66.0265 97.626 67.0801Z" fill="white" />
+							<path d="M111.472 68.9239C112.489 68.9239 113.313 68.0984 113.313 67.0801C113.313 66.0618 112.489 65.2363 111.472 65.2363C110.456 65.2363 109.632 66.0618 109.632 67.0801C109.632 68.0984 110.456 68.9239 111.472 68.9239Z" fill="white" />
+							<path d="M129 67.0801C129 68.1337 128.211 68.9239 127.16 68.9239C126.108 68.9239 125.319 68.1337 125.319 67.0801C125.319 66.0265 126.108 65.2363 127.16 65.2363C128.124 65.2363 129 66.0265 129 67.0801Z" fill="white" />
+							<path d="M3.68071 80.1622C3.68071 81.2158 2.89198 82.006 1.84035 82.006C0.788723 82.006 0 81.2158 0 80.1622C0 79.1086 0.788723 78.3184 1.84035 78.3184C2.89198 78.3184 3.68071 79.1086 3.68071 80.1622Z" fill="white" />
+							<path d="M19.3675 80.1622C19.3675 81.2158 18.5788 82.006 17.5271 82.006C16.4755 82.006 15.6868 81.2158 15.6868 80.1622C15.6868 79.1086 16.4755 78.3184 17.5271 78.3184C18.4911 78.3184 19.3675 79.1086 19.3675 80.1622Z" fill="white" />
+							<path d="M34.9664 80.1622C34.9664 81.2158 34.1776 82.006 33.126 82.006C32.0744 82.006 31.2856 81.2158 31.2856 80.1622C31.2856 79.1086 32.0744 78.3184 33.126 78.3184C34.1776 78.3184 34.9664 79.1086 34.9664 80.1622Z" fill="white" />
+							<path d="M50.6536 80.1622C50.6536 81.2158 49.8649 82.006 48.8133 82.006C47.7616 82.006 46.9729 81.2158 46.9729 80.1622C46.9729 79.1086 47.7616 78.3184 48.8133 78.3184C49.8649 78.3184 50.6536 79.1086 50.6536 80.1622Z" fill="white" />
+							<path d="M66.3404 80.1622C66.3404 81.2158 65.5516 82.006 64.5 82.006C63.4484 82.006 62.6597 81.2158 62.6597 80.1622C62.6597 79.1086 63.4484 78.3184 64.5 78.3184C65.464 78.3184 66.3404 79.1086 66.3404 80.1622Z" fill="white" />
+							<path d="M82.0271 80.1622C82.0271 81.2158 81.2384 82.006 80.1868 82.006C79.1352 82.006 78.3464 81.2158 78.3464 80.1622C78.3464 79.1086 79.1352 78.3184 80.1868 78.3184C81.2384 78.3184 82.0271 79.1086 82.0271 80.1622Z" fill="white" />
+							<path d="M97.626 80.1622C97.626 81.2158 96.8373 82.006 95.7857 82.006C94.734 82.006 93.9453 81.2158 93.9453 80.1622C93.9453 79.1086 94.734 78.3184 95.7857 78.3184C96.8373 78.3184 97.626 79.1086 97.626 80.1622Z" fill="white" />
+							<path d="M113.313 80.1622C113.313 81.2158 112.524 82.006 111.472 82.006C110.421 82.006 109.632 81.2158 109.632 80.1622C109.632 79.1086 110.421 78.3184 111.472 78.3184C112.524 78.3184 113.313 79.1086 113.313 80.1622Z" fill="white" />
+							<path d="M129 80.1622C129 81.2158 128.211 82.006 127.16 82.006C126.108 82.006 125.319 81.2158 125.319 80.1622C125.319 79.1086 126.108 78.3184 127.16 78.3184C128.124 78.3184 129 79.1086 129 80.1622Z" fill="white" />
+							<path d="M3.68071 93.1563C3.68071 94.2099 2.89198 95.0001 1.84035 95.0001C0.788723 95.0001 0 94.2099 0 93.1563C0 92.1027 0.788723 91.3125 1.84035 91.3125C2.89198 91.3125 3.68071 92.1905 3.68071 93.1563Z" fill="white" />
+							<path d="M19.3675 93.1563C19.3675 94.2099 18.5788 95.0001 17.5271 95.0001C16.4755 95.0001 15.6868 94.2099 15.6868 93.1563C15.6868 92.1027 16.4755 91.3125 17.5271 91.3125C18.4911 91.3125 19.3675 92.1905 19.3675 93.1563Z" fill="white" />
+							<path d="M34.9664 93.1563C34.9664 94.2099 34.1776 95.0001 33.126 95.0001C32.0744 95.0001 31.2856 94.2099 31.2856 93.1563C31.2856 92.1027 32.0744 91.3125 33.126 91.3125C34.1776 91.3125 34.9664 92.1905 34.9664 93.1563Z" fill="white" />
+							<path d="M50.6536 93.1563C50.6536 94.2099 49.8649 95.0001 48.8133 95.0001C47.7616 95.0001 46.9729 94.2099 46.9729 93.1563C46.9729 92.1027 47.7616 91.3125 48.8133 91.3125C49.8649 91.3125 50.6536 92.1905 50.6536 93.1563Z" fill="white" />
+							<path d="M66.3404 93.1563C66.3404 94.2099 65.5516 95.0001 64.5 95.0001C63.4484 95.0001 62.6597 94.2099 62.6597 93.1563C62.6597 92.1027 63.4484 91.3125 64.5 91.3125C65.464 91.3125 66.3404 92.1905 66.3404 93.1563Z" fill="white" />
+							<path d="M82.0271 93.1563C82.0271 94.2099 81.2384 95.0001 80.1868 95.0001C79.1352 95.0001 78.3464 94.2099 78.3464 93.1563C78.3464 92.1027 79.1352 91.3125 80.1868 91.3125C81.2384 91.3125 82.0271 92.1905 82.0271 93.1563Z" fill="white" />
+							<path d="M97.626 93.1563C97.626 94.2099 96.8373 95.0001 95.7857 95.0001C94.734 95.0001 93.9453 94.2099 93.9453 93.1563C93.9453 92.1027 94.734 91.3125 95.7857 91.3125C96.8373 91.3125 97.626 92.1905 97.626 93.1563Z" fill="white" />
+							<path d="M113.313 93.1563C113.313 94.2099 112.524 95.0001 111.472 95.0001C110.421 95.0001 109.632 94.2099 109.632 93.1563C109.632 92.1027 110.421 91.3125 111.472 91.3125C112.524 91.3125 113.313 92.1905 113.313 93.1563Z" fill="white" />
+							<path d="M129 93.1563C129 94.2099 128.211 95.0001 127.16 95.0001C126.108 95.0001 125.319 94.2099 125.319 93.1563C125.319 92.1027 126.108 91.3125 127.16 91.3125C128.124 91.3125 129 92.1905 129 93.1563Z" fill="white" />
+						</g>
+						<defs>
+							<clipPath id="clip0_2327_2239">
+								<rect width="129" height="95" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+					<div class="online-events__title-buttons">
+						<div class="online-events__title-block title-block">
+							<div class="online-events__subtitle subtitle">Check other online events</div>
+							<h3 class="online-events__title title">You may be interested in</h3>
+						</div>
+						<div class="online-events__buttons">
+							<button type="button" class="online-events__swiper-button-prev swiper-button-prev _icon-ar-left"></button>
+							<button type="button" class="online-events__swiper-button-next swiper-button-next _icon-ar-right"></button>
+						</div>
+					</div>
+					<div class="online-events__slider swiper">
+						<div class="online-events__wrapper swiper-wrapper">
+							<article class="grid-item swiper-slide">
+								<div class="grid-item__date-time">
+									<div class="grid-item__date">05 August</div>
+									<div class="grid-item__time">11:00 – 14:00</div>
+								</div>
+								<div class="grid-item__body">
+									<h4 class="grid-item__title">Formation of the organizational structure of the
+										company in the
+										face of
+										uncertainty.</h4>
+									<div class="grid-item__detail">Onine master-class</div>
+								</div>
+								<a href="#" class="grid-item__button button  button--white">View more</a>
+							</article>
+							<article class="grid-item swiper-slide">
+								<div class="grid-item__date-time">
+									<div class="grid-item__date">24 Jul</div>
+									<div class="grid-item__time">11:00 – 12:30</div>
+								</div>
+								<div class="grid-item__body">
+									<h4 class="grid-item__title"> Building a customer service department. Best
+										Practices.
+									</h4>
+									<div class="grid-item__detail">Onine lecture</div>
+								</div>
+								<a href="#" class="grid-item__button button  button--white">View more</a>
+							</article>
+							<article class="grid-item swiper-slide">
+								<div class="grid-item__date-time">
+									<div class="grid-item__date">10 Jul</div>
+									<div class="grid-item__time">9:00 – 14:00</div>
+								</div>
+								<div class="grid-item__body">
+									<h4 class="grid-item__title">Find and evaluate: search and assessment tools for
+										candidates.</h4>
+									<div class="grid-item__detail"> Onine workshop</div>
+								</div>
+								<a href="#" class="grid-item__button button  button--white">View more</a>
+							</article>
+							<article class="grid-item swiper-slide">
+								<div class="grid-item__date-time">
+									<div class="grid-item__date">05 August</div>
+									<div class="grid-item__time">11:00 – 14:00</div>
+								</div>
+								<div class="grid-item__body">
+									<h4 class="grid-item__title">Formation of the organizational structure of the
+										company in the
+										face of
+										uncertainty.</h4>
+									<div class="grid-item__detail">Onine master-class</div>
+								</div>
+								<a href="#" class="grid-item__button button  button--white">View more</a>
+							</article>
+						</div>
+					</div>
+					<div class="online-events__question-button question-button">
+						<div class="online-events__question question">Do you want more?</div>
+						<a href="#" class="online-events__button button button--big">Explore all events</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo-text-social">
+					<div class="footer__logo">
+						<a href="#"><img src="img/footer/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="footer__text">
+						<p>Createx Online School is a leader in online studying. We have lots of courses and programs from the
+							main market experts. We provide relevant approaches to online learning, internships and employment
+							in the largest companies in the country. </p>
+					</div>
+					<ul class="footer__social-list social-list social-list--big social-list--footer ">
+						<li class="social-list__item">
+							<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#fb"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#Twitter"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="YouTube" data-tippy-content="YouTube" target="_blank" class="social-list__link social-list__link--big"><svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#yt"></use>
+								</svg></a>
+						</li>
+
+						<li class="social-list__item">
+							<a href="#" aria-label="Telegram" data-tippy-content="Telegram" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#telegram"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#ins"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#linked-in"></use>
+								</svg></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__columns">
+					<nav class="footer__column">
+						<h2 class="footer__column-title">SITE MAP</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#">About Us</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Courses</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Events</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Blog</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__column">
+						<h2 class="footer__column-title">COURSES</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#">HR & Recruting</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Marketing</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Management</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Design</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Development</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h2 class="footer__column-title">CONTACT US</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item footer__column-item--before _icon-phone">
+								<a class="footer__contact-link " aria-label="Call 4055550128 " href="tel:+4055550128">(405)
+									555-0128</a>
+							</li>
+							<li class="footer__column-item footer__column-item--before _icon-envelope">
+								<a href="mailto:hello@createx.com">hello@createx.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__subscribe">
+					<h2 class="footer__column-title footer__column-title--margin-bottom">SIGN UP TO OUR NEWSLETTER</h2>
+					<form class="footer__form" action="#">
+						<input required autocomplete="on" aria-label="Enter your email address" type="email" name="email" placeholder="Email address" class="footer__input">
+						<button aria-label="Submit email" class="footer__button _icon-ar-right"></button>
+					</form>
+					<div class="footer__subscribe-text">
+						<p>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright copyright-footer">
+				<div class="copyright-footer__container">
+					<div class="copyright-footer__text-button">
+						<div class="copyright-footer__text"><span> © All rights reserved. </span> <span class="copyright-footer__text-icon">Made with <span class="copyright-footer__icon _icon-heart"></span>by
+								Createx Studio</span>
+						</div>
+						<button type="button" class="copyright-footer__button">GO TO TOP</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250716213916"></script>
+</body>
+
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contacts</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250716213916">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20250716213916">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-lp class="header header--white">
+			<div class="header__container">
+				<div class="header__logo-menu">
+					<div class="header__logo">
+						<a href="homepage.html"><img src="img/header/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="header__menu menu header--white">
+						<button type="button" aria-label="Toggle menu" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="about_us.html" class="menu__link">About Us</a></li>
+								<li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
+								<li class="menu__item"><a href="events_p.1.html" class="menu__link">Events</a></li>
+								<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a>
+								</li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">Contacts </a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__button-profile">
+					<a data-da=".menu__body, 615" href="#" class="header__button button button--big">Get consultation</a>
+					<div class="header__profile">
+						<button data-popup="#popup-sign-in" class="header__login-button" type="button">Log
+							in</button><span>/</span>
+						<button data-popup="#popup-sign-up" class="header__register-button" type="button">Register</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="popup-sign-in" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-in">
+						<div class="sign-in__content">
+							<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+							<div class="sign-in__title-block">
+								<h1 class="sign-in__title">Sign in</h1>
+								<div class="sign-in__text">
+									<p>Sign in to your account using email and password provided during registration.</p>
+								</div>
+							</div>
+							<form class="sign-in__form" action="#" method="post">
+								<div class="sign-in__email-label-input discount-label-input">
+									<label class="sign-in__email-label discount-label" for="email-sign-in">Email</label>
+									<input required class="discount-input" id="email-sign-in" autocomplete="on" type="email" name="email" placeholder="Your working email">
+								</div>
+								<div class="sign-in__password-label-input">
+									<label class="sign-in__pass-label discount-label" for="password-sign-in">Password</label>
+									<input required id="password-sign-in" type="password" class="sign-in__pass-input discount-input pass-input">
+									<button type="button" class="sign-in__show-pass"></button>
+								</div>
+								<div class="sign-in__checkbox-link">
+									<div class="sign-in__checkbox checkbox">
+										<input type="checkbox" name="form[]" id="subscribe-events-sign-in-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-sign-in-checkbox">Keep me
+											signed
+											in</label>
+									</div>
+									<button type="button" data-popup="#popup-forgot-password" class="sign-in__pass-button">Forgot
+										password?</button>
+								</div>
+								<button class="sign-in__button button button--fw">Sign in</button>
+							</form>
+							<div class="sign-in__sign-up-button">
+								<p>Don't have an account?</p><button data-popup="#popup-sign-up" type="button">Sign up</button>
+							</div>
+							<div class="sign-in__social-wrapper">
+								<div class="sign-in__social-text">Or sign in with</div>
+								<ul class="sign-in__social-list social-list">
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="sign-in__social-list__link social-list__link">
+											<svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="sign-in__social-list__link social-list__link "> <svg class="sign-in__social-list__icon social-list__icon ">
+												<use xlink:href="img/icons/icons.svg#linked-in"></use>
+											</svg></a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="sign-in__social-list__link social-list__link"> <svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#Twitter"></use>
+											</svg></a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="sign-in__social-list__link social-list__link"> <svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#ins"></use>
+											</svg></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-forgot-password" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="forgot-password sign-in">
+						<div class="sign-in__content sign-in__content--padding">
+							<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+							<div class="sign-in__title-block">
+								<h1 class="sign-in__title">Forgot password</h1>
+								<div class="sign-in__text">
+									<p>Provide your email address to reset your password</p>
+								</div>
+							</div>
+							<form class="sign-in__form" action="#">
+								<div class="sign-in__email-label-input discount-label-input">
+									<label class="sign-in__email-label discount-label" for="email-password">Email</label>
+									<input required class="discount-input" id="email-password" autocomplete="on" type="email" name="email" data-error="error" placeholder="Your email">
+								</div>
+								<button class="sign-in__button button button--fw">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-sign-up" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-up">
+						<div class="sign-up__content">
+							<button data-close type="button" class="popup__close sign-up__close-icon"> </button>
+							<div class="sign-up__title-block">
+								<h1 class="sign-up__title">Sign up</h1>
+								<div class="sign-up__text">
+									<p>Registration takes less than a minute but gives you full control over your studying.
+									</p>
+								</div>
+							</div>
+							<form class="sign-up__form" action="#" method="post">
+								<div class="discount-label-input">
+									<label class="discount-label" for="popup-username">Full name</label>
+									<input required autocomplete="on" type="text" id="popup-username" name="username" placeholder="Your full name" class="discount-input">
+								</div>
+								<div class="sign-up__email-label-input discount-label-input">
+									<label class="sign-up__email-label discount-label" for="email-sign-up">Email</label>
+									<input required class="discount-input" id="email-sign-up" autocomplete="on" type="email" name="email" placeholder="Your working email">
+								</div>
+								<div class="sign-up__password-label-input">
+									<label class="sign-up__pass-label discount-label" for="password-sign-up">Password</label>
+									<input id="password-sign-up" type="password" class="sign-up__pass-input discount-input pass-input">
+									<button type="button" class="sign-up__show-pass show-pass"></button>
+								</div>
+								<div class="sign-up__password-label-input">
+									<label class="sign-up__pass-label discount-label" for="confirm-password-sign-up">Confirm
+										Password</label>
+									<input id="confirm-password-sign-up" type="password" class="sign-up__confirm-pass-input discount-input confirm-pass-input">
+									<button type="button" class="sign-up__confirm-pass confirm-pass"></button>
+								</div>
+								<div class="sign-up__checkbox-link">
+									<div class="sign-up__checkbox checkbox">
+										<input type="checkbox" name="form[]" id="subscribe-events-sign-up-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-sign-up-checkbox">Remember
+											me</label>
+									</div>
+								</div>
+								<button class="sign-up__button button button--fw">Sign up</button>
+							</form>
+							<div class="sign-up__sign-in-button">
+								<p>Already have an account?</p><button data-popup="#popup-sign-in" type="button">Sign
+									in</button>
+							</div>
+							<div class="sign-up__social-wrapper">
+								<div class="sign-up__social-text">Or sign in with</div>
+								<ul class="sign-up__social-list social-list">
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="sign-up__social-list__link social-list__link">
+											<svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="sign-up__social-list__link social-list__link "> <svg class="sign-up__social-list__icon social-list__icon ">
+												<use xlink:href="img/icons/icons.svg#linked-in"></use>
+											</svg></a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="sign-up__social-list__link social-list__link"> <svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#Twitter"></use>
+											</svg></a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="sign-up__social-list__link social-list__link"> <svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#ins"></use>
+											</svg></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<main id="page" class="page">
+			<section class="page__contact-info contact-info">
+				<div class="contact-info__container">
+					<div class="contact-info__content">
+						<div class="contact-info__body">
+							<div class="contact-info__title-block title-block">
+								<div class="contact-info__subtitle subtitle">Contact info</div>
+								<h2 class="contact-info__title title">Get in touch</h2>
+							</div>
+							<ul class="contact-info__list">
+								<li class="contact-info__list-item _icon-community"> Talk to us:
+									<a href="mailto:hello@createx.com">hello@createx.com</a>
+								</li>
+								<li class="contact-info__list-item _icon-phone"> Call us: <a href="tel:4055550128">(405)
+										555-0128</a></li>
+								<li class="contact-info__list-item _icon-pin"> Address: <a href="https://maps.app.goo.gl/ifRwifnj5kjECgseA" target="_blank">2464
+										Royal Ln. Mesa, New Jersey 45463, USA</a>
+								</li>
+							</ul>
+							<div class="contact-info__title-social-list">
+								<div class="contact-info__social-title">FOLLOW US:</div>
+								<ul class="contact-info__social-list social-list social-list--big">
+									<li class="social-list__item">
+										<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="social-list__link social-list__link--big">
+											<svg class="social-list__icon">
+												<use xlink:href="img/icons/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-list__item">
+										<a href="#" aria-label="YouTube" data-tippy-content="YouTube" target="_blank" class="social-list__link social-list__link--big"><svg class="social-list__icon">
+												<use xlink:href="img/icons/icons.svg#yt"></use>
+											</svg></a>
+									</li>
+									<li class="social-list__item">
+										<a href="#" aria-label="Telegram" data-tippy-content="Telegram" target="_blank" class="social-list__link social-list__link--big">
+											<svg class="social-list__icon">
+												<use xlink:href="img/icons/icons.svg#telegram"></use>
+											</svg></a>
+									</li>
+									<li class="social-list__item">
+										<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="social-list__link social-list__link--big">
+											<svg class="social-list__icon">
+												<use xlink:href="img/icons/icons.svg#linked-in"></use>
+											</svg></a>
+									</li>
+									<li class="social-list__item">
+										<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="social-list__link social-list__link--big">
+											<svg class="social-list__icon">
+												<use xlink:href="img/icons/icons.svg#Twitter"></use>
+											</svg></a>
+									</li>
+									<li class="social-list__item">
+										<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="social-list__link social-list__link--big">
+											<svg class="social-list__icon">
+												<use xlink:href="img/icons/icons.svg#ins"></use>
+											</svg></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="contact-info__map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24414.39471486112!2d-74.2342123!3d40.1021866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c178a49db6ccf3%3A0xd348da6f4d2e5454!2sGeorgian%20Court%20University!5e0!3m2!1sen!2s!4v1739009624578!5m2!1sen!2s" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- QUESTIONS ======================================================================================= -->
+			<section class="page__questions questions">
+				<div class="questions__container">
+					<div class="questions__content">
+						<div class="questions__image">
+							<img src="img/questions/illustration.svg" alt="Illustration">
+						</div>
+						<div class="questions__body">
+							<div class="questions__title-block title-block ">
+								<div class="questions__subtitle subtitle">Any questions?</div>
+								<h2 class="questions__title title">Drop us a line</h2>
+							</div>
+							<form action="#" class="questions__form">
+								<div class="discount-label-input">
+									<label class="discount-label" for="firstname">First Name*</label>
+									<input required autocomplete="off" type="text" id="firstname" name="firstname" data-error="Error" placeholder="Your first name" class="discount-input">
+								</div>
+								<div class="discount-label-input">
+									<label class="discount-label" for="lastname">Last Name*</label>
+									<input required autocomplete="off" type="text" id="lastname" name="lastname" data-error="Error" placeholder="Your last name" class="discount-input">
+								</div>
+								<div class="discount-label-input">
+									<label class="discount-label" for="emailinput">Email*</label>
+									<input required class="discount-input" id="emailinput" autocomplete="off" type="email" name="email" data-error="error" placeholder="Your working email">
+								</div>
+								<div class="discount-label-input">
+									<label class="discount-label" for="phone">Phone</label>
+									<input autocomplete="off" type="tel" id="phone" name="phone" data-error="error" placeholder="Your phone number" class="discount-input">
+								</div>
+								<div class="questions__label-textarea">
+									<label class="discount-label" for="message">Message*</label>
+									<textarea class="questions__textarea input" id="message" name="message" placeholder="Your message" required></textarea>
+								</div>
+								<div class="questions__checkbox-button">
+									<div class="questions__checkbox checkbox">
+										<input type="checkbox" name="checkbox" id="subscribe-events-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-checkbox">I agree
+											to receive communications from
+											Createx
+											Online School</label>
+									</div>
+									<button class="discount-button button">Send message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo-text-social">
+					<div class="footer__logo">
+						<a href="#"><img src="img/footer/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="footer__text">
+						<p>Createx Online School is a leader in online studying. We have lots of courses and programs from the
+							main market experts. We provide relevant approaches to online learning, internships and employment
+							in the largest companies in the country. </p>
+					</div>
+					<ul class="footer__social-list social-list social-list--big social-list--footer ">
+						<li class="social-list__item">
+							<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#fb"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#Twitter"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="YouTube" data-tippy-content="YouTube" target="_blank" class="social-list__link social-list__link--big"><svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#yt"></use>
+								</svg></a>
+						</li>
+
+						<li class="social-list__item">
+							<a href="#" aria-label="Telegram" data-tippy-content="Telegram" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#telegram"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#ins"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#linked-in"></use>
+								</svg></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__columns">
+					<nav class="footer__column">
+						<h2 class="footer__column-title">SITE MAP</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#">About Us</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Courses</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Events</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Blog</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__column">
+						<h2 class="footer__column-title">COURSES</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#">HR & Recruting</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Marketing</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Management</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Design</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Development</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h2 class="footer__column-title">CONTACT US</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item footer__column-item--before _icon-phone">
+								<a class="footer__contact-link " aria-label="Call 4055550128 " href="tel:+4055550128">(405)
+									555-0128</a>
+							</li>
+							<li class="footer__column-item footer__column-item--before _icon-envelope">
+								<a href="mailto:hello@createx.com">hello@createx.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__subscribe">
+					<h2 class="footer__column-title footer__column-title--margin-bottom">SIGN UP TO OUR NEWSLETTER</h2>
+					<form class="footer__form" action="#">
+						<input required autocomplete="on" aria-label="Enter your email address" type="email" name="email" placeholder="Email address" class="footer__input">
+						<button aria-label="Submit email" class="footer__button _icon-ar-right"></button>
+					</form>
+					<div class="footer__subscribe-text">
+						<p>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright copyright-footer">
+				<div class="copyright-footer__container">
+					<div class="copyright-footer__text-button">
+						<div class="copyright-footer__text"><span> © All rights reserved. </span> <span class="copyright-footer__text-icon">Made with <span class="copyright-footer__icon _icon-heart"></span>by
+								Createx Studio</span>
+						</div>
+						<button type="button" class="copyright-footer__button">GO TO TOP</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250716213916"></script>
+
+</body>
+
+</html>

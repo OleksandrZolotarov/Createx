@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Course</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250716213916">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20250716213916">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-lp class="header header--body-color">
+			<div class="header__container">
+				<div class="header__logo-menu">
+					<div class="header__logo">
+						<a href="homepage.html"><img src="img/header/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="header__menu menu header--body-color">
+						<button type="button" aria-label="Toggle menu" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="about_us.html" class="menu__link">About Us</a></li>
+								<li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
+								<li class="menu__item"><a href="events_p.1.html" class="menu__link">Events</a></li>
+								<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a>
+								</li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">Contacts </a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__button-profile">
+					<a data-da=".menu__body, 615" href="#" class="header__button button button--big">Get consultation</a>
+					<div class="header__profile">
+						<button data-popup="#popup-sign-in" class="header__login-button" type="button">Log
+							in</button><span>/</span>
+						<button data-popup="#popup-sign-up" class="header__register-button" type="button">Register</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="popup-sign-in" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-in">
+						<div class="sign-in__content">
+							<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+							<div class="sign-in__title-block">
+								<h1 class="sign-in__title">Sign in</h1>
+								<div class="sign-in__text">
+									<p>Sign in to your account using email and password provided during registration.</p>
+								</div>
+							</div>
+							<form class="sign-in__form" action="#" method="post">
+								<div class="sign-in__email-label-input discount-label-input">
+									<label class="sign-in__email-label discount-label" for="email-sign-in">Email</label>
+									<input required class="discount-input" id="email-sign-in" autocomplete="on" type="email" name="email" placeholder="Your working email">
+								</div>
+								<div class="sign-in__password-label-input">
+									<label class="sign-in__pass-label discount-label" for="password-sign-in">Password</label>
+									<input required id="password-sign-in" type="password" class="sign-in__pass-input discount-input pass-input">
+									<button type="button" class="sign-in__show-pass"></button>
+								</div>
+								<div class="sign-in__checkbox-link">
+									<div class="sign-in__checkbox checkbox">
+										<input type="checkbox" name="form[]" id="subscribe-events-sign-in-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-sign-in-checkbox">Keep me
+											signed
+											in</label>
+									</div>
+									<button type="button" data-popup="#popup-forgot-password" class="sign-in__pass-button">Forgot
+										password?</button>
+								</div>
+								<button class="sign-in__button button button--fw">Sign in</button>
+							</form>
+							<div class="sign-in__sign-up-button">
+								<p>Don't have an account?</p><button data-popup="#popup-sign-up" type="button">Sign up</button>
+							</div>
+							<div class="sign-in__social-wrapper">
+								<div class="sign-in__social-text">Or sign in with</div>
+								<ul class="sign-in__social-list social-list">
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="sign-in__social-list__link social-list__link">
+											<svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="sign-in__social-list__link social-list__link "> <svg class="sign-in__social-list__icon social-list__icon ">
+												<use xlink:href="img/icons/icons.svg#linked-in"></use>
+											</svg></a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="sign-in__social-list__link social-list__link"> <svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#Twitter"></use>
+											</svg></a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="sign-in__social-list__link social-list__link"> <svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#ins"></use>
+											</svg></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-forgot-password" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="forgot-password sign-in">
+						<div class="sign-in__content sign-in__content--padding">
+							<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+							<div class="sign-in__title-block">
+								<h1 class="sign-in__title">Forgot password</h1>
+								<div class="sign-in__text">
+									<p>Provide your email address to reset your password</p>
+								</div>
+							</div>
+							<form class="sign-in__form" action="#">
+								<div class="sign-in__email-label-input discount-label-input">
+									<label class="sign-in__email-label discount-label" for="email-password">Email</label>
+									<input required class="discount-input" id="email-password" autocomplete="on" type="email" name="email" data-error="error" placeholder="Your email">
+								</div>
+								<button class="sign-in__button button button--fw">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-sign-up" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-up">
+						<div class="sign-up__content">
+							<button data-close type="button" class="popup__close sign-up__close-icon"> </button>
+							<div class="sign-up__title-block">
+								<h1 class="sign-up__title">Sign up</h1>
+								<div class="sign-up__text">
+									<p>Registration takes less than a minute but gives you full control over your studying.
+									</p>
+								</div>
+							</div>
+							<form class="sign-up__form" action="#" method="post">
+								<div class="discount-label-input">
+									<label class="discount-label" for="popup-username">Full name</label>
+									<input required autocomplete="on" type="text" id="popup-username" name="username" placeholder="Your full name" class="discount-input">
+								</div>
+								<div class="sign-up__email-label-input discount-label-input">
+									<label class="sign-up__email-label discount-label" for="email-sign-up">Email</label>
+									<input required class="discount-input" id="email-sign-up" autocomplete="on" type="email" name="email" placeholder="Your working email">
+								</div>
+								<div class="sign-up__password-label-input">
+									<label class="sign-up__pass-label discount-label" for="password-sign-up">Password</label>
+									<input id="password-sign-up" type="password" class="sign-up__pass-input discount-input pass-input">
+									<button type="button" class="sign-up__show-pass show-pass"></button>
+								</div>
+								<div class="sign-up__password-label-input">
+									<label class="sign-up__pass-label discount-label" for="confirm-password-sign-up">Confirm
+										Password</label>
+									<input id="confirm-password-sign-up" type="password" class="sign-up__confirm-pass-input discount-input confirm-pass-input">
+									<button type="button" class="sign-up__confirm-pass confirm-pass"></button>
+								</div>
+								<div class="sign-up__checkbox-link">
+									<div class="sign-up__checkbox checkbox">
+										<input type="checkbox" name="form[]" id="subscribe-events-sign-up-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-sign-up-checkbox">Remember
+											me</label>
+									</div>
+								</div>
+								<button class="sign-up__button button button--fw">Sign up</button>
+							</form>
+							<div class="sign-up__sign-in-button">
+								<p>Already have an account?</p><button data-popup="#popup-sign-in" type="button">Sign
+									in</button>
+							</div>
+							<div class="sign-up__social-wrapper">
+								<div class="sign-up__social-text">Or sign in with</div>
+								<ul class="sign-up__social-list social-list">
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="sign-up__social-list__link social-list__link">
+											<svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="sign-up__social-list__link social-list__link "> <svg class="sign-up__social-list__icon social-list__icon ">
+												<use xlink:href="img/icons/icons.svg#linked-in"></use>
+											</svg></a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="sign-up__social-list__link social-list__link"> <svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#Twitter"></use>
+											</svg></a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="sign-up__social-list__link social-list__link"> <svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#ins"></use>
+											</svg></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<main id="page" class="page">
+			<!-- COURSE============================================================================================== -->
+			<section class="page__course course">
+				<svg class="course__circles" width="172" height="138" viewBox="0 0 172 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M30.0975 0C-48.4557 0 -112 63.5443 -112 142.097C-112 220.456 -48.4557 284.195 30.0975 284.195C108.456 284.195 172.195 220.651 172.195 142.097C172 63.5443 108.456 0 30.0975 0ZM30.0975 275.034C-43.3878 275.034 -102.839 215.583 -102.839 142.097C-102.839 68.6122 -43.3878 9.16129 30.0975 9.16129C103.583 9.16129 163.034 68.6122 163.034 142.097C163.034 215.388 103.388 275.034 30.0975 275.034Z" fill="white" />
+					<path d="M30.0985 30.6025C-31.3016 30.6025 -81.2014 80.5023 -81.2014 141.902C-81.2014 203.303 -31.3016 253.202 30.0985 253.202C91.4986 253.202 141.398 203.498 141.398 142.097C141.398 80.5023 91.4986 30.6025 30.0985 30.6025ZM30.0985 236.244C-21.9454 236.244 -64.2433 193.946 -64.2433 141.902C-64.2433 89.8585 -21.9454 47.5607 30.0985 47.5607C82.1424 47.5607 124.44 89.8585 124.44 141.902C124.44 193.946 82.1424 236.244 30.0985 236.244Z" fill="white" />
+					<path d="M30.098 79.5273C-4.40304 79.5273 -32.4717 107.596 -32.4717 142.097C-32.4717 176.598 -4.59796 204.667 30.098 204.667C64.599 204.667 92.6677 176.598 92.6677 142.097C92.4727 107.596 64.599 79.5273 30.098 79.5273ZM30.098 175.623C11.5805 175.623 -3.42843 160.614 -3.42843 142.097C-3.42843 123.579 11.5805 108.571 30.098 108.571C48.6155 108.571 63.6244 123.579 63.6244 142.097C63.6244 160.614 48.6155 175.623 30.098 175.623Z" fill="white" />
+				</svg>
+				<div class="course__container">
+					<svg class="course__shapes" width="88" height="47" viewBox="0 0 88 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="shapes" opacity="0.3">
+							<path id="Vector" d="M66.4862 42.8902C77.2053 42.8902 85.9372 34.1647 85.9372 23.4534C85.9372 12.7422 77.2053 4.01672 66.4862 4.01672L66.4862 42.8902Z" fill="white" />
+							<path id="Vector_2" d="M36.1412 42.8902C46.8603 42.8902 55.5922 34.1647 55.5922 23.4534C55.5922 12.7422 46.8603 4.01672 36.1412 4.01672L36.1412 42.8902Z" fill="white" />
+							<path id="Vector_3" d="M5.79649 42.8901C16.5156 42.8901 25.2475 34.1647 25.2475 23.4534C25.2475 12.7422 16.5156 4.01672 5.79649 4.01672V42.8901Z" fill="white" />
+						</g>
+					</svg>
+					<svg class="course__dots" width="157" height="137" viewBox="0 0 157 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.8" clip-path="url(#clip0_2320_3687)">
+							<path d="M5.3356 40.2644C5.3356 41.7838 4.19226 42.9234 2.6678 42.9234C1.14334 42.9234 0 41.7838 0 40.2644C0 38.745 1.14334 37.6055 2.6678 37.6055C4.19226 37.6055 5.3356 38.8716 5.3356 40.2644Z" fill="white" />
+							<path d="M28.0755 40.2644C28.0755 41.7838 26.9321 42.9234 25.4077 42.9234C23.8832 42.9234 22.7399 41.7838 22.7399 40.2644C22.7399 38.745 23.8832 37.6055 25.4077 37.6055C26.8051 37.6055 28.0755 38.8716 28.0755 40.2644Z" fill="white" />
+							<path d="M50.688 40.2644C50.688 41.7838 49.5447 42.9234 48.0202 42.9234C46.4958 42.9234 45.3524 41.7838 45.3524 40.2644C45.3524 38.745 46.4958 37.6055 48.0202 37.6055C49.5447 37.6055 50.688 38.8716 50.688 40.2644Z" fill="white" />
+							<path d="M73.4279 40.2644C73.4279 41.7838 72.2845 42.9234 70.7601 42.9234C69.2356 42.9234 68.0923 41.7838 68.0923 40.2644C68.0923 38.745 69.2356 37.6055 70.7601 37.6055C72.2845 37.6055 73.4279 38.8716 73.4279 40.2644Z" fill="white" />
+							<path d="M96.1677 40.2644C96.1677 41.7838 95.0244 42.9234 93.5 42.9234C91.9755 42.9234 90.8322 41.7838 90.8322 40.2644C90.8322 38.745 91.9755 37.6055 93.5 37.6055C94.8974 37.6055 96.1677 38.8716 96.1677 40.2644Z" fill="white" />
+							<path d="M118.908 40.2644C118.908 41.7838 117.764 42.9234 116.24 42.9234C114.715 42.9234 113.572 41.7838 113.572 40.2644C113.572 38.745 114.715 37.6055 116.24 37.6055C117.764 37.6055 118.908 38.8716 118.908 40.2644Z" fill="white" />
+							<path d="M141.52 40.2644C141.52 41.7838 140.377 42.9234 138.852 42.9234C137.328 42.9234 136.185 41.7838 136.185 40.2644C136.185 38.745 137.328 37.6055 138.852 37.6055C140.377 37.6055 141.52 38.8716 141.52 40.2644Z" fill="white" />
+							<path d="M5.3356 59.1306C5.3356 60.6501 4.19226 61.7896 2.6678 61.7896C1.14334 61.7896 0 60.6501 0 59.1306C0 57.6112 1.14334 56.4717 2.6678 56.4717C4.19226 56.4717 5.3356 57.6112 5.3356 59.1306Z" fill="white" />
+							<path d="M28.0755 59.1306C28.0755 60.6501 26.9321 61.7896 25.4077 61.7896C23.8832 61.7896 22.7399 60.6501 22.7399 59.1306C22.7399 57.6112 23.8832 56.4717 25.4077 56.4717C26.8051 56.4717 28.0755 57.6112 28.0755 59.1306Z" fill="white" />
+							<path d="M50.688 59.1306C50.688 60.6501 49.5447 61.7896 48.0202 61.7896C46.4958 61.7896 45.3524 60.6501 45.3524 59.1306C45.3524 57.6112 46.4958 56.4717 48.0202 56.4717C49.5447 56.4717 50.688 57.6112 50.688 59.1306Z" fill="white" />
+							<path d="M73.4279 59.1306C73.4279 60.6501 72.2845 61.7896 70.7601 61.7896C69.2356 61.7896 68.0923 60.6501 68.0923 59.1306C68.0923 57.6112 69.2356 56.4717 70.7601 56.4717C72.2845 56.4717 73.4279 57.6112 73.4279 59.1306Z" fill="white" />
+							<path d="M96.1677 59.1306C96.1677 60.6501 95.0244 61.7896 93.5 61.7896C91.9755 61.7896 90.8322 60.6501 90.8322 59.1306C90.8322 57.6112 91.9755 56.4717 93.5 56.4717C94.8974 56.4717 96.1677 57.6112 96.1677 59.1306Z" fill="white" />
+							<path d="M118.908 59.1306C118.908 60.6501 117.764 61.7896 116.24 61.7896C114.715 61.7896 113.572 60.6501 113.572 59.1306C113.572 57.6112 114.715 56.4717 116.24 56.4717C117.764 56.4717 118.908 57.6112 118.908 59.1306Z" fill="white" />
+							<path d="M141.52 59.1306C141.52 60.6501 140.377 61.7896 138.852 61.7896C137.328 61.7896 136.185 60.6501 136.185 59.1306C136.185 57.6112 137.328 56.4717 138.852 56.4717C140.377 56.4717 141.52 57.6112 141.52 59.1306Z" fill="white" />
+							<path d="M5.3356 2.65896C5.3356 4.17837 4.19226 5.31793 2.6678 5.31793C1.14334 5.31793 0 4.17837 0 2.65896C0 1.13956 1.14334 0 2.6678 0C4.19226 0 5.3356 1.13956 5.3356 2.65896Z" fill="white" />
+							<path d="M28.0755 2.65896C28.0755 4.17837 26.9321 5.31793 25.4077 5.31793C23.8832 5.31793 22.7399 4.17837 22.7399 2.65896C22.7399 1.13956 23.8832 0 25.4077 0C26.8051 0 28.0755 1.13956 28.0755 2.65896Z" fill="white" />
+							<path d="M50.688 2.65896C50.688 4.17837 49.5447 5.31793 48.0202 5.31793C46.4958 5.31793 45.3524 4.17837 45.3524 2.65896C45.3524 1.13956 46.6228 0 48.0202 0C49.5447 0 50.688 1.13956 50.688 2.65896Z" fill="white" />
+							<path d="M73.4279 2.65896C73.4279 4.17837 72.2845 5.31793 70.7601 5.31793C69.2356 5.31793 68.0923 4.17837 68.0923 2.65896C68.0923 1.13956 69.3627 0 70.7601 0C72.1575 0 73.4279 1.13956 73.4279 2.65896Z" fill="white" />
+							<path d="M96.1677 2.65896C96.1677 4.17837 95.0244 5.31793 93.5 5.31793C91.9755 5.31793 90.8322 4.17837 90.8322 2.65896C90.8322 1.13956 91.9755 0 93.5 0C94.8974 0 96.1677 1.13956 96.1677 2.65896Z" fill="white" />
+							<path d="M118.908 2.65896C118.908 4.17837 117.764 5.31793 116.24 5.31793C114.715 5.31793 113.572 4.17837 113.572 2.65896C113.572 1.13956 114.715 0 116.24 0C117.764 0 118.908 1.13956 118.908 2.65896Z" fill="white" />
+							<path d="M141.52 2.65896C141.52 4.17837 140.377 5.31793 138.852 5.31793C137.328 5.31793 136.185 4.17837 136.185 2.65896C136.185 1.13956 137.328 0 138.852 0C140.377 0 141.52 1.13956 141.52 2.65896Z" fill="white" />
+							<path d="M5.3356 21.5252C5.3356 23.0446 4.19226 24.1841 2.6678 24.1841C1.14334 24.1841 0 22.918 0 21.5252C0 20.0058 1.14334 18.8662 2.6678 18.8662C4.19226 18.8662 5.3356 20.0058 5.3356 21.5252Z" fill="white" />
+							<path d="M28.0755 21.5252C28.0755 23.0446 26.9321 24.1841 25.4077 24.1841C23.8832 24.1841 22.7399 23.0446 22.7399 21.5252C22.7399 20.0058 23.8832 18.8662 25.4077 18.8662C26.8051 18.8662 28.0755 20.0058 28.0755 21.5252Z" fill="white" />
+							<path d="M50.688 21.5252C50.688 23.0446 49.5447 24.1841 48.0202 24.1841C46.4958 24.1841 45.3524 23.0446 45.3524 21.5252C45.3524 20.0058 46.4958 18.8662 48.0202 18.8662C49.5447 18.8662 50.688 20.0058 50.688 21.5252Z" fill="white" />
+							<path d="M73.4279 21.5252C73.4279 23.0446 72.2845 24.1841 70.7601 24.1841C69.2356 24.1841 68.0923 23.0446 68.0923 21.5252C68.0923 20.0058 69.2356 18.8662 70.7601 18.8662C72.2845 18.8662 73.4279 20.0058 73.4279 21.5252Z" fill="white" />
+							<path d="M96.1677 21.5252C96.1677 23.0446 95.0244 24.1841 93.5 24.1841C91.9755 24.1841 90.8322 23.0446 90.8322 21.5252C90.8322 20.0058 91.9755 18.8662 93.5 18.8662C94.8974 18.8662 96.1677 20.0058 96.1677 21.5252Z" fill="white" />
+							<path d="M118.908 21.5252C118.908 23.0446 117.764 24.1841 116.24 24.1841C114.715 24.1841 113.572 23.0446 113.572 21.5252C113.572 20.0058 114.715 18.8662 116.24 18.8662C117.764 18.8662 118.908 20.0058 118.908 21.5252Z" fill="white" />
+							<path d="M141.52 21.5252C141.52 23.0446 140.377 24.1841 138.852 24.1841C137.328 24.1841 136.185 23.0446 136.185 21.5252C136.185 20.0058 137.328 18.8662 138.852 18.8662C140.377 18.8662 141.52 20.0058 141.52 21.5252Z" fill="white" />
+							<path d="M5.3356 77.8699C5.3356 79.3893 4.19226 80.5289 2.6678 80.5289C1.14334 80.5289 0 79.3893 0 77.8699C0 76.3505 1.14334 75.2109 2.6678 75.2109C4.19226 75.2109 5.3356 76.4771 5.3356 77.8699Z" fill="white" />
+							<path d="M28.0755 77.8699C28.0755 79.3893 26.9321 80.5289 25.4077 80.5289C23.8832 80.5289 22.7399 79.3893 22.7399 77.8699C22.7399 76.3505 23.8832 75.2109 25.4077 75.2109C26.8051 75.2109 28.0755 76.4771 28.0755 77.8699Z" fill="white" />
+							<path d="M50.688 77.8699C50.688 79.3893 49.5447 80.5289 48.0202 80.5289C46.4958 80.5289 45.3524 79.3893 45.3524 77.8699C45.3524 76.3505 46.4958 75.2109 48.0202 75.2109C49.5447 75.2109 50.688 76.4771 50.688 77.8699Z" fill="white" />
+							<path d="M73.4279 77.8699C73.4279 79.3893 72.2845 80.5289 70.7601 80.5289C69.2356 80.5289 68.0923 79.3893 68.0923 77.8699C68.0923 76.3505 69.2356 75.2109 70.7601 75.2109C72.2845 75.2109 73.4279 76.4771 73.4279 77.8699Z" fill="white" />
+							<path d="M96.1677 77.8699C96.1677 79.3893 95.0244 80.5289 93.5 80.5289C91.9755 80.5289 90.8322 79.3893 90.8322 77.8699C90.8322 76.3505 91.9755 75.2109 93.5 75.2109C94.8974 75.2109 96.1677 76.4771 96.1677 77.8699Z" fill="white" />
+							<path d="M118.908 77.8699C118.908 79.3893 117.764 80.5289 116.24 80.5289C114.715 80.5289 113.572 79.3893 113.572 77.8699C113.572 76.3505 114.715 75.2109 116.24 75.2109C117.764 75.2109 118.908 76.4771 118.908 77.8699Z" fill="white" />
+							<path d="M141.52 77.8699C141.52 79.3893 140.377 80.5289 138.852 80.5289C137.328 80.5289 136.185 79.3893 136.185 77.8699C136.185 76.3505 137.328 75.2109 138.852 75.2109C140.377 75.2109 141.52 76.4771 141.52 77.8699Z" fill="white" />
+							<path d="M5.3356 96.7361C5.3356 98.2555 4.19226 99.3951 2.6678 99.3951C1.14334 99.3951 0 98.2555 0 96.7361C0 95.2167 1.14334 94.0771 2.6678 94.0771C4.19226 94.0771 5.3356 95.2167 5.3356 96.7361Z" fill="white" />
+							<path d="M28.0755 96.7361C28.0755 98.2555 26.9321 99.3951 25.4077 99.3951C23.8832 99.3951 22.7399 98.2555 22.7399 96.7361C22.7399 95.2167 23.8832 94.0771 25.4077 94.0771C26.8051 94.0771 28.0755 95.2167 28.0755 96.7361Z" fill="white" />
+							<path d="M50.688 96.7361C50.688 98.2555 49.5447 99.3951 48.0202 99.3951C46.4958 99.3951 45.3524 98.2555 45.3524 96.7361C45.3524 95.2167 46.4958 94.0771 48.0202 94.0771C49.5447 94.0771 50.688 95.2167 50.688 96.7361Z" fill="white" />
+							<path d="M70.7601 99.3951C72.2335 99.3951 73.4279 98.2046 73.4279 96.7361C73.4279 95.2676 72.2335 94.0771 70.7601 94.0771C69.2867 94.0771 68.0923 95.2676 68.0923 96.7361C68.0923 98.2046 69.2867 99.3951 70.7601 99.3951Z" fill="white" />
+							<path d="M96.1677 96.7361C96.1677 98.2555 95.0244 99.3951 93.5 99.3951C91.9755 99.3951 90.8322 98.2555 90.8322 96.7361C90.8322 95.2167 91.9755 94.0771 93.5 94.0771C94.8974 94.0771 96.1677 95.2167 96.1677 96.7361Z" fill="white" />
+							<path d="M118.908 96.7361C118.908 98.2555 117.764 99.3951 116.24 99.3951C114.715 99.3951 113.572 98.2555 113.572 96.7361C113.572 95.2167 114.715 94.0771 116.24 94.0771C117.764 94.0771 118.908 95.2167 118.908 96.7361Z" fill="white" />
+							<path d="M141.52 96.7361C141.52 98.2555 140.377 99.3951 138.852 99.3951C137.328 99.3951 136.185 98.2555 136.185 96.7361C136.185 95.2167 137.328 94.0771 138.852 94.0771C140.377 94.0771 141.52 95.2167 141.52 96.7361Z" fill="white" />
+							<path d="M5.3356 115.601C5.3356 117.121 4.19226 118.26 2.6678 118.26C1.14334 118.26 0 117.121 0 115.601C0 114.082 1.14334 112.942 2.6678 112.942C4.19226 112.942 5.3356 114.082 5.3356 115.601Z" fill="white" />
+							<path d="M28.0755 115.601C28.0755 117.121 26.9321 118.26 25.4077 118.26C23.8832 118.26 22.7399 117.121 22.7399 115.601C22.7399 114.082 23.8832 112.942 25.4077 112.942C26.8051 112.942 28.0755 114.082 28.0755 115.601Z" fill="white" />
+							<path d="M50.688 115.601C50.688 117.121 49.5447 118.26 48.0202 118.26C46.4958 118.26 45.3524 117.121 45.3524 115.601C45.3524 114.082 46.4958 112.942 48.0202 112.942C49.5447 112.942 50.688 114.082 50.688 115.601Z" fill="white" />
+							<path d="M73.4279 115.601C73.4279 117.121 72.2845 118.26 70.7601 118.26C69.2356 118.26 68.0923 117.121 68.0923 115.601C68.0923 114.082 69.2356 112.942 70.7601 112.942C72.2845 112.942 73.4279 114.082 73.4279 115.601Z" fill="white" />
+							<path d="M96.1677 115.601C96.1677 117.121 95.0244 118.26 93.5 118.26C91.9755 118.26 90.8322 117.121 90.8322 115.601C90.8322 114.082 91.9755 112.942 93.5 112.942C94.8974 112.942 96.1677 114.082 96.1677 115.601Z" fill="white" />
+							<path d="M118.908 115.601C118.908 117.121 117.764 118.26 116.24 118.26C114.715 118.26 113.572 117.121 113.572 115.601C113.572 114.082 114.715 112.942 116.24 112.942C117.764 112.942 118.908 114.082 118.908 115.601Z" fill="white" />
+							<path d="M141.52 115.601C141.52 117.121 140.377 118.26 138.852 118.26C137.328 118.26 136.185 117.121 136.185 115.601C136.185 114.082 137.328 112.942 138.852 112.942C140.377 112.942 141.52 114.082 141.52 115.601Z" fill="white" />
+							<path d="M5.3356 134.341C5.3356 135.86 4.19226 137 2.6678 137C1.14334 137 0 135.86 0 134.341C0 132.821 1.14334 131.682 2.6678 131.682C4.19226 131.682 5.3356 132.948 5.3356 134.341Z" fill="white" />
+							<path d="M28.0755 134.341C28.0755 135.86 26.9321 137 25.4077 137C23.8832 137 22.7399 135.86 22.7399 134.341C22.7399 132.821 23.8832 131.682 25.4077 131.682C26.8051 131.682 28.0755 132.948 28.0755 134.341Z" fill="white" />
+							<path d="M50.688 134.341C50.688 135.86 49.5447 137 48.0202 137C46.4958 137 45.3524 135.86 45.3524 134.341C45.3524 132.821 46.4958 131.682 48.0202 131.682C49.5447 131.682 50.688 132.948 50.688 134.341Z" fill="white" />
+							<path d="M73.4279 134.341C73.4279 135.86 72.2845 137 70.7601 137C69.2356 137 68.0923 135.86 68.0923 134.341C68.0923 132.821 69.2356 131.682 70.7601 131.682C72.2845 131.682 73.4279 132.948 73.4279 134.341Z" fill="white" />
+							<path d="M96.1677 134.341C96.1677 135.86 95.0244 137 93.5 137C91.9755 137 90.8322 135.86 90.8322 134.341C90.8322 132.821 91.9755 131.682 93.5 131.682C94.8974 131.682 96.1677 132.948 96.1677 134.341Z" fill="white" />
+							<path d="M118.908 134.341C118.908 135.86 117.764 137 116.24 137C114.715 137 113.572 135.86 113.572 134.341C113.572 132.821 114.715 131.682 116.24 131.682C117.764 131.682 118.908 132.948 118.908 134.341Z" fill="white" />
+							<path d="M141.52 134.341C141.52 135.86 140.377 137 138.852 137C137.328 137 136.185 135.86 136.185 134.341C136.185 132.821 137.328 131.682 138.852 131.682C140.377 131.682 141.52 132.948 141.52 134.341Z" fill="white" />
+						</g>
+						<defs>
+							<clipPath id="clip0_2320_3687">
+								<rect width="187" height="137" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+					<svg class="course__vector" width="110" height="58" viewBox="0 0 110 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="shape" opacity="0.3">
+							<path id="Vector1" d="M96.3412 36.3218L110.001 36.3218L110.001 1.75665e-06L73.6788 0L73.6788 13.556L96.3412 13.556L96.3412 36.3218Z" fill="white" />
+							<path id="Vector1_2" d="M71.8159 60.8452L85.3719 60.8452L85.3719 24.5234L49.1536 24.5234L49.1536 38.1829L71.8159 38.1829L71.8159 60.8452Z" fill="white" />
+							<path id="Vector1_3" d="M47.1875 85.3716L60.847 85.3716L60.847 49.1533L24.5251 49.1533L24.5251 62.7093L47.1875 62.7093L47.1875 85.3716Z" fill="white" />
+						</g>
+					</svg>
+					<div class="course__title-block title-block title-block--center">
+						<div class="course__subtitle subtitle">course</div>
+						<h2 class="course__title title">User Experience. Principles of Human-Centered Design</h2>
+					</div>
+				</div>
+			</section>
+			<section class="page__about-course about-course">
+				<div class="about-course__container">
+					<div class="about-course__content">
+						<div class="about-course__block-left">
+							<div class="about-course__title-text">
+								<h3 class="about-course__title title">About the course</h3>
+								<div class="about-course__text">
+									<p>Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue
+										in
+										sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at
+										elementum. Tellus maecenas libero est tempus sit cras at malesuada diam.
+										Consequat
+										senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna
+										aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt
+										tortor,
+										mi nulla pellentesque</p>
+								</div>
+							</div>
+							<div class="about-course__title-list">
+								<h4 class="about-course__list-title">You will learn:</h4>
+								<ul class="about-course__list list">
+									<li class="about-course__list-item list-item">Etiam duis lobortis in fames ultrices
+										commodo nibh.</li>
+									<li class="about-course__list-item list-item"> Cursus eu pretium, vulputate tempus
+										quam
+										massa sed at.</li>
+									<li class="about-course__list-item list-item">A fermentum bi pretium aliquam
+										adipiscing
+										donec tempus.</li>
+									<li class="about-course__list-item list-item"> Cursus eu pretium, vulputate tempus
+										quam
+										massa sed at.</li>
+									<li class="about-course__list-item list-item">A fermentum bi pretium aliquam
+										adipiscing
+										donec tempus.</li>
+									<li class="about-course__list-item list-item">A fermentum in morb adipiscing donec
+										tempus.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="about-course__block-right">
+							<div class="about-course__detailes">
+								<ul class="about-course__detailes-list">
+									<li class="about-course__detailes-item">
+										<ul class="about-course__sub-list">
+											<li class="about-course__sub-item-title">Dates</li>
+											<li class="about-course__sub-item-title-detail">Sept 7 – Nov 2</li>
+											<li class="about-course__sub-item-text">Metus turpis sit lorem lacus, in
+												elit
+												tellus lacus.</li>
+										</ul>
+									</li>
+									<li class="about-course__detailes-item">
+										<ul class="about-course__sub-list">
+											<li class="about-course__sub-item-title">Duration</li>
+											<li class="about-course__sub-item-title-detail">2 months – 8 lessons</li>
+											<li class="about-course__sub-item-text">Rhoncus pellentesque auctor auctor
+												orci
+												vulputate faucibus quis ut.</li>
+										</ul>
+									</li>
+									<li class="about-course__detailes-item">
+										<ul class="about-course__sub-list">
+											<li class="about-course__sub-item-title">Price</li>
+											<li class="about-course__sub-item-title-detail">$120 per month</li>
+											<li class="about-course__sub-item-text">Nulla sem adipiscing adipiscing
+												felis
+												fringilla. Adipiscing mauris quam ac elit tristique dis.</li>
+										</ul>
+									</li>
+								</ul>
+								<a href="#" class="about-course__button button button--fw">Join the course</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Course curator========================================================================================== -->
+			<section class="page__curator curator">
+				<div class="curator__container">
+					<svg class="curator__circles" width="242" height="242" viewBox="0 0 242 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.12" clip-path="url(#clip0_2282_1)">
+							<path d="M121.083 0C54.1469 0 0 54.1469 0 121.083C0 187.853 54.1469 242.166 121.083 242.166C187.853 242.166 242.166 188.019 242.166 121.083C242 54.1469 187.853 0 121.083 0ZM121.083 234.36C58.4653 234.36 7.80645 183.701 7.80645 121.083C7.80645 58.4653 58.4653 7.80645 121.083 7.80645C183.701 7.80645 234.36 58.4653 234.36 121.083C234.36 183.535 183.535 234.36 121.083 234.36Z" fill="#FFCF2D" />
+							<path d="M121.083 26.0762C68.7634 26.0762 26.2432 68.5964 26.2432 120.916C26.2432 173.236 68.7634 215.756 121.083 215.756C173.403 215.756 215.923 173.402 215.923 121.082C215.923 68.5964 173.403 26.0762 121.083 26.0762ZM121.083 201.306C76.736 201.306 40.6934 165.264 40.6934 120.916C40.6934 76.569 76.736 40.5264 121.083 40.5264C165.431 40.5264 201.473 76.569 201.473 120.916C201.473 165.264 165.431 201.306 121.083 201.306Z" fill="#FFCF2D" />
+						</g>
+						<defs>
+							<clipPath id="clip0_2282_1">
+								<rect width="242" height="242" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+					<div class="curator__image">
+						<picture><source srcset="img/curator/curator.webp" type="image/webp"><img src="img/curator/curator.jpg" loading="lazy" alt="Image"></picture>
+					</div>
+					<div class="curator__body-block">
+						<div class="curator__title-block title-block">
+							<div class="curator__subtitle subtitle">Course curator</div>
+							<div class="curator__title title">Cody Fisher</div>
+						</div>
+						<div class="curator__title-details">Senior UX designer in IT Product Company</div>
+						<ul class="curator__statistics-list">
+							<li class="curator__statistics-item _icon-star">4.9 rate</li>
+							<li class="curator__statistics-item _icon-play">4 courses</li>
+							<li class="curator__statistics-item curator__statistics-item--icon">350 students</li>
+						</ul>
+						<div class="curator__text">
+							<p>Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis,
+								vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat.
+								Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate
+								molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit
+								nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. </p>
+						</div>
+						<ul class="curator__social-list social-list social-list--big">
+							<li class="social-list__item">
+								<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="social-list__link social-list__link--big">
+									<svg class="social-list__icon">
+										<use xlink:href="img/icons/icons.svg#fb"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a href="#" aria-label="Behance" data-tippy-content="Behance" target="_blank" class="social-list__link social-list__link--big"> <svg class="social-list__icon">
+										<use xlink:href="img/icons/icons.svg#bh"></use>
+									</svg></a>
+							</li>
+							<li class="social-list__item">
+								<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="social-list__link social-list__link--big"> <svg class="social-list__icon">
+										<use xlink:href="img/icons/icons.svg#Twitter"></use>
+									</svg></a>
+							</li>
+							<li class="social-list__item">
+								<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="social-list__link social-list__link--big"> <svg class="social-list__icon">
+										<use xlink:href="img/icons/icons.svg#linked-in"></use>
+									</svg></a>
+							</li>
+							<li class="social-list__item">
+								<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="social-list__link social-list__link--big"> <svg class="social-list__icon">
+										<use xlink:href="img/icons/icons.svg#ins"></use>
+									</svg></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- PROCESS===================================================================================================== -->
+			<section class="page__process process">
+				<div class="process__container">
+					<svg class="process__deco-vector" width="121" height="121" viewBox="0 0 121 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.2">
+							<path d="M72.4864 92.8978L79.9499 100.361L60.1038 120.207L40.2577 100.361L47.6646 92.9544L60.0472 105.337L72.4864 92.8978Z" fill="#FFCF2D" />
+							<path d="M72.4856 66.0971L79.8926 73.504L60.0465 93.3501L40.257 73.5605L47.7204 66.0971L60.103 78.4797L72.4856 66.0971Z" fill="#FFCF2D" />
+							<path d="M72.4291 39.2395L79.8926 46.703L60.1031 66.4926L40.257 46.6465L47.6639 39.2395L60.0465 51.6221L72.4291 39.2395Z" fill="#FFCF2D" />
+							<path d="M72.4859 12.3822L79.9494 19.8457L60.1033 39.6918L40.2572 19.8457L47.7207 12.3822L60.1033 24.7648L72.4859 12.3822Z" fill="#FFCF2D" />
+						</g>
+					</svg>
+
+					<div class="process__title-block title-block title-block--center">
+						<div class="process__subtitle subtitle">Main steps</div>
+						<h3 class="process__title title">Online learning process</h3>
+					</div>
+					<ol class="process__list">
+						<li class="process__list-item">
+							<div class="process__list-title">Watching online video lectures</div>
+
+
+							<div class="process__list-description">
+								<p> Culpa nostrud commodo ea consequat aliquip
+									reprehenderit. Veniam velit nostrud aliquip sunt. </p>
+							</div>
+
+						</li>
+						<li class="process__list-item">
+							<div class="process__list-title">Passing test</div>
+
+
+							<div class="process__list-description">
+								<p>Anim reprehenderit sint voluptate exercitation
+									adipisicing laborum adipisicing. Minim ad tempor est ea. </p>
+							</div>
+
+						</li>
+						<li class="process__list-item">
+							<div class="process__list-title">Curator's feedback</div>
+
+
+							<div class="process__list-description">
+								<p> Adipisicing esse aliqua aliquip qui amet. Aute
+									eiusmod dolore dolore et ad et veniam ad deserunt. </p>
+							</div>
+
+						</li>
+						<li class="process__list-item">
+							<div class="process__list-title">Corrections if needed</div>
+
+
+							<div class="process__list-description">
+								<p> Sit veniam aute dolore adipisicing nulla sit
+									culpa.
+									Minim mollit voluptate ullamco proident ea ad. </p>
+
+							</div>
+						</li>
+					</ol>
+					<div class="process__discount">
+						<svg class="process__circles" width="236" height="70" viewBox="0 0 236 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="circle" opacity="0.2">
+								<path id="Vector5" d="M117.581 -166C52.5807 -166 0 -113.419 0 -48.4193C0 16.4194 52.5807 69.1613 117.581 69.1613C182.419 69.1613 235.161 16.5806 235.161 -48.4193C235 -113.419 182.419 -166 117.581 -166ZM117.581 61.5807C56.7742 61.5807 7.58065 12.3871 7.58065 -48.4193C7.58065 -109.226 56.7742 -158.419 117.581 -158.419C178.387 -158.419 227.581 -109.226 227.581 -48.4193C227.581 12.2258 178.226 61.5807 117.581 61.5807Z" fill="white" />
+								<path id="Vector5_2" d="M117.582 -140.678C66.7752 -140.678 25.4849 -99.3874 25.4849 -48.581C25.4849 2.22548 66.7752 43.5158 117.582 43.5158C168.388 43.5158 209.678 2.38678 209.678 -48.4197C209.678 -99.3874 168.388 -140.678 117.582 -140.678ZM117.582 29.4836C74.5171 29.4836 39.5171 -5.51645 39.5171 -48.581C39.5171 -91.6455 74.5171 -126.645 117.582 -126.645C160.646 -126.645 195.646 -91.6455 195.646 -48.581C195.646 -5.51645 160.646 29.4836 117.582 29.4836Z" fill="white" />
+							</g>
+						</svg>
+						<div class="process__discount-title-countdown">
+							<h4 class="process__discount-title">20% discount for early birds!</h4>
+							<div data-target="2025-12-31T23:59:59" class="process__discount-countdown">
+								<div class="process__countdown-item"> <span id="days">00</span> Days</div>
+								<div class="process__countdown-item"> <span id="hours">00</span> Hours</div>
+								<div class="process__countdown-item"><span id="minutes">00</span> Mins</div>
+								<div class="process__countdown-item"> <span id="seconds">00</span> Sec</div>
+							</div>
+						</div>
+						<form action="#" class="process__discount-form">
+							<div class="process__discount-label-input">
+								<label class="process__discount-label" for="process-username">Full name</label>
+								<input required autocomplete="off" type="text" id="process-username" name="name" data-error="Error" placeholder="Your full name" class="process__discount-input">
+							</div>
+							<div class="process__discount-label-input">
+								<label class="process__discount-label" for="email">Email</label>
+								<input required class="process__discount-input" id="email" autocomplete="off" type="email" name="email-address" data-error="error" placeholder="Your working email">
+							</div>
+							<div class="process__discount-label-input">
+								<label class="process__discount-label" for="phone">Phone</label>
+								<input required autocomplete="off" type="tel" id="phone" name="phone-number" data-error="error" placeholder="Your phone number" class="process__discount-input">
+							</div>
+							<button class="process__discount-button button">Join the
+								course</button>
+						</form>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- FOR WHOM===================================================================================================== -->
+			<section class="page__for-whom for-whom">
+				<svg class="for-whom__dots" width="119" height="163" viewBox="0 0 119 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g id="DOTS" opacity="0.8" clip-path="url(#clip0_2282_629)">
+						<g id="Group">
+							<path id="Vector_11" d="M6.05784 70.1506C6.6401 71.1591 6.31961 72.3526 5.31003 72.9355C4.30045 73.5184 3.10657 73.1991 2.52432 72.1906C1.94206 71.1822 2.26256 69.9886 3.27213 69.4057C4.28171 68.8229 5.52411 69.2261 6.05784 70.1506Z" fill="#FFCF2D" />
+							<path id="Vector_112" d="M21.1174 61.4553C21.6997 62.4638 21.3792 63.6573 20.3696 64.2402C19.36 64.823 18.1661 64.5038 17.5839 63.4953C17.0016 62.4868 17.3221 61.2933 18.3317 60.7104C19.2571 60.1761 20.5837 60.5308 21.1174 61.4553Z" fill="#FFCF2D" />
+							<path id="Vector_13" d="M36.177 52.7599C36.7592 53.7684 36.4387 54.962 35.4292 55.5449C34.4196 56.1277 33.2257 55.8085 32.6435 54.8C32.0612 53.7915 32.3817 52.598 33.3913 52.0151C34.4008 51.4322 35.6432 51.8355 36.177 52.7599Z" fill="#FFCF2D" />
+							<path id="Vector_14" d="M51.1523 44.1135C51.7346 45.122 51.4141 46.3155 50.4045 46.8984C49.3949 47.4812 48.2011 47.162 47.6188 46.1535C47.0365 45.145 47.357 43.9515 48.3666 43.3686C49.3762 42.7857 50.6186 43.189 51.1523 44.1135Z" fill="#FFCF2D" />
+							<path id="Vector_15" d="M66.2119 35.4201C66.7941 36.4286 66.4737 37.6221 65.4641 38.205C64.4545 38.7879 63.2606 38.4687 62.6784 37.4602C62.0961 36.4517 62.4166 35.2582 63.4262 34.6753C64.4358 34.0924 65.6782 34.4956 66.2119 35.4201Z" fill="#FFCF2D" />
+							<path id="Vector_16" d="M81.2715 26.7248C81.8537 27.7333 81.5332 28.9268 80.5237 29.5097C79.5141 30.0926 78.3202 29.7734 77.7379 28.7649C77.1557 27.7564 77.4762 26.5628 78.4858 25.98C79.4112 25.4457 80.7377 25.8003 81.2715 26.7248Z" fill="#FFCF2D" />
+							<path id="Vector_17" d="M13.2873 82.6721C13.8696 83.6805 13.5491 84.8741 12.5395 85.457C11.5299 86.0398 10.3361 85.7206 9.75381 84.7121C9.17156 83.7036 9.49205 82.5101 10.5016 81.9272C11.5112 81.3443 12.7051 81.6636 13.2873 82.6721Z" fill="#FFCF2D" />
+							<path id="Vector_18" d="M28.3469 73.9767C28.9292 74.9852 28.6087 76.1788 27.5991 76.7616C26.5895 77.3445 25.3956 77.0253 24.8134 76.0168C24.2311 75.0083 24.5516 73.8148 25.5612 73.2319C26.4866 72.6976 27.7646 72.9682 28.3469 73.9767Z" fill="#FFCF2D" />
+							<path id="Vector_19" d="M43.4065 65.2834C43.9887 66.2919 43.6682 67.4854 42.6587 68.0683C41.6491 68.6512 40.4552 68.332 39.873 67.3235C39.2907 66.315 39.6112 65.1214 40.6208 64.5386C41.6303 63.9557 42.8242 64.2749 43.4065 65.2834Z" fill="#FFCF2D" />
+							<path id="Vector_20" d="M58.3818 56.6369C58.9641 57.6454 58.6436 58.8389 57.634 59.4218C56.6244 60.0047 55.4305 59.6855 54.8483 58.677C54.266 57.6685 54.5865 56.4749 55.5961 55.8921C56.6057 55.3092 57.7996 55.6284 58.3818 56.6369Z" fill="#FFCF2D" />
+							<path id="Vector_21" d="M73.4414 47.9416C74.0236 48.9501 73.7031 50.1436 72.6936 50.7265C71.684 51.3094 70.4901 50.9902 69.9079 49.9817C69.3256 48.9732 69.6461 47.7796 70.6557 47.1968C71.6653 46.6139 72.8591 46.9331 73.4414 47.9416Z" fill="#FFCF2D" />
+							<path id="Vector_22" d="M88.501 39.2463C89.0832 40.2548 88.7627 41.4483 87.7531 42.0312C86.7436 42.6141 85.5497 42.2948 84.9674 41.2864C84.3852 40.2779 84.7057 39.0843 85.7153 38.5014C86.6407 37.9671 87.9187 38.2378 88.501 39.2463Z" fill="#FFCF2D" />
+							<path id="Vector_23" d="M6.70652 36.4943C7.28877 37.5028 6.96828 38.6963 5.9587 39.2792C4.94913 39.8621 3.75525 39.5429 3.173 38.5344C2.59074 37.5259 2.91123 36.3324 3.92081 35.7495C4.84626 35.2152 6.12426 35.4858 6.70652 36.4943Z" fill="#FFCF2D" />
+							<path id="Vector_24" d="M21.7661 27.801C22.3483 28.8095 22.0279 30.003 21.0183 30.5859C20.0087 31.1687 18.8148 30.8495 18.2326 29.841C17.6503 28.8325 17.9708 27.639 18.9804 27.0561C19.99 26.4733 21.1838 26.7925 21.7661 27.801Z" fill="#FFCF2D" />
+							<path id="Vector_25" d="M36.7414 19.1545C37.3237 20.163 37.0032 21.3565 35.9936 21.9394C34.984 22.5223 33.7902 22.203 33.2079 21.1946C32.6257 20.1861 32.9462 18.9925 33.9557 18.4096C34.9653 17.8268 36.1592 18.146 36.7414 19.1545Z" fill="#FFCF2D" />
+							<path id="Vector_116" d="M51.801 10.4592C52.3833 11.4677 52.0628 12.6612 51.0532 13.2441C50.0436 13.8269 48.8497 13.5077 48.2675 12.4992C47.6852 11.4907 48.0057 10.2972 49.0153 9.71434C50.0249 9.13146 51.2188 9.45067 51.801 10.4592Z" fill="#FFCF2D" />
+							<path id="Vector_117" d="M66.8606 1.76385C67.4428 2.77235 67.1223 3.96587 66.1128 4.54875C65.1032 5.13163 63.9093 4.81242 63.3271 3.80393C62.7448 2.79543 63.0653 1.6019 64.0749 1.01902C65.0003 0.484714 66.2783 0.755357 66.8606 1.76385Z" fill="#FFCF2D" />
+							<path id="Vector_118" d="M13.9363 49.0178C14.5185 50.0263 14.198 51.2198 13.1884 51.8027C12.1789 52.3855 10.985 52.0663 10.4027 51.0578C9.82048 50.0493 10.141 48.8558 11.1505 48.2729C12.076 47.7386 13.354 48.0093 13.9363 49.0178Z" fill="#FFCF2D" />
+							<path id="Vector_119" d="M28.9958 40.3224C29.5781 41.3309 29.2576 42.5245 28.248 43.1074C27.2384 43.6902 26.0446 43.371 25.4623 42.3625C24.8801 41.354 25.2005 40.1605 26.2101 39.5776C27.2197 38.9947 28.4136 39.314 28.9958 40.3224Z" fill="#FFCF2D" />
+							<path id="Vector_120" d="M43.9712 31.676C44.5534 32.6845 44.2329 33.878 43.2234 34.4609C42.2138 35.0437 41.0199 34.7245 40.4376 33.716C39.8554 32.7075 40.1759 31.514 41.1855 30.9311C42.195 30.3482 43.3889 30.6675 43.9712 31.676Z" fill="#FFCF2D" />
+							<path id="Vector_121" d="M59.0307 22.9826C59.613 23.9911 59.2925 25.1846 58.2829 25.7675C57.2733 26.3504 56.0795 26.0312 55.4972 25.0227C54.915 24.0142 55.2355 22.8207 56.245 22.2378C57.2546 21.6549 58.4485 21.9741 59.0307 22.9826Z" fill="#FFCF2D" />
+							<path id="Vector_122" d="M74.0903 14.2873C74.6726 15.2958 74.3521 16.4893 73.3425 17.0722C72.3329 17.6551 71.139 17.3359 70.5568 16.3274C69.9745 15.3189 70.295 14.1253 71.3046 13.5425C72.2301 13.0082 73.5081 13.2788 74.0903 14.2873Z" fill="#FFCF2D" />
+							<path id="Vector_123" d="M5.40916 103.805C5.99142 104.813 5.67092 106.007 4.66134 106.59C3.65176 107.173 2.45789 106.853 1.87564 105.845C1.29338 104.836 1.61387 103.643 2.62345 103.06C3.63303 102.477 4.87543 102.88 5.40916 103.805Z" fill="#FFCF2D" />
+							<path id="Vector_124" d="M20.4687 95.1096C21.051 96.118 20.7305 97.3116 19.7209 97.8945C18.7113 98.4773 17.5175 98.1581 16.9352 97.1496C16.353 96.1411 16.6734 94.9476 17.683 94.3647C18.6926 93.7818 19.935 94.1851 20.4687 95.1096Z" fill="#FFCF2D" />
+							<path id="Vector_125" d="M35.5283 86.4162C36.1105 87.4247 35.7901 88.6182 34.7805 89.2011C33.7709 89.784 32.577 89.4648 31.9948 88.4563C31.4125 87.4478 31.733 86.2542 32.7426 85.6714C33.668 85.1371 34.9946 85.4917 35.5283 86.4162Z" fill="#FFCF2D" />
+							<path id="Vector_126" d="M50.5879 77.7209C51.1701 78.7294 50.8496 79.9229 49.8401 80.5058C48.8305 81.0887 47.6366 80.7695 47.0543 79.761C46.4721 78.7525 46.7926 77.5589 47.8022 76.9761C48.8117 76.3932 50.0541 76.7964 50.5879 77.7209Z" fill="#FFCF2D" />
+							<path id="Vector_127" d="M65.5632 69.0744C66.1455 70.0829 65.825 71.2764 64.8154 71.8593C63.8058 72.4422 62.6119 72.123 62.0297 71.1145C61.4474 70.106 61.7679 68.9124 62.7775 68.3296C63.7871 67.7467 65.0295 68.1499 65.5632 69.0744Z" fill="#FFCF2D" />
+							<path id="Vector_128" d="M80.6228 60.3791C81.205 61.3876 80.8845 62.5811 79.875 63.164C78.8654 63.7469 77.6715 63.4277 77.0893 62.4192C76.507 61.4107 76.8275 60.2171 77.8371 59.6343C78.8466 59.0514 80.089 59.4546 80.6228 60.3791Z" fill="#FFCF2D" />
+							<path id="Vector_129" d="M95.6823 51.6857C96.2646 52.6942 95.9441 53.8878 94.9345 54.4706C93.925 55.0535 92.7311 54.7343 92.1488 53.7258C91.5666 52.7173 91.8871 51.5238 92.8966 50.9409C93.8221 50.4066 95.1486 50.7613 95.6823 51.6857Z" fill="#FFCF2D" />
+							<path id="Vector_130" d="M12.6387 116.326C13.2209 117.335 12.9004 118.528 11.8908 119.111C10.8813 119.694 9.68738 119.375 9.10513 118.366C8.52287 117.358 8.84336 116.164 9.85294 115.582C10.8625 114.999 12.0564 115.318 12.6387 116.326Z" fill="#FFCF2D" />
+							<path id="Vector_131" d="M26.9504 110.416C27.9262 109.853 28.261 108.606 27.6982 107.631C27.1355 106.656 25.8883 106.323 24.9125 106.886C23.9368 107.45 23.6019 108.696 24.1647 109.671C24.7274 110.646 25.9747 110.979 26.9504 110.416Z" fill="#FFCF2D" />
+							<path id="Vector_132" d="M42.7578 98.9377C43.34 99.9462 43.0195 101.14 42.01 101.723C41.0004 102.305 39.8065 101.986 39.2243 100.978C38.642 99.9693 38.9625 98.7757 39.9721 98.1929C40.8975 97.6585 42.1755 97.9292 42.7578 98.9377Z" fill="#FFCF2D" />
+							<path id="Vector_133" d="M57.8174 90.2424C58.3996 91.2509 58.0791 92.4444 57.0695 93.0273C56.06 93.6102 54.8661 93.2909 54.2838 92.2824C53.7016 91.2739 54.0221 90.0804 55.0317 89.4975C56.0412 88.9147 57.2351 89.2339 57.8174 90.2424Z" fill="#FFCF2D" />
+							<path id="Vector_134" d="M72.7927 81.5959C73.375 82.6044 73.0545 83.7979 72.0449 84.3808C71.0353 84.9637 69.8414 84.6445 69.2592 83.636C68.6769 82.6275 68.9974 81.4339 70.007 80.8511C71.0166 80.2682 72.2104 80.5874 72.7927 81.5959Z" fill="#FFCF2D" />
+							<path id="Vector_135" d="M87.1045 75.6874C88.0802 75.1241 88.415 73.8772 87.8523 72.9025C87.2895 71.9278 86.0423 71.5943 85.0666 72.1577C84.0908 72.721 83.756 73.9679 84.3188 74.9426C84.8815 75.9173 86.1287 76.2508 87.1045 75.6874Z" fill="#FFCF2D" />
+							<path id="Vector_136" d="M102.912 64.2072C103.494 65.2157 103.174 66.4092 102.164 66.9921C101.154 67.575 99.9606 67.2558 99.3783 66.2473C98.7961 65.2388 99.1166 64.0453 100.126 63.4624C101.052 62.9281 102.33 63.1987 102.912 64.2072Z" fill="#FFCF2D" />
+							<path id="Vector_137" d="M4.89305 137.494C5.4753 138.503 5.15481 139.696 4.14523 140.279C3.13566 140.862 1.94178 140.543 1.35953 139.534C0.77727 138.526 1.09776 137.332 2.10734 136.749C3.03278 136.215 4.31079 136.486 4.89305 137.494Z" fill="#FFCF2D" />
+							<path id="Vector_138" d="M19.8684 128.85C20.4506 129.858 20.1302 131.052 19.1206 131.635C18.111 132.218 16.9171 131.898 16.3349 130.89C15.7526 129.881 16.0731 128.688 17.0827 128.105C18.0923 127.522 19.2861 127.841 19.8684 128.85Z" fill="#FFCF2D" />
+							<path id="Vector_139" d="M34.928 120.154C35.5102 121.163 35.1897 122.357 34.1801 122.939C33.1706 123.522 31.9767 123.203 31.3944 122.195C30.8122 121.186 31.1327 119.993 32.1423 119.41C33.1518 118.827 34.3457 119.146 34.928 120.154Z" fill="#FFCF2D" />
+							<path id="Vector_140" d="M49.9875 111.459C50.5698 112.468 50.2493 113.661 49.2397 114.244C48.2301 114.827 47.0363 114.508 46.454 113.499C45.8718 112.491 46.1922 111.297 47.2018 110.714C48.1273 110.18 49.4053 110.451 49.9875 111.459Z" fill="#FFCF2D" />
+							<path id="Vector_141" d="M65.0471 102.766C65.6294 103.774 65.3089 104.968 64.2993 105.551C63.2897 106.134 62.0958 105.814 61.5136 104.806C60.9313 103.797 61.2518 102.604 62.2614 102.021C63.271 101.438 64.4648 101.757 65.0471 102.766Z" fill="#FFCF2D" />
+							<path id="Vector_142" d="M80.0227 94.1193C80.6049 95.1278 80.2845 96.3213 79.2749 96.9042C78.2653 97.4871 77.0714 97.1679 76.4892 96.1594C75.9069 95.1509 76.2274 93.9574 77.237 93.3745C78.2466 92.7916 79.4404 93.1108 80.0227 94.1193Z" fill="#FFCF2D" />
+							<path id="Vector_143" d="M95.0823 85.424C95.6645 86.4325 95.344 87.626 94.3344 88.2089C93.3249 88.7918 92.131 88.4726 91.5487 87.4641C90.9665 86.4556 91.287 85.2621 92.2965 84.6792C93.3061 84.0963 94.5 84.4155 95.0823 85.424Z" fill="#FFCF2D" />
+							<path id="Vector_144" d="M110.142 76.7307C110.724 77.7391 110.403 78.9327 109.394 79.5156C108.384 80.0984 107.19 79.7792 106.608 78.7707C106.026 77.7622 106.346 76.5687 107.356 75.9858C108.281 75.4515 109.559 75.7222 110.142 76.7307Z" fill="#FFCF2D" />
+							<path id="Vector_145" d="M12.0742 149.934C12.6565 150.942 12.336 152.136 11.3264 152.719C10.3168 153.302 9.12293 152.982 8.54068 151.974C7.95842 150.965 8.27891 149.772 9.28849 149.189C10.2139 148.655 11.5405 149.009 12.0742 149.934Z" fill="#FFCF2D" />
+							<path id="Vector_146" d="M27.0495 141.287C27.6318 142.296 27.3113 143.489 26.3017 144.072C25.2921 144.655 24.0983 144.336 23.516 143.327C22.9338 142.319 23.2543 141.125 24.2638 140.542C25.2734 139.96 26.5158 140.363 27.0495 141.287Z" fill="#FFCF2D" />
+							<path id="Vector_147" d="M42.1091 132.592C42.6914 133.6 42.3709 134.794 41.3613 135.377C40.3517 135.96 39.1578 135.641 38.5756 134.632C37.9933 133.624 38.3138 132.43 39.3234 131.847C40.333 131.264 41.5754 131.668 42.1091 132.592Z" fill="#FFCF2D" />
+							<path id="Vector_148" d="M57.1687 123.899C57.7509 124.907 57.4304 126.101 56.4209 126.684C55.4113 127.266 54.2174 126.947 53.6352 125.939C53.0529 124.93 53.3734 123.737 54.383 123.154C55.3084 122.619 56.6349 122.974 57.1687 123.899Z" fill="#FFCF2D" />
+							<path id="Vector_149" d="M72.2282 115.203C72.8105 116.212 72.49 117.405 71.4804 117.988C70.4709 118.571 69.277 118.252 68.6947 117.243C68.1125 116.235 68.433 115.041 69.4425 114.458C70.4521 113.876 71.6945 114.279 72.2282 115.203Z" fill="#FFCF2D" />
+							<path id="Vector_150" d="M87.2036 106.557C87.7859 107.565 87.4654 108.759 86.4558 109.342C85.4462 109.925 84.2523 109.605 83.6701 108.597C83.0878 107.588 83.4083 106.395 84.4179 105.812C85.4275 105.229 86.6699 105.632 87.2036 106.557Z" fill="#FFCF2D" />
+							<path id="Vector_151" d="M102.263 97.8615C102.845 98.87 102.525 100.064 101.515 100.646C100.506 101.229 99.3119 100.91 98.7296 99.9016C98.1474 98.8931 98.4679 97.6996 99.4775 97.1167C100.487 96.5338 101.729 96.9371 102.263 97.8615Z" fill="#FFCF2D" />
+							<path id="Vector_152" d="M117.323 89.1682C117.905 90.1766 117.585 91.3702 116.575 91.9531C115.565 92.5359 114.371 92.2167 113.789 91.2082C113.207 90.1997 113.527 89.0062 114.537 88.4233C115.462 87.889 116.789 88.2437 117.323 89.1682Z" fill="#FFCF2D" />
+						</g>
+					</g>
+					<defs>
+						<clipPath id="clip0_2282_629">
+							<rect width="143" height="105" fill="white" transform="translate(-58 71.5) rotate(-30)" />
+						</clipPath>
+					</defs>
+				</svg>
+
+				<div class="for-whom__container">
+					<div class="for-whom__title-block title-block ">
+						<div class="for-whom__subtitle subtitle">For whom?</div>
+						<h3 class="for-whom__title title">Who will benefit from the course:</h3>
+					</div>
+					<ul class="for-whom__list list">
+						<li class="for-whom__list-item list-item">Specialists with more than 1 year of active work
+							experience</li>
+						<li class="for-whom__list-item list-item">Mobile app designers who want to improve their skills
+							in solving business problems, creating and testing human-centered interfaces
+						</li>
+						<li class="for-whom__list-item list-item">Professional designers who want to feel more confident
+							in UX</li>
+						<li class="for-whom__list-item list-item">Specialists who would like to structure their
+							knowledge, fill in the gaps
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- PROGRAM===================================================================================================== -->
+
+			<section class="page__program program">
+				<div class="program__container">
+					<div class="program__title-block title-block">
+						<div class="program__subtitle subtitle">Course program</div>
+						<h3 class="program__title title">What will you learn</h3>
+					</div>
+					<div class="program__body">
+						<div class="program__body-left">
+							<div data-spollers class="program__spollers spollers ">
+								<details class="spollers__item program__spollers-item">
+									<summary class="spollers__title program__spollers-title"><span class="spollers__title-lesson program__spollers-title-lesson">Lesson
+											1.</span><span class="spollers__title-lesson-text program__spollers-title-text">
+											Aliquet lectus
+											urna
+											viverra in
+											odio.</span>
+									</summary>
+									<div class="spollers__body program__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.,</div>
+								</details>
+								<details class="spollers__item program__spollers-item">
+									<summary class="spollers__title program__spollers-title"><span class="spollers__title-lesson program__spollers-title-lesson">Lesson
+											2.</span><span class="spollers__title-lesson-text program__spollers-title-text">
+											Orci commodo, viverra orci mollis ut euismod.</span>
+									</summary>
+									<div class="spollers__body program__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+								<details class="spollers__item program__spollers-item">
+									<summary class="spollers__title program__spollers-title"><span class="spollers__title-lesson program__spollers-title-lesson">Lesson
+											3.</span><span class="spollers__title-lesson-text program__spollers-title-text">
+											Sagittis vitae facilisi rutrum amet mauris quisque vel.</span>
+									</summary>
+									<div class="spollers__body program__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+								<details class="spollers__item program__spollers-item">
+									<summary class="spollers__title program__spollers-title"><span class="spollers__title-lesson program__spollers-title-lesson">Lesson
+											4.</span><span class="spollers__title-lesson-text program__spollers-title-text">
+											In id dolor quis nunc, urna hendrerit pharetra.</span>
+									</summary>
+									<div class="spollers__body program__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+								<details class="spollers__item program__spollers-item">
+									<summary class="spollers__title program__spollers-title"><span class="spollers__title-lesson program__spollers-title-lesson">Lesson
+											5.</span><span class="spollers__title-lesson-text program__spollers-title-text">
+											Est, ut tempus id rutrum facilisi.</span>
+									</summary>
+									<div class="spollers__body program__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+								<details class="spollers__item program__spollers-item">
+									<summary class="spollers__title program__spollers-title"><span class="spollers__title-lesson program__spollers-title-lesson">Lesson
+											6.</span><span class="spollers__title-lesson-text program__spollers-title-text">
+											Amet nec in pellentesque.</span>
+									</summary>
+									<div class="spollers__body program__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+								<details class="spollers__item program__spollers-item">
+									<summary class="spollers__title program__spollers-title"><span class="spollers__title-lesson program__spollers-title-lesson">Lesson
+											7.</span><span class="spollers__title-lesson-text program__spollers-title-text">
+											Massa vel arcu mauris, id vel rhoncus mattis quis.</span>
+									</summary>
+									<div class="spollers__body program__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+								<details class="spollers__item program__spollers-item">
+									<summary class="spollers__title program__spollers-title"><span class="spollers__title-lesson program__spollers-title-lesson">Lesson
+											8.</span><span class="spollers__title-lesson-text program__spollers-title-text">
+											Neque, cursus sapien nullam id.</span>
+									</summary>
+									<div class="spollers__body program__spollers-body">Nulla amet, sagittis potenti
+										rhoncus
+										sit.
+										Elit lectus nec
+										pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+										mauris.
+										Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem
+										lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</div>
+								</details>
+							</div>
+						</div>
+						<div class="program__body-right">
+							<div class="program__image"> <img src="img/program/illustration.svg" loading="lazy" alt="Image"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- REGISTER===================================================================================================== -->
+			<section class="page__register register">
+				<svg class="register__circles" width="132" height="258" viewBox="0 0 132 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M129.089 0C57.7268 0 0 57.7268 0 129.089C0 200.273 57.7268 258.177 129.089 258.177C200.273 258.177 258.177 200.45 258.177 129.089C258 57.7268 200.273 0 129.089 0ZM129.089 249.855C62.3308 249.855 8.32258 195.846 8.32258 129.089C8.32258 62.3308 62.3308 8.32258 129.089 8.32258C195.846 8.32258 249.855 62.3308 249.855 129.089C249.855 195.669 195.669 249.855 129.089 249.855Z" fill="white" />
+					<path d="M129.089 27.8008C73.3097 27.8008 27.9781 73.1323 27.9781 128.911C27.9781 184.69 73.3097 230.022 129.089 230.022C184.868 230.022 230.199 184.867 230.199 129.088C230.199 73.1323 184.868 27.8008 129.089 27.8008ZM129.089 214.616C81.8093 214.616 43.3838 176.191 43.3838 128.911C43.3838 81.6319 81.8093 43.2064 129.089 43.2064C176.368 43.2064 214.794 81.6319 214.794 128.911C214.794 176.191 176.368 214.616 129.089 214.616Z" fill="white" />
+				</svg>
+				<div class="register__container">
+					<svg class="register__shapes" width="100" height="85" viewBox="0 0 100 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="shapes3" opacity="0.6">
+							<path id="Vector4" d="M79.1688 48.0503C88.4518 42.6907 91.6511 30.7683 86.2955 21.4921C80.9398 12.2159 69.0151 9.02534 59.7321 14.3849L79.1688 48.0503Z" fill="white" />
+							<path id="Vector4_2" d="M52.8895 63.2222C62.1725 57.8626 65.3718 45.9402 60.0162 36.664C54.6605 27.3878 42.7358 24.1972 33.4528 29.5568L52.8895 63.2222Z" fill="white" />
+							<path id="Vector4_3" d="M26.6099 78.394C35.893 73.0345 39.0922 61.1121 33.7366 51.8359C28.381 42.5596 16.4562 39.3691 7.17322 44.7286L26.6099 78.394Z" fill="white" />
+						</g>
+					</svg>
+
+					<div class="register__content-left">
+						<div class="register__image">
+							<img src="img/register/illustration.svg" loading="lazy" alt="Image">
+						</div>
+					</div>
+					<div class="register__content-right">
+						<div class="register__title-block title-block ">
+							<div class="register__subtitle subtitle">Leave a request now and get 20% off!</div>
+							<h3 class="register__title title">Register for the course</h3>
+						</div>
+						<form action="#" class="register__discount-form discount-form discount-form--vertical">
+							<div class="register__discount-label-input discount-label-input">
+								<label class="register__discount-label discount-label" for="register-username">Full
+									name</label>
+								<input required autocomplete="off" type="text" id="register-username" name="name" data-error="Error" placeholder="Your full name" class="register__discount-input discount-input">
+							</div>
+							<div class="register__discount-label-input discount-label-input">
+								<label class="register__discount-label" for="register-email">Email</label>
+								<input required class="register__discount-input discount-input" id="register-email" autocomplete="off" type="email" name="email-address" data-error="error" placeholder="Your working email">
+							</div>
+							<div class="register__discount-label-input discount-label-input">
+								<label class="register__discount-label discount-label" for="phone-number">Phone</label>
+								<input required autocomplete="off" type="tel" id="phone-number" name="phone" data-error="error" placeholder="Your phone number" class="register__discount-input discount-input">
+							</div>
+							<button class="register__discount-button discount-button button ">Join the
+								course</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- OTHER COURSES================================================================================================= -->
+
+			<section class="page__other-courses other-courses">
+				<div class="other-courses__container">
+					<div class="other-courses__title-buttons">
+						<div class="other-courses__title-block title-block">
+							<div class="other-courses__subtitle subtitle">Check other courses</div>
+							<h3 class="other-courses__title title">You may also like</h3>
+						</div>
+						<div class="other-courses__buttons buttons">
+							<button type="button" class="other-courses__swiper-button-prev swiper-button-prev _icon-ar-left"></button>
+							<button type="button" class="other-courses__swiper-button-next swiper-button-next _icon-ar-right"></button>
+						</div>
+					</div>
+					<div class="other-courses__slider swiper">
+						<div class="other-courses__swiper-wrapper swiper-wrapper">
+							<a href="#" class="card-other-courses swiper-slide  ">
+								<div class="card-other-courses__image">
+									<picture><source srcset="img/courses/01.webp" type="image/webp"><img src="img/courses/01.jpg" loading="lazy" alt="Image"></picture>
+								</div>
+
+								<div class="card-other-courses__body">
+									<div style="background-color: #03CEA4" class="card-other-courses__category">
+										Marketing
+									</div>
+									<h4 class="card-other-courses__title">The Ultimate Google Ads Training
+										Course</h4>
+									<div class="card-other-courses__price-author">
+										<div class="card-other-courses__price">$100</div>
+										<div class="card-other-courses__author">by Jerome Bell
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="card-other-courses swiper-slide  ">
+								<div class="card-other-courses__image">
+									<picture><source srcset="img/courses/02.webp" type="image/webp"><img src="img/courses/02.jpg" loading="lazy" alt="Image"></picture>
+								</div>
+
+								<div class="card-other-courses__body">
+									<div style="background-color: #5A87FC" class="card-other-courses__category">
+										Marketing
+									</div>
+									<h4 class="card-other-courses__title">Prduct Management Fundamentals</h4>
+									<div class="card-other-courses__price-author">
+										<div class="card-other-courses__price">$480</div>
+										<div class="card-other-courses__author">by Marvin McKinney
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="card-other-courses swiper-slide  ">
+								<div class="card-other-courses__image">
+									<picture><source srcset="img/courses/01.webp" type="image/webp"><img src="img/courses/01.jpg" loading="lazy" alt="Image"></picture>
+								</div>
+
+								<div class="card-other-courses__body">
+									<div style="background-color: #03CEA4" class="card-other-courses__category">
+										Marketing
+									</div>
+									<h4 class="card-other-courses__title">The Ultimate Google Ads Training
+										Course</h4>
+									<div class="card-other-courses__price-author">
+										<div class="card-other-courses__price">$100</div>
+										<div class="card-other-courses__author">by Jerome Bell
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="card-other-courses swiper-slide  ">
+								<div class="card-other-courses__image">
+									<picture><source srcset="img/courses/03.webp" type="image/webp"><img src="img/courses/03.jpg" loading="lazy" alt="Image"></picture>
+								</div>
+
+								<div class="card-other-courses__body">
+									<div style="background-color: #03CEA4" class="card-other-courses__category">
+										Marketing
+									</div>
+									<h4 class="card-other-courses__title">The Ultimate Google Ads Training
+										Course</h4>
+									<div class="card-other-courses__price-author">
+										<div class="card-other-courses__price">$300</div>
+										<div class="card-other-courses__author">by Jerome Bell
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="other-courses__question-button question-button">
+						<div class="other-courses__question question">Do you want more?</div>
+						<a href="#" class="other-courses__button button button--big">Explore all events</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo-text-social">
+					<div class="footer__logo">
+						<a href="#"><img src="img/footer/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="footer__text">
+						<p>Createx Online School is a leader in online studying. We have lots of courses and programs from the
+							main market experts. We provide relevant approaches to online learning, internships and employment
+							in the largest companies in the country. </p>
+					</div>
+					<ul class="footer__social-list social-list social-list--big social-list--footer ">
+						<li class="social-list__item">
+							<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#fb"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#Twitter"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="YouTube" data-tippy-content="YouTube" target="_blank" class="social-list__link social-list__link--big"><svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#yt"></use>
+								</svg></a>
+						</li>
+
+						<li class="social-list__item">
+							<a href="#" aria-label="Telegram" data-tippy-content="Telegram" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#telegram"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#ins"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#linked-in"></use>
+								</svg></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__columns">
+					<nav class="footer__column">
+						<h2 class="footer__column-title">SITE MAP</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#">About Us</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Courses</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Events</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Blog</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__column">
+						<h2 class="footer__column-title">COURSES</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#">HR & Recruting</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Marketing</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Management</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Design</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Development</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h2 class="footer__column-title">CONTACT US</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item footer__column-item--before _icon-phone">
+								<a class="footer__contact-link " aria-label="Call 4055550128 " href="tel:+4055550128">(405)
+									555-0128</a>
+							</li>
+							<li class="footer__column-item footer__column-item--before _icon-envelope">
+								<a href="mailto:hello@createx.com">hello@createx.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__subscribe">
+					<h2 class="footer__column-title footer__column-title--margin-bottom">SIGN UP TO OUR NEWSLETTER</h2>
+					<form class="footer__form" action="#">
+						<input required autocomplete="on" aria-label="Enter your email address" type="email" name="email" placeholder="Email address" class="footer__input">
+						<button aria-label="Submit email" class="footer__button _icon-ar-right"></button>
+					</form>
+					<div class="footer__subscribe-text">
+						<p>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright copyright-footer">
+				<div class="copyright-footer__container">
+					<div class="copyright-footer__text-button">
+						<div class="copyright-footer__text"><span> © All rights reserved. </span> <span class="copyright-footer__text-icon">Made with <span class="copyright-footer__icon _icon-heart"></span>by
+								Createx Studio</span>
+						</div>
+						<button type="button" class="copyright-footer__button">GO TO TOP</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250716213916"></script>
+</body>
+
+</html>

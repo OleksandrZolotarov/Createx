@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Blog</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250716213916">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20250716213916">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-lp class="header header--white">
+			<div class="header__container">
+				<div class="header__logo-menu">
+					<div class="header__logo">
+						<a href="homepage.html"><img src="img/header/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="header__menu menu header--white">
+						<button type="button" aria-label="Toggle menu" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="about_us.html" class="menu__link">About Us</a></li>
+								<li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
+								<li class="menu__item"><a href="events_p.1.html" class="menu__link">Events</a></li>
+								<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a>
+								</li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">Contacts </a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__button-profile">
+					<a data-da=".menu__body, 615" href="#" class="header__button button button--big">Get consultation</a>
+					<div class="header__profile">
+						<button data-popup="#popup-sign-in" class="header__login-button" type="button">Log
+							in</button><span>/</span>
+						<button data-popup="#popup-sign-up" class="header__register-button" type="button">Register</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="popup-sign-in" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-in">
+						<div class="sign-in__content">
+							<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+							<div class="sign-in__title-block">
+								<h1 class="sign-in__title">Sign in</h1>
+								<div class="sign-in__text">
+									<p>Sign in to your account using email and password provided during registration.</p>
+								</div>
+							</div>
+							<form class="sign-in__form" action="#" method="post">
+								<div class="sign-in__email-label-input discount-label-input">
+									<label class="sign-in__email-label discount-label" for="email-sign-in">Email</label>
+									<input required class="discount-input" id="email-sign-in" autocomplete="on" type="email" name="email" placeholder="Your working email">
+								</div>
+								<div class="sign-in__password-label-input">
+									<label class="sign-in__pass-label discount-label" for="password-sign-in">Password</label>
+									<input required id="password-sign-in" type="password" class="sign-in__pass-input discount-input pass-input">
+									<button type="button" class="sign-in__show-pass"></button>
+								</div>
+								<div class="sign-in__checkbox-link">
+									<div class="sign-in__checkbox checkbox">
+										<input type="checkbox" name="form[]" id="subscribe-events-sign-in-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-sign-in-checkbox">Keep me
+											signed
+											in</label>
+									</div>
+									<button type="button" data-popup="#popup-forgot-password" class="sign-in__pass-button">Forgot
+										password?</button>
+								</div>
+								<button class="sign-in__button button button--fw">Sign in</button>
+							</form>
+							<div class="sign-in__sign-up-button">
+								<p>Don't have an account?</p><button data-popup="#popup-sign-up" type="button">Sign up</button>
+							</div>
+							<div class="sign-in__social-wrapper">
+								<div class="sign-in__social-text">Or sign in with</div>
+								<ul class="sign-in__social-list social-list">
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="sign-in__social-list__link social-list__link">
+											<svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="sign-in__social-list__link social-list__link "> <svg class="sign-in__social-list__icon social-list__icon ">
+												<use xlink:href="img/icons/icons.svg#linked-in"></use>
+											</svg></a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="sign-in__social-list__link social-list__link"> <svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#Twitter"></use>
+											</svg></a>
+									</li>
+									<li class="sign-in__social-list__item social-list__item">
+										<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="sign-in__social-list__link social-list__link"> <svg class="sign-in__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#ins"></use>
+											</svg></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-forgot-password" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="forgot-password sign-in">
+						<div class="sign-in__content sign-in__content--padding">
+							<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+							<div class="sign-in__title-block">
+								<h1 class="sign-in__title">Forgot password</h1>
+								<div class="sign-in__text">
+									<p>Provide your email address to reset your password</p>
+								</div>
+							</div>
+							<form class="sign-in__form" action="#">
+								<div class="sign-in__email-label-input discount-label-input">
+									<label class="sign-in__email-label discount-label" for="email-password">Email</label>
+									<input required class="discount-input" id="email-password" autocomplete="on" type="email" name="email" data-error="error" placeholder="Your email">
+								</div>
+								<button class="sign-in__button button button--fw">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-sign-up" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-up">
+						<div class="sign-up__content">
+							<button data-close type="button" class="popup__close sign-up__close-icon"> </button>
+							<div class="sign-up__title-block">
+								<h1 class="sign-up__title">Sign up</h1>
+								<div class="sign-up__text">
+									<p>Registration takes less than a minute but gives you full control over your studying.
+									</p>
+								</div>
+							</div>
+							<form class="sign-up__form" action="#" method="post">
+								<div class="discount-label-input">
+									<label class="discount-label" for="popup-username">Full name</label>
+									<input required autocomplete="on" type="text" id="popup-username" name="username" placeholder="Your full name" class="discount-input">
+								</div>
+								<div class="sign-up__email-label-input discount-label-input">
+									<label class="sign-up__email-label discount-label" for="email-sign-up">Email</label>
+									<input required class="discount-input" id="email-sign-up" autocomplete="on" type="email" name="email" placeholder="Your working email">
+								</div>
+								<div class="sign-up__password-label-input">
+									<label class="sign-up__pass-label discount-label" for="password-sign-up">Password</label>
+									<input id="password-sign-up" type="password" class="sign-up__pass-input discount-input pass-input">
+									<button type="button" class="sign-up__show-pass show-pass"></button>
+								</div>
+								<div class="sign-up__password-label-input">
+									<label class="sign-up__pass-label discount-label" for="confirm-password-sign-up">Confirm
+										Password</label>
+									<input id="confirm-password-sign-up" type="password" class="sign-up__confirm-pass-input discount-input confirm-pass-input">
+									<button type="button" class="sign-up__confirm-pass confirm-pass"></button>
+								</div>
+								<div class="sign-up__checkbox-link">
+									<div class="sign-up__checkbox checkbox">
+										<input type="checkbox" name="form[]" id="subscribe-events-sign-up-checkbox" value="1" class="checkbox__input">
+										<label class="checkbox__label" for="subscribe-events-sign-up-checkbox">Remember
+											me</label>
+									</div>
+								</div>
+								<button class="sign-up__button button button--fw">Sign up</button>
+							</form>
+							<div class="sign-up__sign-in-button">
+								<p>Already have an account?</p><button data-popup="#popup-sign-in" type="button">Sign
+									in</button>
+							</div>
+							<div class="sign-up__social-wrapper">
+								<div class="sign-up__social-text">Or sign in with</div>
+								<ul class="sign-up__social-list social-list">
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="sign-up__social-list__link social-list__link">
+											<svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="sign-up__social-list__link social-list__link "> <svg class="sign-up__social-list__icon social-list__icon ">
+												<use xlink:href="img/icons/icons.svg#linked-in"></use>
+											</svg></a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="sign-up__social-list__link social-list__link"> <svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#Twitter"></use>
+											</svg></a>
+									</li>
+									<li class="sign-up__social-list__item social-list__item">
+										<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="sign-up__social-list__link social-list__link"> <svg class="sign-up__social-list__icon social-list__icon">
+												<use xlink:href="img/icons/icons.svg#ins"></use>
+											</svg></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<main id="page" class="page">
+			<!--   OUR BLOG============================================================================================================= -->
+			<section class="page__our-blog our-blog">
+				<div class="our-blog__container">
+					<div class="our-blog__title-block title-block title-block--center">
+						<div class="our-blog__subtitle subtitle">Our blog</div>
+						<h2 class="our-blog__title title">Createx School Journal</h2>
+					</div>
+					<div class="our-blog__filters-input">
+						<div data-simplebar class="our-blog__filter-list-wrapper">
+							<ul class="our-blog__filter-list">
+								<li class="our-blog__filter-item">
+									<button type="button" class="our-blog__filter-button our-blog-filter-button-active">All
+									</button>
+								</li>
+								<li class="our-blog__filter-item">
+									<button type="button" class="our-blog__filter-button _icon-play">Video
+									</button>
+								</li>
+								<li class="our-blog__filter-item">
+									<button type="button" class="our-blog__filter-button _icon-podcast">Podcast
+									</button>
+								</li>
+								<li class="our-blog__filter-item">
+									<button type="button" class="our-blog__filter-button _icon-paper">Article
+									</button>
+								</li>
+							</ul>
+						</div>
+
+						<form action="#" class="our-blog__form">
+							<div class="our-blog__select-wrapper">
+								<div class="our-blog__select-name">Blog category</div>
+								<select class="our-blog__select" name="category" data-class-modif="form">
+									<option value="1" selected>all themes</option>
+									<option value="2">Podcast</option>
+									<option value="3">Video</option>
+									<option value="4">Article</option>
+								</select>
+							</div>
+							<div class="our-blog__search-input-wrapper">
+								<input autocomplete="off" type="search" name="search" data-error="Error" placeholder="Search blog..." class="our-blog__search-input">
+								<button aria-label="Search" class="our-blog__search-button _icon-magglass"></button>
+							</div>
+						</form>
+					</div>
+					<div class="our-blog__cards">
+						<article class="our-blog__card card-blog">
+							<a href="#" class="card-blog__image">
+								<picture><source srcset="img/blog/011.webp" type="image/webp"><img src="img/blog/011.jpg" alt="Image"></picture>
+								<div class="card-blog__badge _icon-podcast">Podcast</div>
+							</a>
+							<div class="card-blog__body">
+								<div class="card-blog__body-header">
+									<div class="card-blog__header-category">Marketing
+									</div>
+									<div class="card-blog__header-date date">September 4, 2020</div>
+									<div class="card-blog__header-time time">36 min</div>
+								</div>
+								<h3 class="card-blog__body-title"><a href="#">What is traffic arbitrage and does it
+										really make
+										money?</a></h3>
+								<div class="card-blog__body-text">
+									<p>
+										Pharetra, ullamcorper iaculis viverra parturient
+										sed
+										id sed. Convallis proin dignissim lacus, purus gravida Curabitur nisl tincidunt
+										eros
+										venenatis vestibulum ac
+										placerat. Tortor, viverra sed vulputate ultrices Lorem ipsum dolor sit amet
+										consectetur adipisicing elit. Quisquam eius veniam maiores velit dolor veritatis
+										sit. Expedita commodi incidunt sunt, voluptatum esse error, minus aspernatur vel
+										quas dolorum ex nobis!
+									</p>
+								</div>
+							</div>
+							<a href="#" class="card-blog__link _icon-ar-right">Listen</a>
+						</article>
+						<article class="our-blog__card card-blog">
+							<a href="#" class="card-blog__image">
+								<picture><source srcset="img/our-blog/02.webp" type="image/webp"><img src="img/our-blog/02.jpg" alt="Image"></picture>
+								<div class="card-blog__badge _icon-play">Video</div>
+							</a>
+
+							<div class="card-blog__body">
+								<div class="card-blog__body-header">
+									<div class="card-blog__header-category">
+										Management</div>
+									<div class="card-blog__header-date date">August 25, 2020</div>
+									<div class="card-blog__header-time time">45 min</div>
+								</div>
+								<h3 class="card-blog__body-title"><a href="#">What to do and who to talk to if you want
+										to
+										get
+										feedback on the product</a></h3>
+								<div class="card-blog__body-text">
+									<p>
+										Neque a, senectus consectetur odio in
+										aliquet nec eu.
+										Ultricies ac nibh urna urna sagittis faucibus Curabitur nisl tincidunt eros
+										venenatis vestibulum ac
+										placerat. Tortor, viverra sed vulputate ultrices Lorem ipsum dolor sit amet
+										consectetur adipisicing elit. Quisquam eius veniam maiores velit dolor veritatis
+										sit. Expedita commodi incidunt sunt, voluptatum esse error, minus aspernatur vel
+										quas dolorum ex nobis!
+									</p>
+								</div>
+							</div>
+							<a href="#" class="card-blog__link _icon-ar-right"> Watch</a>
+						</article>
+						<article class="our-blog__card card-blog">
+							<a href="#" class="card-blog__image">
+								<picture><source srcset="img/blog/03.webp" type="image/webp"><img src="img/blog/03.jpg" alt="Image"></picture>
+								<div class="card-blog__badge _icon-paper">Article</div>
+							</a>
+
+							<div class="card-blog__body">
+								<div class="card-blog__body-header">
+									<div class="card-blog__header-category">
+										Design</div>
+									<div class="card-blog__header-date date">August 8, 2020</div>
+								</div>
+								<h3 class="card-blog__body-title"><a href="#">Should you choose a creative
+										profession if you are
+										attracted to creativity?</a></h3>
+								<div class="card-blog__body-text">
+									<p>
+										Curabitur nisl tincidunt eros
+										venenatis vestibulum ac
+										placerat. Tortor, viverra sed vulputate ultrices Lorem ipsum dolor sit amet
+										consectetur adipisicing elit. Quisquam eius veniam maiores velit dolor veritatis
+										sit. Expedita commodi incidunt sunt, voluptatum esse error, minus aspernatur vel
+										quas dolorum ex nobis!
+									</p>
+								</div>
+							</div>
+							<a href="#" class="card-blog__link _icon-ar-right">Read</a>
+						</article>
+
+						<article class="our-blog__card card-blog our-blog__card--biggest ">
+							<a href="#" class="card-blog__image card-blog__image--biggest">
+								<picture><source srcset="img/our-blog/04.webp" type="image/webp"><img src="img/our-blog/04.jpg" loading="lazy" alt="Image"></picture>
+								<div class="card-blog__badge _icon-play">Video</div>
+							</a>
+							<div class="card-blog__body">
+								<div class="card-blog__body-header">
+									<div class="card-blog__header-category">
+										HR & Recruting</div>
+									<div class="card-blog__header-date date">August 25, 2020</div>
+									<div class="card-blog__header-time time">45 min</div>
+								</div>
+								<h3 class="card-blog__body-title"><a href="#">HR statistics: job search, interviews,
+										hiring and
+										recruiting</a>
+								</h3>
+								<div class="card-blog__body-text">
+									<p>
+										Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus
+										bibendum
+										diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae
+										pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id
+										semper
+										fermentum pretium...
+									</p>
+								</div>
+							</div>
+							<a href="#" class="card-blog__link _icon-ar-right">Read</a>
+						</article>
+						<article class="our-blog__card card-blog our-blog__card--bigger">
+							<a href="#" class="card-blog__image card-blog__image--bigger">
+								<picture><source srcset="img/our-blog/05.webp" type="image/webp"><img src="img/our-blog/05.jpg" loading="lazy" alt="Image"></picture>
+								<div class="card-blog__badge _icon-play">Video</div>
+							</a>
+
+							<div class="card-blog__body">
+								<div class="card-blog__body-header">
+									<div class="card-blog__header-category">
+										Management</div>
+									<div class="card-blog__header-date date">August 25, 2020</div>
+									<div class="card-blog__header-time time">45 min</div>
+								</div>
+								<h3 class="card-blog__body-title"><a href="#">What to do and who to talk to if you want
+										to get
+										feedback on the product </a></h3>
+								<div class="card-blog__body-text">
+									<p>Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna
+										urna
+										sagittis faucibus. Curabitur nisl tincidunt eros venenatis...
+									</p>
+								</div>
+							</div>
+							<a href="#" class="card-blog__link _icon-ar-right">Watch</a>
+						</article>
+
+						<article class="our-blog__card card-blog">
+							<a href="#" class="card-blog__image">
+								<picture><source srcset="img/our-blog/06.webp" type="image/webp"><img src="img/our-blog/06.jpg" loading="lazy" alt="Image"></picture>
+								<div class="card-blog__badge _icon-podcast">Podcast</div>
+							</a>
+
+							<div class="card-blog__body">
+								<div class="card-blog__body-header">
+									<div class="card-blog__header-category">
+										Design</div>
+									<div class="card-blog__header-date date">August 25, 2020</div>
+									<div class="card-blog__header-time time">36 min</div>
+								</div>
+								<h3 class="card-blog__body-title"><a href="#">What are color profiles and how they work
+										in graphic
+										design</a></h3>
+								<div class="card-blog__body-title">
+								</div>
+								<div class="card-blog__body-text">
+									<p>Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida.
+										Consectetur urna arcu eleifend...
+									</p>
+								</div>
+							</div>
+							<a href="#" class="card-blog__link _icon-ar-right">Listen</a>
+						</article>
+						<article class="our-blog__card card-blog">
+							<a href="#" class="card-blog__image">
+								<picture><source srcset="img/our-blog/07.webp" type="image/webp"><img src="img/our-blog/07.jpg" loading="lazy" alt="Image"></picture>
+								<div class="card-blog__badge _icon-podcast">Podcast</div>
+							</a>
+
+							<div class="card-blog__body">
+								<div class="card-blog__body-header">
+									<div class="card-blog__header-category">
+										Management</div>
+									<div class="card-blog__header-date date date">August 25, 2020</div>
+									<div class="card-blog__header-time time time">45 min</div>
+								</div>
+								<h3 class="card-blog__body-title"><a href="#"> Startup: how to build a team that will
+										live longer
+										than a year</a></h3>
+								<div class="card-blog__body-text">
+									<p>
+										Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque
+										in nisi, urna...
+									</p>
+								</div>
+							</div>
+							<a href="#" class="card-blog__link _icon-ar-right">Listen</a>
+						</article>
+						<article class="our-blog__card card-blog">
+							<a href="#" class="card-blog__image">
+								<picture><source srcset="img/our-blog/08.webp" type="image/webp"><img src="img/our-blog/08.jpg" loading="lazy" alt="Image"></picture>
+								<div class="card-blog__badge _icon-play">Video</div>
+							</a>
+							<div class="card-blog__body">
+								<div class="card-blog__body-header">
+									<div class="card-blog__header-category">
+										HR & Recruting</div>
+									<div class="card-blog__header-date date">August 25, 2020</div>
+									<div class="card-blog__header-time time">45 min</div>
+								</div>
+								<h3 class="card-blog__body-title"><a href="#">How to get customers to love your business
+										from the
+										start </a></h3>
+								<div class="card-blog__body-text">
+									<p>Malesuada in augue mi feugiat morbi a aliquet enim. Elementum lacus, pellentesque
+										etiam arcu tristique ac...
+									</p>
+								</div>
+							</div>
+							<a href="#" class="card-blog__link _icon-ar-right">Watch</a>
+						</article>
+					</div>
+					<ul class="our-blog__pages-list pages-list">
+						<li class="pages-list__list-item pages-list__list-item--active"><a href="#" title="Go to page 1" aria-current="page" aria-label="Page 1">1</a></li>
+						<li class="pages-list__list-item"><a href="#" aria-label="Page 2" title="Go to page 2">2</a>
+						</li>
+						<li class="pages-list__list-item"><a href="#" aria-label="Page 3" title="Go to page 3">3</a>
+						</li>
+						<li class="pages-list__list-item"><a href="#" aria-label="Page 4" title="Go to page 4">4</a>
+						</li>
+						<li class="pages-list__list-item"><a class="_icon-ar-right" aria-label="Next page" title="Go to next page" href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo-text-social">
+					<div class="footer__logo">
+						<a href="#"><img src="img/footer/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="footer__text">
+						<p>Createx Online School is a leader in online studying. We have lots of courses and programs from the
+							main market experts. We provide relevant approaches to online learning, internships and employment
+							in the largest companies in the country. </p>
+					</div>
+					<ul class="footer__social-list social-list social-list--big social-list--footer ">
+						<li class="social-list__item">
+							<a href="#" aria-label="Facebook" data-tippy-content="Facebook" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#fb"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Twitter" data-tippy-content="Twitter" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#Twitter"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="YouTube" data-tippy-content="YouTube" target="_blank" class="social-list__link social-list__link--big"><svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#yt"></use>
+								</svg></a>
+						</li>
+
+						<li class="social-list__item">
+							<a href="#" aria-label="Telegram" data-tippy-content="Telegram" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#telegram"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Instagram" data-tippy-content="Instagram" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#ins"></use>
+								</svg></a>
+						</li>
+						<li class="social-list__item">
+							<a href="#" aria-label="Linked-In" data-tippy-content="Linked-In" target="_blank" class="social-list__link social-list__link--big">
+								<svg class="social-list__icon social-list__icon--footer">
+									<use xlink:href="img/icons/icons.svg#linked-in"></use>
+								</svg></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__columns">
+					<nav class="footer__column">
+						<h2 class="footer__column-title">SITE MAP</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#">About Us</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Courses</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Events</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Blog</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__column">
+						<h2 class="footer__column-title">COURSES</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#">HR & Recruting</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Marketing</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Management</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Design</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#">Development</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h2 class="footer__column-title">CONTACT US</h2>
+						<ul class="footer__column-list">
+							<li class="footer__column-item footer__column-item--before _icon-phone">
+								<a class="footer__contact-link " aria-label="Call 4055550128 " href="tel:+4055550128">(405)
+									555-0128</a>
+							</li>
+							<li class="footer__column-item footer__column-item--before _icon-envelope">
+								<a href="mailto:hello@createx.com">hello@createx.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__subscribe">
+					<h2 class="footer__column-title footer__column-title--margin-bottom">SIGN UP TO OUR NEWSLETTER</h2>
+					<form class="footer__form" action="#">
+						<input required autocomplete="on" aria-label="Enter your email address" type="email" name="email" placeholder="Email address" class="footer__input">
+						<button aria-label="Submit email" class="footer__button _icon-ar-right"></button>
+					</form>
+					<div class="footer__subscribe-text">
+						<p>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright copyright-footer">
+				<div class="copyright-footer__container">
+					<div class="copyright-footer__text-button">
+						<div class="copyright-footer__text"><span> © All rights reserved. </span> <span class="copyright-footer__text-icon">Made with <span class="copyright-footer__icon _icon-heart"></span>by
+								Createx Studio</span>
+						</div>
+						<button type="button" class="copyright-footer__button">GO TO TOP</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250716213916"></script>
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js?_v=20250716213916"></script>
+</body>
+
+</html>
