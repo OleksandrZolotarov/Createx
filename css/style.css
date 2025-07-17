@@ -759,8 +759,7 @@ body::after {
 }
 .header__logo {
   position: relative;
-  flex: 0 0 8.125rem;
-  min-height: 1.375rem
+  flex: 0 0 8.125rem
 }
 .header__logo img {
   width: 100%;
@@ -4047,6 +4046,7 @@ body::after {
 }
 .button {
   display: inline-flex;
+  padding: .9375rem 1.5rem;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -4057,19 +4057,18 @@ body::after {
   border-radius: .25rem;
   letter-spacing: .03125rem;
   background-image: linear-gradient(56deg,#ff3f3a 0,#f75e05 100%);
-  padding: .9375rem 2rem;
   transition: color .3s,opacity .3s
 }
 .button--white {
-  padding: .875rem 2rem;
   color: #ff3f3a;
   background: #fff;
   border: .0625rem solid #ff3f3a;
   transition: all .3s
 }
 .button--big {
+  min-width: 12.9375rem;
   font-size: 1rem;
-  padding: 1.125rem 2.5rem
+  padding: 1.125rem 1.5rem
 }
 .button--fw {
   width: 100%;
@@ -4842,12 +4841,6 @@ body::after {
     -moz-column-gap: 1.25rem;
     column-gap: 1.25rem
   }
-  .header__logo {
-    width: 8.125rem
-  }
-  .header__logo {
-    top: .0000000625rem
-  }
 }
 @media (min-width:61.99875em) {
   .certificate-page__body {
@@ -4905,6 +4898,12 @@ body::after {
     -webkit-column-gap: 3.75rem;
     -moz-column-gap: 3.75rem;
     column-gap: 3.75rem
+  }
+  .header__logo {
+    width: 8.125rem
+  }
+  .header__logo {
+    height: 1.375rem
   }
   .header__button-profile {
     -webkit-column-gap: 2.25rem;
@@ -5856,6 +5855,9 @@ body::after {
   }
 }
 @media (min-width:62em) {
+  .header__logo {
+    top: .0000000625rem
+  }
   .header__button {
     padding-left: 2.5rem
   }
@@ -6127,7 +6129,7 @@ body::after {
     padding-left: 1.25rem
   }
   .header__container {
-    min-height: 4.0625rem
+    min-height: 3.4375rem
   }
   .header__logo-menu {
     -webkit-column-gap: .625rem;
@@ -6138,7 +6140,10 @@ body::after {
     width: 5.625rem
   }
   .header__logo {
-    top: .25rem
+    height: 1.125rem
+  }
+  .header__logo {
+    top: .125rem
   }
   .header__profile {
     padding-left: 1.25rem
@@ -7146,7 +7151,7 @@ body::after {
     justify-content: space-between
   }
   .button--big {
-    padding: 1rem 2rem
+    padding: 1rem 1.25rem
   }
   .certificate__title-block {
     text-align: center
@@ -7175,6 +7180,10 @@ body::after {
   }
 }
 @media (max-width:47.99875em) {
+  .icon-menu {
+    width: 1.375rem;
+    height: .9375rem
+  }
   .who-we-are__container {
     grid-template-columns: 1fr
   }
@@ -7628,7 +7637,7 @@ body::after {
     background: url(../img/blog-article/braces.svg) 0 0/1.375rem .875rem no-repeat
   }
   .button--big {
-    padding: .875rem 2rem
+    padding: .875rem .9375rem
   }
   .image-certificate {
     border-radius: 0
@@ -8102,14 +8111,34 @@ body::after {
       padding-left: calc(1.25rem + 1.25*(100vw - 20rem)/ 58.75)
     }
   }
-  @supports (min-height:clamp(4.0625rem ,3.4880319149rem + 2.8723404255vw ,5.75rem)) {
+  @supports (min-height:clamp(3.4375rem ,2.6502659574rem + 3.9361702128vw ,5.75rem)) {
     .header__container {
-      min-height: clamp(4.0625rem ,3.4880319149rem + 2.8723404255vw ,5.75rem)
+      min-height: clamp(3.4375rem ,2.6502659574rem + 3.9361702128vw ,5.75rem)
     }
   }
-  @supports not (min-height:clamp(4.0625rem ,3.4880319149rem + 2.8723404255vw ,5.75rem)) {
+  @supports not (min-height:clamp(3.4375rem ,2.6502659574rem + 3.9361702128vw ,5.75rem)) {
     .header__container {
-      min-height: calc(4.0625rem + 1.6875*(100vw - 20rem)/ 58.75)
+      min-height: calc(3.4375rem + 2.3125*(100vw - 20rem)/ 58.75)
+    }
+  }
+  @supports (width:clamp(5.625rem ,4.7739361702rem + 4.2553191489vw ,8.125rem)) {
+    .header__logo {
+      width: clamp(5.625rem ,4.7739361702rem + 4.2553191489vw ,8.125rem)
+    }
+  }
+  @supports not (width:clamp(5.625rem ,4.7739361702rem + 4.2553191489vw ,8.125rem)) {
+    .header__logo {
+      width: calc(5.625rem + 2.5*(100vw - 20rem)/ 58.75)
+    }
+  }
+  @supports (height:clamp(1.125rem ,1.039893617rem + 0.4255319149vw ,1.375rem)) {
+    .header__logo {
+      height: clamp(1.125rem ,1.039893617rem + .4255319149vw ,1.375rem)
+    }
+  }
+  @supports not (height:clamp(1.125rem ,1.039893617rem + 0.4255319149vw ,1.375rem)) {
+    .header__logo {
+      height: calc(1.125rem + .25*(100vw - 20rem)/ 58.75)
     }
   }
   @supports (padding-left:clamp(1.25rem ,1.079787234rem + 0.8510638298vw ,1.75rem)) {
@@ -10888,24 +10917,16 @@ body::after {
       column-gap: calc(.625rem + .625*(100vw - 20rem)/ 9.6875)
     }
   }
-  @supports (width:clamp(5.625rem ,0.4637096774rem + 25.8064516129vw ,8.125rem)) {
+}
+@media (min-width:20em)and (max-width:62em) {
+  @supports (top:clamp(0.0000000625rem ,0.1845237798rem + -0.2976188988vw ,0.125rem)) {
     .header__logo {
-      width: clamp(5.625rem ,.4637096774rem + 25.8064516129vw ,8.125rem)
+      top: clamp(.0000000625rem ,.1845237798rem + -.2976188988vw ,.125rem)
     }
   }
-  @supports not (width:clamp(5.625rem ,0.4637096774rem + 25.8064516129vw ,8.125rem)) {
+  @supports not (top:clamp(0.0000000625rem ,0.1845237798rem + -0.2976188988vw ,0.125rem)) {
     .header__logo {
-      width: calc(5.625rem + 2.5*(100vw - 20rem)/ 9.6875)
-    }
-  }
-  @supports (top:clamp(0.0000000625rem ,0.7661289032rem + -2.5806445161vw ,0.25rem)) {
-    .header__logo {
-      top: clamp(.0000000625rem ,.7661289032rem + -2.5806445161vw ,.25rem)
-    }
-  }
-  @supports not (top:clamp(0.0000000625rem ,0.7661289032rem + -2.5806445161vw ,0.25rem)) {
-    .header__logo {
-      top: calc(.25rem + -.2499999375*(100vw - 20rem)/ 9.6875)
+      top: calc(.125rem + -.1249999375*(100vw - 20rem)/ 42)
     }
   }
 }
