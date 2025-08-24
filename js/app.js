@@ -8022,25 +8022,27 @@
     }));
     const countdownElement = document.querySelector(".process__discount-countdown");
     if (countdownElement) {
-        const targetDate = new Date(countdownElement.getAttribute("data-target"));
+        let targetDate = new Date(countdownElement.getAttribute("data-target"));
         if (!isNaN(targetDate.getTime())) {
             function updateCountdown() {
                 const now = new Date;
-                const timeDifference = targetDate - now;
-                if (timeDifference > 0) {
-                    const days = String(Math.floor(timeDifference / (1e3 * 60 * 60 * 24))).padStart(2, "0");
-                    const hours = String(Math.floor(timeDifference % (1e3 * 60 * 60 * 24) / (1e3 * 60 * 60))).padStart(2, "0");
-                    const minutes = String(Math.floor(timeDifference % (1e3 * 60 * 60) / (1e3 * 60))).padStart(2, "0");
-                    const seconds = String(Math.floor(timeDifference % (1e3 * 60) / 1e3)).padStart(2, "0");
-                    const daysElement = countdownElement.querySelector("#days");
-                    const hoursElement = countdownElement.querySelector("#hours");
-                    const minutesElement = countdownElement.querySelector("#minutes");
-                    const secondsElement = countdownElement.querySelector("#seconds");
-                    if (daysElement) daysElement.textContent = days;
-                    if (hoursElement) hoursElement.textContent = hours;
-                    if (minutesElement) minutesElement.textContent = minutes;
-                    if (secondsElement) secondsElement.textContent = seconds;
-                } else countdownElement.textContent = "Time is up!";
+                let timeDifference = targetDate - now;
+                if (timeDifference <= 0) {
+                    targetDate.setFullYear(targetDate.getFullYear() + 1);
+                    timeDifference = targetDate - now;
+                }
+                const days = String(Math.floor(timeDifference / (1e3 * 60 * 60 * 24))).padStart(2, "0");
+                const hours = String(Math.floor(timeDifference % (1e3 * 60 * 60 * 24) / (1e3 * 60 * 60))).padStart(2, "0");
+                const minutes = String(Math.floor(timeDifference % (1e3 * 60 * 60) / (1e3 * 60))).padStart(2, "0");
+                const seconds = String(Math.floor(timeDifference % (1e3 * 60) / 1e3)).padStart(2, "0");
+                const daysElement = countdownElement.querySelector("#days");
+                const hoursElement = countdownElement.querySelector("#hours");
+                const minutesElement = countdownElement.querySelector("#minutes");
+                const secondsElement = countdownElement.querySelector("#seconds");
+                if (daysElement) daysElement.textContent = days;
+                if (hoursElement) hoursElement.textContent = hours;
+                if (minutesElement) minutesElement.textContent = minutes;
+                if (secondsElement) secondsElement.textContent = seconds;
             }
             setInterval(updateCountdown, 1e3);
             updateCountdown();

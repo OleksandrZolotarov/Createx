@@ -1173,7 +1173,8 @@ body::after {
 .card-courses__price-author {
   display: flex;
   align-items: center;
-  gap: .5rem
+  gap: .5rem;
+  line-height: 1.2
 }
 .card-courses__price {
   align-self: flex-start;
@@ -1183,8 +1184,7 @@ body::after {
   -moz-column-gap: .5rem;
   column-gap: .5rem;
   color: #ff4242;
-  font-weight: 700;
-  line-height: 1.5
+  font-weight: 700
 }
 .card-courses__price::after {
   content: "";
@@ -1193,8 +1193,7 @@ body::after {
   background-color: #787a80
 }
 .card-courses__author {
-  color: #787a80;
-  line-height: 1.2
+  color: #787a80
 }
 .benefits {
   background-color: #fff
@@ -1767,7 +1766,8 @@ body::after {
 }
 .online-courses__card-wrapper-link {
   display: grid;
-  grid-template-rows: auto 1fr
+  grid-template-rows: auto 1fr;
+  height: 100%
 }
 .online-courses__card-image {
   aspect-ratio: 390/240;
@@ -1788,31 +1788,30 @@ body::after {
 .online-courses__card-title {
   color: #1e212c;
   font-weight: 700;
-  line-height: 1.5
+  line-height: 1.2
 }
 .online-courses__card-price-author {
   display: flex;
   align-items: center;
-  gap: 1.25rem
+  gap: 1.25rem;
+  line-height: 1.2
 }
 .online-courses__card-price {
   align-self: flex-start;
   color: #ff4242;
   font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.5
+  font-weight: 700
 }
 .online-courses__card-author {
   position: relative;
   color: #787a80;
-  font-size: 1.125rem;
-  line-height: 1.5
+  font-size: 1.125rem
 }
 .online-courses__card-author::before {
   position: absolute;
-  top: .375rem;
-  left: -.625rem;
   content: "";
+  top: .1875rem;
+  left: -.625rem;
   height: 1rem;
   width: .0625rem;
   background-color: #787a80
