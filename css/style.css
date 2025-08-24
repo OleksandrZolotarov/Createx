@@ -7233,10 +7233,6 @@ body::after {
   .blog__title-block {
     text-align: center
   }
-  .blog__button {
-    width: 100%;
-    justify-content: center
-  }
   .online-courses__filter-input {
     flex-wrap: wrap
   }
@@ -7522,6 +7518,9 @@ body::after {
   }
   .testimonials__slide {
     padding: 10% 6% 10% 15%
+  }
+  .blog__button {
+    width: 100%
   }
   .card-blog__image {
     margin: 0 -.9375rem;
