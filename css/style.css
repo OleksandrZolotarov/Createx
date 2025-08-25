@@ -5877,6 +5877,9 @@ body::after {
   }
 }
 @media (max-width:75em) {
+  .card-courses__body {
+    padding: 1.25rem
+  }
   .our-events__search-input-wrapper,
   .our-events__select-wrapper {
     flex-grow: 1
@@ -5951,9 +5954,6 @@ body::after {
   .who-we-are__list:not(:last-child) {
     margin-bottom: 1.875rem
   }
-  .courses__cards {
-    grid-template-columns: 1fr
-  }
   .benefits__tabs-body-image {
     -webkit-column-gap: 2.5rem;
     -moz-column-gap: 2.5rem;
@@ -6018,6 +6018,12 @@ body::after {
   }
   .who-we-are {
     padding-bottom: 1.875rem
+  }
+  .courses__cards {
+    grid-template-columns: 1fr
+  }
+  .card-courses__image {
+    flex-basis: 8rem
   }
   .curator__container {
     -webkit-column-gap: 1.875rem;
@@ -6214,9 +6220,6 @@ body::after {
   }
   .courses__cards {
     gap: .9375rem
-  }
-  .card-courses__image {
-    flex-basis: 7rem
   }
   .card-courses__body {
     row-gap: .625rem
@@ -7010,6 +7013,11 @@ body::after {
     display: none
   }
 }
+@media (max-width:68.75em) {
+  .card-courses__body {
+    padding: .9375rem
+  }
+}
 @media (max-width:61.99875em) {
   .menu__body {
     position: fixed;
@@ -7119,6 +7127,12 @@ body::after {
   .hero__image {
     display: none
   }
+  .card-courses__image {
+    aspect-ratio: 1/1.3
+  }
+  .card-courses__body {
+    padding: 1.25rem
+  }
   .blog__cards {
     grid-template-columns: repeat(2,1fr)
   }
@@ -7203,6 +7217,12 @@ body::after {
   }
   .who-we-are__container {
     grid-template-columns: 1fr
+  }
+  .card-courses__image {
+    aspect-ratio: 1/1.1
+  }
+  .card-courses__image {
+    aspect-ratio: 1/1.2
   }
   .benefits__tabs-body-image {
     grid-template-columns: 1fr
@@ -7413,6 +7433,9 @@ body::after {
   .who-we-are__container {
     row-gap: 1.875rem
   }
+  .card-courses__image {
+    flex-basis: 7rem
+  }
   .for-whom__title-block:not(:last-child) {
     margin-bottom: 1.25rem
   }
@@ -7467,11 +7490,6 @@ body::after {
   }
   .courses__button {
     justify-self: center
-  }
-}
-@media (max-width:34.375em) {
-  .card-courses__image {
-    aspect-ratio: 1/1.2
   }
 }
 @media (max-width:29.99875em) {
@@ -7786,6 +7804,16 @@ body::after {
   @supports not (padding-left:clamp(1.875rem ,-8.368902439rem + 21.3414634146vw ,8.4375rem)) {
     .who-we-are__body {
       padding-left: calc(1.875rem + 6.5625*(100vw - 48rem)/ 30.75)
+    }
+  }
+  @supports (flex-basis:clamp(8rem ,-0.3902439024rem + 17.4796747967vw ,13.375rem)) {
+    .card-courses__image {
+      flex-basis: clamp(8rem ,-.3902439024rem + 17.4796747967vw ,13.375rem)
+    }
+  }
+  @supports not (flex-basis:clamp(8rem ,-0.3902439024rem + 17.4796747967vw ,13.375rem)) {
+    .card-courses__image {
+      flex-basis: calc(8rem + 5.375*(100vw - 48rem)/ 30.75)
     }
   }
   @supports (padding-right:clamp(4.375rem ,0.9603658537rem + 7.1138211382vw ,6.5625rem)) {
@@ -8340,16 +8368,6 @@ body::after {
   @supports not (gap:clamp(0.9375rem ,0.6183510638rem + 1.5957446809vw ,1.875rem)) {
     .courses__cards {
       gap: calc(.9375rem + .9375*(100vw - 20rem)/ 58.75)
-    }
-  }
-  @supports (flex-basis:clamp(7rem ,4.829787234rem + 10.8510638298vw ,13.375rem)) {
-    .card-courses__image {
-      flex-basis: clamp(7rem ,4.829787234rem + 10.8510638298vw ,13.375rem)
-    }
-  }
-  @supports not (flex-basis:clamp(7rem ,4.829787234rem + 10.8510638298vw ,13.375rem)) {
-    .card-courses__image {
-      flex-basis: calc(7rem + 6.375*(100vw - 20rem)/ 58.75)
     }
   }
   @supports (row-gap:clamp(0.625rem ,0.1994680851rem + 2.1276595745vw ,1.875rem)) {
@@ -11051,6 +11069,9 @@ body::after {
   .who-we-are__container {
     row-gap: 3.75rem
   }
+  .card-courses__image {
+    flex-basis: 13.375rem
+  }
   .for-whom__title-block:not(:last-child) {
     margin-bottom: 1.875rem
   }
@@ -11064,6 +11085,16 @@ body::after {
   @supports not (row-gap:clamp(1.875rem ,1.2367021277rem + 3.1914893617vw ,3.75rem)) {
     .who-we-are__container {
       row-gap: calc(1.875rem + 1.875*(100vw - 20rem)/ 58.75)
+    }
+  }
+  @supports (flex-basis:clamp(7rem ,4.829787234rem + 10.8510638298vw ,13.375rem)) {
+    .card-courses__image {
+      flex-basis: clamp(7rem ,4.829787234rem + 10.8510638298vw ,13.375rem)
+    }
+  }
+  @supports not (flex-basis:clamp(7rem ,4.829787234rem + 10.8510638298vw ,13.375rem)) {
+    .card-courses__image {
+      flex-basis: calc(7rem + 6.375*(100vw - 20rem)/ 58.75)
     }
   }
   @supports (margin-bottom:clamp(1.25rem ,1.0372340426rem + 1.0638297872vw ,1.875rem)) {
