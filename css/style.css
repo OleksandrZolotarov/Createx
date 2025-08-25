@@ -1147,7 +1147,8 @@ body::after {
 }
 .card-courses__wrapper-link {
   display: flex;
-  align-items: center
+  align-items: center;
+  height: 100%
 }
 .card-courses__image {
   flex: 0 0 auto;
@@ -1161,20 +1162,21 @@ body::after {
   object-fit: cover
 }
 .card-courses__body {
-  padding: .9375rem;
+  height: 100%;
+  padding: 1.875rem .9375rem;
   display: flex;
   flex-direction: column
 }
 .card-courses__title {
+  flex-grow: 1;
   color: #1e212c;
   font-weight: 700;
-  line-height: 1.2
+  line-height: 1.1
 }
 .card-courses__price-author {
   display: flex;
   align-items: center;
-  gap: .5rem;
-  line-height: 1.2
+  gap: .5rem
 }
 .card-courses__price {
   align-self: flex-start;
@@ -2400,7 +2402,7 @@ body::after {
 }
 .card-other-courses__body {
   flex-grow: 1;
-  padding: .9375rem;
+  padding: 1.5625rem .9375rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2417,6 +2419,7 @@ body::after {
   background-color: var(--color)
 }
 .card-other-courses__title {
+  flex-grow: 1;
   color: #1e212c;
   font-weight: 700;
   line-height: 1.5
@@ -5008,7 +5011,7 @@ body::after {
     flex-basis: 13.375rem
   }
   .card-courses__body {
-    row-gap: 1.25rem
+    row-gap: 1.875rem
   }
   .card-courses__title {
     font-size: 1.25rem
@@ -7286,7 +7289,7 @@ body::after {
     display: none
   }
   .card-other-courses__body {
-    padding: .75rem
+    padding: 1.25rem .75rem
   }
   .our-events__toolbar {
     -webkit-column-gap: 0;
@@ -7466,6 +7469,11 @@ body::after {
     justify-self: center
   }
 }
+@media (max-width:34.375em) {
+  .card-courses__image {
+    aspect-ratio: 1/1.2
+  }
+}
 @media (max-width:29.99875em) {
   .icon-menu {
     width: 1.25rem;
@@ -7513,7 +7521,7 @@ body::after {
     border-radius: 0
   }
   .card-courses__body {
-    padding: .625rem
+    padding: .9375rem .625rem
   }
   .testimonials__slide {
     padding: 10% 6% 10% 15%
@@ -7606,9 +7614,6 @@ body::after {
   .card-other-courses {
     flex-direction: column;
     align-items: center
-  }
-  .card-other-courses__category {
-    align-self: center
   }
   .lecture__detailes {
     margin: 0 -.9375rem;
@@ -8347,14 +8352,14 @@ body::after {
       flex-basis: calc(7rem + 6.375*(100vw - 20rem)/ 58.75)
     }
   }
-  @supports (row-gap:clamp(0.625rem ,0.4122340426rem + 1.0638297872vw ,1.25rem)) {
+  @supports (row-gap:clamp(0.625rem ,0.1994680851rem + 2.1276595745vw ,1.875rem)) {
     .card-courses__body {
-      row-gap: clamp(.625rem ,.4122340426rem + 1.0638297872vw ,1.25rem)
+      row-gap: clamp(.625rem ,.1994680851rem + 2.1276595745vw ,1.875rem)
     }
   }
-  @supports not (row-gap:clamp(0.625rem ,0.4122340426rem + 1.0638297872vw ,1.25rem)) {
+  @supports not (row-gap:clamp(0.625rem ,0.1994680851rem + 2.1276595745vw ,1.875rem)) {
     .card-courses__body {
-      row-gap: calc(.625rem + .625*(100vw - 20rem)/ 58.75)
+      row-gap: calc(.625rem + 1.25*(100vw - 20rem)/ 58.75)
     }
   }
   @supports (font-size:clamp(1rem ,0.914893617rem + 0.4255319149vw ,1.25rem)) {
