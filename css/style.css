@@ -7515,7 +7515,7 @@ body::after {
     justify-self: center
   }
 }
-@media (max-width:31.25em) {
+@media (max-width:34.6875em) {
   .our-events__form {
     display: flex;
     flex-wrap: wrap
